@@ -66,8 +66,8 @@ export default {
       watched: [],
     };
   },
-  async created() {
-    const animes = await this.$axios.$get(`/api/list`);
+  async mounted() {
+    const animes = await this.$axios.$get(`${window.location.href}api/list`);
     let data = JSON.parse(animes);
     data.forEach((a) => {
       if (a.watched) {
