@@ -23,7 +23,7 @@
           </div>
 
           <div class="anime-title text-gray-800">
-            <h2 v-text="pop.title"></h2>
+            <h2 v-text="pop.title" :title="pop.title"></h2>
           </div>
         </Nuxt-link>
       </div>
@@ -50,7 +50,7 @@
           </div>
 
           <div class="anime-title text-gray-800">
-            <h2 v-text="pop.title"></h2>
+            <h2 v-text="pop.title" :title="pop.title"></h2>
           </div>
         </Nuxt-link>
       </div>

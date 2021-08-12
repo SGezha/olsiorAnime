@@ -36,6 +36,24 @@
         "watched": true
     },
     {
+        "title": "Врата Штейна: Найти недостающее звено — Деление на ноль / Steins;Gate: Kyoukaimenjou no Missing Link - Divide By Zero",
+        "img": "https://desu.shikimori.one/system/animes/original/32188.jpg?1617285093",
+        "id": "z9253-steins-gate",
+        "episodes": "1/1",
+        "stars": "-",
+        "url": "SteinsGateDel",
+        "watched": true
+    },
+    {
+        "title": "Врата Штейна: Эгоистичная пориомания / Steins;Gate: Oukoubakko no Poriomania",
+        "img": "https://desu.shikimori.one/system/animes/original/10863.jpg?1617285077",
+        "id": "z9253-steins-gate",
+        "episodes": "1/1",
+        "stars": "-",
+        "url": "SteinsGateEgo",
+        "watched": true
+    },
+    {
         "title": "Город, в котором меня нет / Boku dake ga Inai Machi",
         "img": "https://desu.shikimori.one/system/animes/original/31043.jpg?1617255769",
         "id": "z9253-steins-gate",
@@ -58,7 +76,7 @@
         "img": "https://nyaa.shikimori.one/system/animes/original/20.jpg?1610181991",
         "id": "z9253-steins-gate",
         "episodes": "220/220",
-        "stars": "9",
+        "stars": "8",
         "url": "naruto",
         "watched": true
     },
