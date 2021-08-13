@@ -6,6 +6,18 @@
         <h2>{{ anime.title }} <i class="fas fa-chevron-right text-sm"></i></h2>
       </div>
       <div class="m-5">
+        <div class="chat-block" v-if="chat != ''">
+          <div v-for="(msg, index) in parsedChat" :key="index" class="message">
+            <span
+              class="time"
+              v-text="
+                `[${msg.time.hours}:${msg.time.minutes}:${msg.time.seconds}]`
+              "
+            ></span>
+            <span class="author" v-text="msg.author + ':'"></span>
+            <span class="text" v-text="msg.text"></span>
+          </div>
+        </div>
         <div
           class="history"
           :class="{ active: video != null }"
@@ -34,7 +46,7 @@
       <div class="player-block m-5">
         <div class="player" :class="{ hidden: video == null }">
           <video ref="video" @loadeddata="loadedVideo" controls :key="video">
-            <source :src="video" type="video/mp4" />
+            <source :src="video"/>
           </video>
         </div>
         <div class="episode-block" :class="{ active: video != null }">
@@ -86,6 +98,10 @@ export default {
       },
       timer: null,
       needSave: false,
+      chat: "",
+      parsedChat: [],
+      nowChat: [],
+      nowTime: 0,
     };
   },
   mounted() {
@@ -101,6 +117,44 @@ export default {
   },
   computed: {},
   methods: {
+    async getChat() {
+      const chat = await this.$axios.$get("/chat/bleach_110.txt");
+      this.chat = chat;
+      this.parseChat();
+    },
+    parseChat() {
+      let timeStart;
+      this.chat.split("\r\n").forEach((text, ind) => {
+        if (ind == 0) {
+          timeStart = new Date(
+            `Mon Jan 01 2007 ${text.split(`[`)[1].split(":")[0]}:${
+              text.split(`:`)[1].split(":")[0]
+            }:${text.split(`:`)[2].split("]")[0]} GMT+0530`
+          ).getTime();
+          return;
+        }
+        if (text == "") return;
+        let timeEnd = new Date(
+          `Mon Jan 01 2007 ${text.split(`[`)[1].split(":")[0]}:${
+            text.split(`:`)[1].split(":")[0]
+          }:${text.split(`:`)[2].split("]")[0]} GMT+0530`
+        ).getTime();
+        let hourDiff = timeEnd - timeStart; //in ms
+        let secDiff = hourDiff / 1000; //in s
+        let minDiff = hourDiff / 60 / 1000; //in minutes
+        let hDiff = hourDiff / 3600 / 1000; //in hours
+        let result = {};
+        result.hours = Math.floor(hDiff);
+        result.minutes = Math.floor(minDiff - 60 * result.hours);
+        result.seconds = secDiff - 60 * result.minutes;
+        result.timesec = secDiff;
+        this.parsedChat.push({
+          time: result,
+          author: text.split("] ")[1].split(":")[0],
+          text: text.split("] ")[1].split(":")[1],
+        });
+      });
+    },
     change(ind, url, title) {
       clearInterval(this.timer);
       if (this.save.id == ind) this.needSave = true;
@@ -113,14 +167,15 @@ export default {
         this.save = {
           time: this.$refs.video.currentTime,
           id: this.nowInd,
-          volume: this.$refs.video.volume
-        }
+          volume: this.$refs.video.volume,
+        };
+        this.nowTime = parseInt(this.save.time.toString().split(".")[0]);
         localStorage.setItem(
           `${window.location.href.split("/watch/")[1]}`,
           JSON.stringify({
             time: this.$refs.video.currentTime,
             id: this.nowInd,
-            volume: this.$refs.video.volume
+            volume: this.$refs.video.volume,
           })
         );
       }, 1000);
@@ -156,6 +211,11 @@ export default {
 </script>
 
 <style>
+.chat-block {
+  overflow: auto;
+  height: 400px;
+}
+
 .history {
   display: flex;
   align-items: center;
