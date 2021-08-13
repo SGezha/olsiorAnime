@@ -121,9 +121,11 @@ export default {
       }, 1000);
     },
     loadedVideo() {
+      if (this.$refs.video == undefined) return;
+      if (this.save.time == 0) return;
       if (this.needSave) {
         this.$refs.video.currentTime = this.save.time;
-        this.needSave;
+        this.needSave = false;
       }
       this.$refs.video.volume = this.save.volume;
     },
@@ -192,6 +194,11 @@ export default {
 @media screen and (min-width: 768px) {
   .episode {
     width: calc((100% - 10px) / 4);
+  }
+
+  .episode span {
+    display: inline-flex;
+    width: 80%;
   }
 }
 
