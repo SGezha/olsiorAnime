@@ -38,7 +38,6 @@
           </video>
         </div>
         <div class="episode-block" :class="{ active: video != null }">
-          <h2>Серии:</h2>
           <div class="episode-scroll" :class="{ active: video != null }">
             <div
               v-for="(post, index) in anime.episodes"
@@ -114,6 +113,7 @@ export default {
           JSON.stringify({
             time: this.$refs.video.currentTime,
             id: this.nowInd,
+            volume: this.$refs.video.volume
           })
         );
       }, 1000);
@@ -167,13 +167,14 @@ export default {
 }
 
 .episode-scroll {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .episode {
   cursor: pointer;
-  width: calc((100% - 10px) / 9);
+  display: inline-block;
   padding: 5px 10px;
   background: #2b2b2b;
   border: 1px solid #2b2b2b;
@@ -181,6 +182,26 @@ export default {
   transition: 0.3s ease;
   margin: 5px;
 }
+
+@media screen and (min-width: 768px) {
+  .episode {
+    width: calc((100% - 10px) / 4);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .episode {
+    width: calc((100% - 10px) / 6);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .episode {
+    width: calc((100% - 10px) / 9);
+  }
+}
+
+
 
 .oneepisode {
   cursor: pointer;
