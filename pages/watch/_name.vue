@@ -64,8 +64,8 @@ import Header from "@/components/header.vue";
 
 export default {
   async asyncData({ params, $axios }) {
-    // let anime = await $axios.$get(`https://olsior.herokuapp.com/api/anime?${params.name}`);
-    let anime = await $axios.$get(`/api/anime?${params.name}`);
+    let anime = await $axios.$get(`https://olsior.herokuapp.com/api/anime?${params.name}`);
+    // let anime = await $axios.$get(`/api/anime?${params.name}`);
     anime = JSON.parse(anime);
     return { anime };
   },
@@ -110,24 +110,29 @@ export default {
       this.timer = setInterval(() => {
         if (this.$refs.video.currentTime == undefined) return;
         if (this.$refs.video.currentTime == 0) return;
+        this.save = {
+          time: this.$refs.video.currentTime,
+          id: this.nowInd,
+          volume: this.$refs.video.volume
+        }
         localStorage.setItem(
           `${window.location.href.split("/watch/")[1]}`,
           JSON.stringify({
             time: this.$refs.video.currentTime,
             id: this.nowInd,
-            volume: this.$refs.video.volume,
+            volume: this.$refs.video.volume
           })
         );
       }, 1000);
     },
     loadedVideo() {
       if (this.$refs.video == undefined) return;
-      this.$refs.video.volume = this.save.volume;
       if (this.save.time == 0) return;
       if (this.needSave) {
         this.$refs.video.currentTime = this.save.time;
         this.needSave = false;
       }
+      this.$refs.video.volume = this.save.volume;
     },
     formatTime(duration) {
       // Hours, minutes and seconds
