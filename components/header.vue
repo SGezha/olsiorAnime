@@ -4,7 +4,7 @@
       class="header container w-full mx-auto flex justify-center items-center text-gray-300 h-1/6"
     >
       <NuxtLink to="/">
-        <h1>Олсиор смотрит аниме</h1>
+        <h1>Олсиор смотрит аниме <span class="small">BETA</span></h1>
       </NuxtLink>
     </div>
   </div>
@@ -22,9 +22,16 @@ export default {
 .bg-header {
   background: #2b2b2b;
 }
- 
+
+.small {
+  font-size: 10px;
+  margin-left: 2px;
+}
+
 h1 {
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .header {
