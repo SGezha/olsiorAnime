@@ -33,7 +33,7 @@
       </div>
       <div class="player-block m-5">
         <div class="player" :class="{ hidden: video == null }">
-          <video ref="video" @loadeddata="test" controls :key="video">
+          <video ref="video" @loadeddata="loadedVideo" controls :key="video">
             <source :src="video" type="video/mp4" />
           </video>
         </div>
@@ -85,6 +85,7 @@ export default {
         time: 0,
       },
       timer: null,
+      needSave: false,
     };
   },
   mounted() {
@@ -102,6 +103,7 @@ export default {
   methods: {
     change(ind, url, title) {
       clearInterval(this.timer);
+      if (this.save.id == ind) this.needSave = true;
       this.nowInd = ind;
       this.video = url;
       this.title = title;
@@ -113,13 +115,17 @@ export default {
           JSON.stringify({
             time: this.$refs.video.currentTime,
             id: this.nowInd,
-            volume: this.$refs.video.volume
+            volume: this.$refs.video.volume,
           })
         );
       }, 1000);
     },
-    test() {
-      this.$refs.video.currentTime = this.save.time;
+    loadedVideo() {
+      if (this.needSave) {
+        this.$refs.video.currentTime = this.save.time;
+        this.needSave;
+      }
+      this.$refs.video.volume = this.save.volume;
     },
     formatTime(duration) {
       // Hours, minutes and seconds
@@ -200,8 +206,6 @@ export default {
     width: calc((100% - 10px) / 9);
   }
 }
-
-
 
 .oneepisode {
   cursor: pointer;
