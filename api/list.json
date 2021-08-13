@@ -23,7 +23,7 @@
         "id": "z30484-steins-gate-0",
         "episodes": "23/23",
         "stars": "10",
-        "url": "SteinsGate0",
+        "url": "steinsgate0",
         "watched": true
     },
     {
@@ -32,7 +32,7 @@
         "id": "z9253-steins-gate",
         "episodes": "24/24",
         "stars": "10",
-        "url": "SteinsGate",
+        "url": "steinsgate",
         "watched": true
     },
     {
@@ -41,7 +41,7 @@
         "id": "z9253-steins-gate",
         "episodes": "1/1",
         "stars": "-",
-        "url": "SteinsGateDel",
+        "url": "steinsgatedel",
         "watched": true
     },
     {
@@ -50,7 +50,7 @@
         "id": "z9253-steins-gate",
         "episodes": "1/1",
         "stars": "-",
-        "url": "SteinsGateEgo",
+        "url": "steinsgateego",
         "watched": true
     },
     {

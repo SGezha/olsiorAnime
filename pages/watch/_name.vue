@@ -5,9 +5,35 @@
       <div class="head text-2xl m-5 flex justify-start items-center">
         <h2>{{ anime.title }} <i class="fas fa-chevron-right text-sm"></i></h2>
       </div>
-      <div class="player-block m-5 lg:flex">
+      <div class="m-5">
+        <div
+          class="history"
+          :class="{ active: video != null }"
+          v-if="save.time != 0"
+        >
+          <h2>Вы остановились на</h2>
+          <div class="oneepisode">
+            <span
+              @click="
+                change(
+                  save.id,
+                  anime.episodes[save.id].url,
+                  anime.episodes[save.id].title
+                )
+              "
+              >{{ anime.episodes[save.id].title }} ({{
+                formatTime(save.time)
+              }})</span
+            >
+            <a :href="anime.episodes[save.id].url" class="down"
+              ><i class="fas fa-download"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="player-block m-5">
         <div class="player" :class="{ hidden: video == null }">
-          <video controls :key="video">
+          <video ref="video" @loadeddata="test" controls :key="video">
             <source :src="video" type="video/mp4" />
           </video>
         </div>
@@ -55,21 +81,77 @@ export default {
       nowInd: -1,
       video: null,
       title: "Олсиор смотрит аниме",
+      save: {
+        id: 0,
+        time: 0,
+      },
+      timer: null,
     };
   },
-  mounted() {},
+  mounted() {
+    if (
+      localStorage.getItem(`${window.location.href.split("/watch/")[1]}`) !=
+      null
+    ) {
+      this.save = JSON.parse(
+        localStorage.getItem(`${window.location.href.split("/watch/")[1]}`)
+      );
+      console.log(this.save);
+    }
+  },
   computed: {},
   methods: {
     change(ind, url, title) {
+      clearInterval(this.timer);
       this.nowInd = ind;
       this.video = url;
       this.title = title;
+      this.timer = setInterval(() => {
+        if (this.$refs.video.currentTime == undefined) return;
+        if (this.$refs.video.currentTime == 0) return;
+        localStorage.setItem(
+          `${window.location.href.split("/watch/")[1]}`,
+          JSON.stringify({
+            time: this.$refs.video.currentTime,
+            id: this.nowInd,
+          })
+        );
+      }, 1000);
+    },
+    test() {
+      this.$refs.video.currentTime = this.save.time;
+    },
+    formatTime(duration) {
+      // Hours, minutes and seconds
+      var hrs = ~~(duration / 3600);
+      var mins = ~~((duration % 3600) / 60);
+      var secs = ~~duration % 60;
+
+      // Output like "1:01" or "4:03:59" or "123:03:59"
+      var ret = "";
+
+      if (hrs > 0) {
+        ret += "" + hrs + ":" + (mins < 10 ? "0" : "");
+      }
+
+      ret += "" + mins + ":" + (secs < 10 ? "0" : "");
+      ret += "" + secs;
+      return ret;
     },
   },
 };
 </script>
 
 <style>
+.history {
+  display: flex;
+  align-items: center;
+}
+
+.history.active {
+  display: none;
+}
+
 .down {
   margin-left: 5px;
 }
@@ -79,15 +161,38 @@ export default {
   height: 100%;
 }
 
+.episode-block {
+  margin-left: -5px;
+  margin-top: 10px;
+}
+
+.episode-scroll {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .episode {
   cursor: pointer;
-  display: inline-block;
+  width: calc((100% - 10px) / 9);
   padding: 5px 10px;
   background: #2b2b2b;
   border: 1px solid #2b2b2b;
-  margin: 5px 5px;
   border-radius: 5px;
   transition: 0.3s ease;
+  margin: 5px;
+}
+
+.oneepisode {
+  cursor: pointer;
+  width: fit-content;
+  padding: 5px 10px;
+  background: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  margin: 0px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 .episode.active {
@@ -96,11 +201,8 @@ export default {
 
 .episode-block h2 {
   margin-left: 5px;
-}
-
-.episode-block {
-  margin-left: -5px;
-  margin-top: 10px;
+  display: block;
+  width: 100%;
 }
 
 .episode-scroll::-webkit-scrollbar {
@@ -135,48 +237,5 @@ export default {
 }
 .episode-scroll::-webkit-scrollbar-corner {
   background: transparent;
-}
-
-@media (min-width: 1024px) {
-  .player {
-    width: 100%;
-    height: 725px;
-  }
-
-  .episode-scroll.active {
-    overflow-y: auto;
-    height: 410px;
-  }
-
-  .episode-block.active {
-    position: relative;
-    margin-left: 10px;
-    max-width: 200px;
-  }
-
-  .episode-block {
-    margin-left: -5px;
-    margin-top: 0px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .player {
-    height: 559px;
-  }
-
-  .episode-scroll.active {
-    height: 559px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .player {
-    height: 725px;
-  }
-
-  .episode-scroll.active {
-    height: 700px;
-  }
 }
 </style>
