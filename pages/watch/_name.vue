@@ -255,7 +255,8 @@ export default {
 .player .video {
   width: 100%;
   height: 70vh;
-  z-index: -100;
+  background: black;
+  /* z-index: -100; */
 }
 
 .episode-block {
@@ -325,5 +326,59 @@ export default {
   margin-left: 5px;
   display: block;
   width: 100%;
+}
+
+video::-webkit-media-controls-enclosure {
+  padding: 0px;
+  height: auto;
+}
+
+video::-webkit-media-controls-panel {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 50%;
+  opacity: 1 !important;
+  display: -webkit-flex !important;
+  height: auto;
+
+  background: transparent;
+
+  z-index: 1;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+video::-webkit-media-controls-timeline {
+  background: transparent;
+  position: absolute;
+  bottom: 45px;
+  height: 4px;
+  left: 50%;
+  width: 92%;
+  transform: translateX(-50%);
+}
+
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-timeline {
+  background: transparent;
+}
+
+video::-webkit-media-controls-volume-slider::-webkit-media-slider-container,
+video::-webkit-media-controls-timeline::-webkit-media-slider-container {
+  cursor: pointer;
+  background: transparent;
+}
+
+::-webkit-media-slider-thumb {
+  background: red;
+}
+
+video::-webkit-media-controls-play-button {
+  cursor: pointer;
+}
+
+video::-webkit-media-controls-play-button:hover {
 }
 </style>
