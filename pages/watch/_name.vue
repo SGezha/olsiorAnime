@@ -4,9 +4,18 @@
 
     <div
       @click="theatre = !theatre"
-      class="theatre_button"
+      class="theatre_button top"
       title="Режим кинотеатра"
-      :class="{ theatre: theatre }"
+      v-if="theatre && video != null"
+    >
+      <i class="fas fa-compress"></i>
+    </div>
+
+    <div
+      @click="theatre = !theatre"
+      class="theatre_button bot"
+      title="Режим кинотеатра"
+      v-if="!theatre && video != null"
     >
       <i class="fas fa-expand"></i>
     </div>
@@ -118,8 +127,8 @@ import Footer from "@/components/footer.vue";
 
 export default {
   async asyncData({ params, $axios }) {
-    let anime = await $axios.$get(`https://olsior.herokuapp.com/api/anime?${params.name}`);
-    // let anime = await $axios.$get(`/api/anime?${params.name}`);
+    // let anime = await $axios.$get(`https://olsior.herokuapp.com/api/anime?${params.name}`);
+    let anime = await $axios.$get(`/api/anime?${params.name}`);
     anime = JSON.parse(anime);
     return { anime };
   },
@@ -145,7 +154,7 @@ export default {
       parsedChat: [],
       nowTime: 0,
       theatre: false,
-      emotes: []
+      emotes: [],
     };
   },
   mounted() {
@@ -162,12 +171,16 @@ export default {
   computed: {},
   methods: {
     async getChat(url) {
-      const emotes = await this.$axios.$get(`https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes.json?v=1628961862168`)
+      const emotes = await this.$axios.$get(
+        `https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes.json?v=1628967948823`
+      );
       this.emotes = emotes;
       let chat = await this.$axios.$get(`${url}`);
-      this.emotes.forEach(m => {
-          chat = chat.split(`${m.name}`).join(`<img class="emote" src="${m.url}">`);
-      })
+      this.emotes.forEach((m) => {
+        chat = chat
+          .split(`${m.name}`)
+          .join(`<img class="emote" src="${m.url}">`);
+      });
       this.chat = chat;
       this.parseChat();
     },
@@ -196,7 +209,10 @@ export default {
         this.parsedChat.push({
           time: result,
           author: text.split("] ")[1].split(":")[0],
-          text: text.split("] ")[1].split(`${text.split("] ")[1].split(":")[0]}: `).join(""),
+          text: text
+            .split("] ")[1]
+            .split(`${text.split("] ")[1].split(":")[0]}: `)
+            .join(""),
           display: false,
         });
       });
@@ -247,7 +263,7 @@ export default {
       });
       if (mesaages == undefined) return;
       mesaages.forEach((a, ind) => {
-        if(a.display) return;
+        if (a.display) return;
         a.display = true;
         a.color = this.getRandomColor();
         if (ind + 1 == mesaages.length) {
@@ -307,12 +323,22 @@ body {
   cursor: pointer;
   bottom: 10px;
   right: 10px;
+  transition: background 0.3s ease;
 }
 
-.theatre_button.theatre {
-  bottom: unset;
+.theatre_button:hover {
+  background: #3b3b3b;
+}
+
+.theatre_button.bot {
+  bottom: 10px;
+  right: 10px;
+}
+
+.theatre_button.top {
   top: 10px;
-  transition: 0.5s ease;
+  right: 10px;
+  opacity: 0.5;
 }
 
 .arches-block {
@@ -392,6 +418,11 @@ body {
   transition: 0.3s ease;
   margin: 5px;
   font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.episode:hover {
+  background: #3b3b3b;
 }
 
 .player-block.theatre {
@@ -436,6 +467,12 @@ body {
 
   .episode span {
     display: inline-flex;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .episode {
+    width: calc((100% - 10px) / 6);
   }
 
   video::-webkit-media-controls-enclosure {
@@ -487,12 +524,6 @@ body {
 
   video::-webkit-media-controls-play-button {
     cursor: pointer;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .episode {
-    width: calc((100% - 10px) / 6);
   }
 }
 
