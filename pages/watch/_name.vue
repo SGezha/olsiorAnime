@@ -47,7 +47,13 @@
 
       <div class="player-block m-5">
         <div class="player" :class="{ hidden: video == null }">
-          <video ref="video" @loadeddata="loadedVideo" controls :key="video">
+          <video
+            ref="video"
+            class="video"
+            @loadeddata="loadedVideo"
+            controls
+            :key="video"
+          >
             <source :src="video" />
           </video>
         </div>
@@ -58,10 +64,9 @@
               :key="index"
               class="episode"
               :class="{ active: nowInd == index }"
+              @click="change(index, post.url, anime.title)"
             >
-              <span @click="change(index, post.url, anime.title)">{{
-                post.title
-              }}</span>
+              <span>{{ post.title }}</span>
               <div class="right">
                 <i class="fas fa-comment-alt" v-if="post.chat"></i>
                 <a :href="post.url" class="down"
@@ -242,8 +247,15 @@ export default {
 }
 
 .player {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 70vh;
+}
+
+.player .video {
+  width: 100%;
+  height: 70vh;
+  z-index: -100;
 }
 
 .episode-block {
