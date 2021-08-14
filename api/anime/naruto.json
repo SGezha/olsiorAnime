@@ -1,6 +1,186 @@
 {
   "title": "Наруто / Naruto",
+  "arches": "1. Арка «Введение» — 1-5\n2. Арка «Страна Волн» — 6-19\n3. Арка «Экзамен На Звание Чуунина» — 20-25, 26, 27-52, 53, 54-56, 57,58-67\n4. Арка «Вторжение в Деревню Скрытого Листа» — 68-80\n5. Арка «Возвращение Итачи» — 81-85\n6. Арка «Цунаде» — 86-96, 97, 98, 99, 100\n7. Арка «Страна Чая» — 101-106\n8. Арка «Преследование Саске» — 107-135\n9. Арка «Проникновение в Убежище Орочимару» — 136-140, 141\n10. Арка «Возвращение Мидзуки» — 142, 143-147\n11. Арка «Бикочу» — 148-151\n12. Арка «Райга» — 152-157\n13. Арка «План По Самовыживанию» — 158\n14. Арка «Охотники За Преступниками» — 159-160\n15. Арка «Зелёные Звери» — 161\n16. Арка «Страна Птиц» — 162-167\n17. Арка «Пылающая Ваза» — 168",
   "episodes": [
-
+    {
+      "title": "1-2 серия",
+      "url": "https://stream.wrench.gq/7471"
+    },
+    {
+      "title": "2-5 серия",
+      "url": "https://stream.wrench.gq/7476"
+    },
+    {
+      "title": "6-8 серия",
+      "url": "https://stream.wrench.gq/7477"
+    },
+    {
+      "title": "9-11 серия",
+      "url": "https://stream.wrench.gq/7472"
+    },
+    {
+      "title": "12-14 серия",
+      "url": "https://stream.wrench.gq/7473"
+    },
+    {
+      "title": "15-17 серия",
+      "url": "https://stream.wrench.gq/7474"
+    },
+    {
+      "title": "18-20 серия",
+      "url": "https://stream.wrench.gq/7475"
+    },
+    {
+      "title": "21-23 серия",
+      "url": "https://stream.wrench.gq/7478"
+    },
+    {
+      "title": "24-27 серия",
+      "url": "https://stream.wrench.gq/7483"
+    },
+    {
+      "title": "28-30 серия",
+      "url": "https://stream.wrench.gq/7484"
+    },
+    {
+      "title": "31-33 серия",
+      "url": "https://stream.wrench.gq/7479"
+    },
+    {
+      "title": "34-36 серия",
+      "url": "https://stream.wrench.gq/7480"
+    },
+    {
+      "title": "37-40 серия",
+      "url": "https://stream.wrench.gq/7481"
+    },
+    {
+      "title": "41-43 серия",
+      "url": "https://stream.wrench.gq/7482"
+    },
+    {
+      "title": "44-46 серия",
+      "url": "https://stream.wrench.gq/7485"
+    },
+    {
+      "title": "47-48 серия",
+      "url": "https://stream.wrench.gq/7491"
+    },
+    {
+      "title": "49-50 серия",
+      "url": "https://stream.wrench.gq/7492"
+    },
+    {
+      "title": "51-53 серия",
+      "url": "https://stream.wrench.gq/7486"
+    },
+    {
+      "title": "54-56 серия",
+      "url": "https://stream.wrench.gq/7487"
+    },
+    {
+      "title": "57-60 серия",
+      "url": "https://stream.wrench.gq/7488"
+    },
+    {
+      "title": "61-64 серия",
+      "url": "https://stream.wrench.gq/7489"
+    },
+    {
+      "title": "65-68 серия",
+      "url": "https://stream.wrench.gq/7490"
+    },
+    {
+      "title": "69-72 серия",
+      "url": "https://stream.wrench.gq/7493"
+    },
+    {
+      "title": "73-75 серия",
+      "url": "https://stream.wrench.gq/7501"
+    },
+    {
+      "title": "76-78 серия",
+      "url": "https://stream.wrench.gq/7494"
+    },
+    {
+      "title": "79-81 серия",
+      "url": "https://stream.wrench.gq/7495"
+    },
+    {
+      "title": "82-83 серия",
+      "url": "https://stream.wrench.gq/7496"
+    },
+    {
+      "title": "84-86 серия",
+      "url": "https://stream.wrench.gq/7502"
+    },
+    {
+      "title": "87-88 серия",
+      "url": "https://stream.wrench.gq/7497"
+    },
+    {
+      "title": "89-92 серия",
+      "url": "https://stream.wrench.gq/7498"
+    },
+    {
+      "title": "93-96 серия",
+      "url": "https://stream.wrench.gq/7499"
+    },
+    {
+      "title": "98-100 серия",
+      "url": "https://stream.wrench.gq/7500"
+    },
+    {
+      "title": "101 серия",
+      "url": "https://stream.wrench.gq/7503"
+    },
+    {
+      "title": "107-110 серия",
+      "url": "https://stream.wrench.gq/7514"
+    },
+    {
+      "title": "112-115 серия",
+      "url": "https://stream.wrench.gq/7504"
+    },
+    {
+      "title": "116-118 серия",
+      "url": "https://stream.wrench.gq/7505"
+    },
+    {
+      "title": "119-121 серия",
+      "url": "https://stream.wrench.gq/7506"
+    },
+    {
+      "title": "122-123 серия",
+      "url": "https://stream.wrench.gq/7507"
+    },
+    {
+      "title": "126-127 серия",
+      "url": "https://stream.wrench.gq/7508"
+    },
+    {
+      "title": "129-130 серия",
+      "url": "https://stream.wrench.gq/7509"
+    },
+    {
+      "title": "131-132 серия",
+      "url": "https://stream.wrench.gq/7510"
+    },
+    {
+      "title": "134-135 серия",
+      "url": "https://stream.wrench.gq/7515"
+    },
+    {
+      "title": "148-150 филлеры",
+      "url": "https://stream.wrench.gq/7511"
+    },
+    {
+      "title": "151 филлеры",
+      "url": "https://stream.wrench.gq/7512"
+    },
+    {
+      "title": "168 филлеры",
+      "url": "https://stream.wrench.gq/7513"
+    }
   ]
 }

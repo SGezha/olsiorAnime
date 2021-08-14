@@ -18,6 +18,7 @@
             <span class="text" v-text="msg.text"></span>
           </div>
         </div>
+
         <div
           class="history"
           :class="{ active: video != null }"
@@ -43,10 +44,11 @@
           </div>
         </div>
       </div>
+
       <div class="player-block m-5">
         <div class="player" :class="{ hidden: video == null }">
           <video ref="video" @loadeddata="loadedVideo" controls :key="video">
-            <source :src="video"/>
+            <source :src="video" />
           </video>
         </div>
         <div class="episode-block" :class="{ active: video != null }">
@@ -60,11 +62,21 @@
               <span @click="change(index, post.url, anime.title)">{{
                 post.title
               }}</span>
-              <a :href="post.url" class="down"
-                ><i class="fas fa-download"></i
-              ></a>
+              <div class="right">
+                <i class="fas fa-comment-alt" v-if="post.chat"></i>
+                <a :href="post.url" class="down"
+                  ><i class="fas fa-download"></i
+                ></a>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="m-5" v-if="anime.arches">
+        <div class="arches-block">
+          <h2 class="text-xl">Список арок:</h2>
+          <pre v-text="anime.arches.split('Арка ').join('')"></pre>
         </div>
       </div>
     </div>
@@ -259,11 +271,12 @@ export default {
 @media screen and (min-width: 768px) {
   .episode {
     width: calc((100% - 10px) / 4);
+    display: flex;
+    justify-content: space-between;
   }
 
   .episode span {
     display: inline-flex;
-    width: 80%;
   }
 }
 
@@ -275,7 +288,7 @@ export default {
 
 @media screen and (min-width: 1920px) {
   .episode {
-    width: calc((100% - 10px) / 9);
+    width: calc((100% - 10px) / 7);
   }
 }
 
