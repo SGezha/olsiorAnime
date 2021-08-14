@@ -3,43 +3,53 @@
   "episodes": [
     {
       "title": "1-3 серия",
-      "url": "https://stream.wrench.gq/7373"
+      "url": "https://stream.wrench.gq/7373",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_1-3.txt?v=1628972551449"
     },
     {
       "title": "4-5 серия",
-      "url": "https://stream.wrench.gq/7382"
+      "url": "https://stream.wrench.gq/7382",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_4-5.txt?v=1628972557849"
     },
     {
       "title": "6-7 серия",
-      "url": "https://stream.wrench.gq/7383"
+      "url": "https://stream.wrench.gq/7383",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_6-7.txt?v=1628972562181"
     },
     {
       "title": "8-9 серия",
-      "url": "https://stream.wrench.gq/7374"
+      "url": "https://stream.wrench.gq/7374",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_8-9.txt?v=1628972569495"
     },
     {
       "title": "10-12 серия",
-      "url": "https://stream.wrench.gq/7375"
+      "url": "https://stream.wrench.gq/7375",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_10-12.txt?v=1628972577957"
     },
     {
       "title": "13-14 серия",
-      "url": "https://stream.wrench.gq/7376"
+      "url": "https://stream.wrench.gq/7376",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_13-14.txt?v=1628972582806"
     },
     {
       "title": "15-17 серия",
-      "url": "https://stream.wrench.gq/7377"
+      "url": "https://stream.wrench.gq/7377",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_15-17.txt?v=1628972588306"
     },
     {
       "title": "18-20 серия",
-      "url": "https://stream.wrench.gq/7378"
+      "url": "https://stream.wrench.gq/7378",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_18-20.txt?v=1628972593260"
     },
     {
       "title": "21-22 серия",
-      "url": "https://stream.wrench.gq/7379"
+      "url": "https://stream.wrench.gq/7379",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_21-22.txt?v=1628972601987"
     },
     {
       "title": "23-24 серия",
-      "url": "https://stream.wrench.gq/7380"
+      "url": "https://stream.wrench.gq/7380",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_23-24.txt?v=1628972606905"
     }
   ]
 }

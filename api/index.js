@@ -18,10 +18,9 @@ app.get('/anime', (req, res) => {
 })
 
 app.get('/getdonations', (req, res) => {
-  let data = JSON.parse(fs.readFileSync(`${__dirname}/anime/${req.url.split("?")[1]}.json`).toString())
-  res.status(200).json(JSON.stringify(data))
+  let data = fs.readFileSync(`${__dirname}/donations.txt`).toString()
+  res.status(200).send(data);
 })
-
 // Export express app
 module.exports = app
 

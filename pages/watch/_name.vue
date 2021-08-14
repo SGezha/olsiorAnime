@@ -20,6 +20,10 @@
       <i class="fas fa-expand"></i>
     </div>
 
+    <div class="theatre_button bot-2" @click="hideChat = !hideChat" v-if="video != null && !theatre">
+      <i class="fas" :class="{ 'fa-comment-slash': hideChat, 'fa-comment': !hideChat }"></i>
+    </div>
+
     <div class="container mx-auto">
       <div class="head text-2xl m-5 flex justify-start items-center">
         <h2>{{ anime.title }} <i class="fas fa-chevron-right text-sm"></i></h2>
@@ -69,9 +73,11 @@
         </div>
 
         <div
+          @mouseenter="lockChat = true"
+          @mouseleave="lockChat = false"
           class="chat-block"
           ref="chat"
-          v-if="nowInd != -1 && anime.episodes[nowInd].chat != undefined"
+          v-if="nowInd != -1 && anime.episodes[nowInd].chat != undefined && !hideChat"
           :class="{ theatre: theatre }"
         >
           <div v-for="(msg, index) in parsedChat" :key="index">
@@ -127,8 +133,8 @@ import Footer from "@/components/footer.vue";
 
 export default {
   async asyncData({ params, $axios }) {
-    let anime = await $axios.$get(`https://olsior.herokuapp.com/api/anime?${params.name}`);
-    // let anime = await $axios.$get(`/api/anime?${params.name}`);
+    // let anime = await $axios.$get(`https://olsior.herokuapp.com/api/anime?${params.name}`);
+    let anime = await $axios.$get(`/api/anime?${params.name}`);
     anime = JSON.parse(anime);
     return { anime };
   },
@@ -155,6 +161,8 @@ export default {
       nowTime: 0,
       theatre: false,
       emotes: [],
+      lockChat: false,
+      hideChat: false,
     };
   },
   mounted() {
@@ -170,6 +178,9 @@ export default {
   },
   computed: {},
   methods: {
+    checkHover() {
+      console.log("test");
+    },
     async getChat(url) {
       const emotes = await this.$axios.$get(
         `https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes.json?v=1628967948823`
@@ -266,7 +277,7 @@ export default {
         if (a.display) return;
         a.display = true;
         a.color = this.getRandomColor();
-        if (ind + 1 == mesaages.length) {
+        if (ind + 1 == mesaages.length && !this.lockChat) {
           setTimeout(() => {
             this.$refs.chat.scrollTo({
               top: 9999999999999999,
@@ -310,6 +321,12 @@ body {
   max-width: 100%;
 }
 
+.hide-chat {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
 .theatre_button {
   position: fixed;
   display: flex;
@@ -333,6 +350,11 @@ body {
 .theatre_button.bot {
   bottom: 10px;
   right: 10px;
+}
+
+.theatre_button.bot-2 {
+  bottom: 10px;
+  right: 70px;
 }
 
 .theatre_button.top {

@@ -7,7 +7,14 @@
       </div>
       <div class="m-5">
         <p>Номер карты: 4276520013949280 Галина Николаевна А.</p>
-        <a href="https://www.donationalerts.com/r/sgezha" class="flex mt-2 items-center"><img src="/donate.png" alt="" class="donate" /> С помощью сервиса DonationAlerts</a>
+        <a
+          href="https://www.donationalerts.com/r/sgezha"
+          class="flex mt-2 items-center"
+          ><img src="/donate.png" alt="" class="donate" /> С помощью сервиса
+          DonationAlerts</a
+        >
+        <h2 class="mt-2">История донатов:</h2>
+        <div v-html="donats"></div>
       </div>
     </div>
     <Footer />
@@ -19,6 +26,10 @@ import Header from "@/components/header.vue";
 import Footer from "@/components/footer.vue";
 
 export default {
+  async asyncData({ params, $axios }) {
+    let donats = await $axios.$get(`https://olsior.herokuapp.com/api/getdonations`);
+    return { donats };
+  },
   data() {
     return {
       Header,
