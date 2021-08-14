@@ -338,11 +338,11 @@ video::-webkit-media-controls-panel {
   bottom: 10px;
   left: 50%;
   width: 50%;
-  opacity: 1 !important;
+  /* opacity: 1 !important; */
   display: -webkit-flex !important;
   height: auto;
 
-  background: transparent;
+  background: #2b2b2be5;
 
   z-index: 1;
   transform: translateX(-50%);
