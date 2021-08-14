@@ -14,14 +14,15 @@ export default {
       this.loading = true;
     },
     finish() {
-      this.loading = false;
+      setTimeout(() => {
+        this.loading = false;
+      }, 500);
     },
   },
 };
 </script>
 <style scoped>
-html,
-body {
+html, body {
   overflow-x: hidden !important;
   overflow-y: hidden !important;
 }
@@ -31,7 +32,7 @@ body {
   top: 0;
   right: 0;
   z-index: 1000;
-  background: #1b1b1b;
+  background: #1b1b1b99;
   width: 100%;
   height: 100%;
   display: flex;
