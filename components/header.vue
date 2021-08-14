@@ -1,10 +1,29 @@
 <template>
   <div class="w-full shadow bg-header">
     <div
-      class="header container w-full mx-auto flex justify-center items-center text-gray-300 h-1/6"
+      class="
+        header
+        container
+        w-full
+        mx-auto
+        flex
+        justify-around
+        items-center
+        text-gray-300
+        h-1/6
+      "
     >
       <NuxtLink to="/">
-        <h1>Олсиор смотрит аниме <span class="small">BETA</span></h1>
+        <h1>
+          <img src="https://olsior.herokuapp.com/loading.gif" class="logo" />
+          Олсиор смотрит аниме <span class="small">BETA</span>
+        </h1>
+      </NuxtLink>
+      <NuxtLink to="/support">
+        <h1>
+          Поддержать работу сайта
+          <img src="https://olsior.herokuapp.com/money.jpg" class="logo" />
+        </h1>
       </NuxtLink>
     </div>
   </div>
@@ -13,12 +32,18 @@
 <script>
 export default {
   data() {
-    return {}
+    return {};
   },
-}
+};
 </script>
 
 <style>
+.logo {
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .bg-header {
   background: #2b2b2b;
 }
@@ -32,10 +57,13 @@ h1 {
   color: white;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .header {
-  height: 60px;
+  min-height: 60px;
+  flex-direction: column;
 }
 
 .header img {
@@ -63,5 +91,16 @@ input:focus {
   box-shadow: none;
   border: none;
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 </style>
