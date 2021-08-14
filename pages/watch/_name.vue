@@ -1,62 +1,85 @@
 <template>
   <div>
     <Header />
+
+    <div
+      @click="theatre = !theatre"
+      class="theatre_button"
+      title="Режим кинотеатра"
+      :class="{ theatre: theatre }"
+    >
+      <i class="fas fa-expand"></i>
+    </div>
+
     <div class="container mx-auto">
       <div class="head text-2xl m-5 flex justify-start items-center">
         <h2>{{ anime.title }} <i class="fas fa-chevron-right text-sm"></i></h2>
       </div>
       <div class="m-5">
-        <div class="chat-block" v-if="chat != ''">
-          <div v-for="(msg, index) in parsedChat" :key="index" class="message">
-            <span
-              class="time"
-              v-text="
-                `[${msg.time.hours}:${msg.time.minutes}:${msg.time.seconds}]`
-              "
-            ></span>
-            <span class="author" v-text="msg.author + ':'"></span>
-            <span class="text" v-text="msg.text"></span>
-          </div>
-        </div>
-
         <div
           class="history"
           :class="{ active: video != null }"
           v-if="save.time != 0"
         >
           <h2>Вы остановились на</h2>
-          <div class="oneepisode">
+          <div
+            class="oneepisode"
+            @click="
+              change(
+                save.id,
+                anime.episodes[save.id].url,
+                anime.episodes[save.id].title,
+                anime.episodes[save.id].chat
+              )
+            "
+          >
             <span
-              @click="
-                change(
-                  save.id,
-                  anime.episodes[save.id].url,
-                  anime.episodes[save.id].title
-                )
-              "
               >{{ anime.episodes[save.id].title }} ({{
                 formatTime(save.time)
               }})</span
             >
-            <a :href="anime.episodes[save.id].url" class="down"
-              ><i class="fas fa-download"></i
-            ></a>
           </div>
         </div>
       </div>
 
-      <div class="player-block m-5">
-        <div class="player" :class="{ hidden: video == null }">
+      <div class="player-block m-5 flex" :class="{ theatre: theatre }">
+        <div
+          class="player"
+          :class="{ hidden: video == null, theatre: theatre }"
+        >
           <video
             ref="video"
             class="video"
             @loadeddata="loadedVideo"
             controls
             :key="video"
+            :class="{ theatre: theatre }"
           >
             <source :src="video" />
           </video>
         </div>
+
+        <div
+          class="chat-block"
+          ref="chat"
+          v-if="nowInd != -1 && anime.episodes[nowInd].chat != undefined"
+          :class="{ theatre: theatre }"
+        >
+          <div v-for="(msg, index) in parsedChat" :key="index">
+            <div v-if="msg.display" class="message">
+              <!-- <span class="time" v-text="`[${msg.time.time}]`"></span> -->
+              <span
+                class="author"
+                v-text="msg.author + ':'"
+                :style="{ color: `${msg.color}` }"
+              ></span>
+              <span class="text" v-html="msg.text"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-5">
         <div class="episode-block" :class="{ active: video != null }">
           <div class="episode-scroll" :class="{ active: video != null }">
             <div
@@ -64,7 +87,7 @@
               :key="index"
               class="episode"
               :class="{ active: nowInd == index }"
-              @click="change(index, post.url, anime.title)"
+              @click="change(index, post.url, anime.title, post.chat)"
             >
               <span>{{ post.title }}</span>
               <div class="right">
@@ -85,11 +108,13 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "@/components/header.vue";
+import Footer from "@/components/footer.vue";
 
 export default {
   async asyncData({ params, $axios }) {
@@ -106,6 +131,7 @@ export default {
   data() {
     return {
       Header,
+      Footer,
       nowInd: -1,
       video: null,
       title: "Олсиор смотрит аниме",
@@ -117,8 +143,9 @@ export default {
       needSave: false,
       chat: "",
       parsedChat: [],
-      nowChat: [],
       nowTime: 0,
+      theatre: false,
+      emotes: []
     };
   },
   mounted() {
@@ -134,8 +161,13 @@ export default {
   },
   computed: {},
   methods: {
-    async getChat() {
-      const chat = await this.$axios.$get("/chat/bleach_110.txt");
+    async getChat(url) {
+      const emotes = await this.$axios.$get(`https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes.json?v=1628961862168`)
+      this.emotes = emotes;
+      let chat = await this.$axios.$get(`${url}`);
+      this.emotes.forEach(m => {
+          chat = chat.split(`${m.name}`).join(`<img class="emote" src="${m.url}">`);
+      })
       this.chat = chat;
       this.parseChat();
     },
@@ -158,28 +190,28 @@ export default {
         ).getTime();
         let hourDiff = timeEnd - timeStart; //in ms
         let secDiff = hourDiff / 1000; //in s
-        let minDiff = hourDiff / 60 / 1000; //in minutes
-        let hDiff = hourDiff / 3600 / 1000; //in hours
         let result = {};
-        result.hours = Math.floor(hDiff);
-        result.minutes = Math.floor(minDiff - 60 * result.hours);
-        result.seconds = secDiff - 60 * result.minutes;
+        result.time = this.formatTime(secDiff);
         result.timesec = secDiff;
         this.parsedChat.push({
           time: result,
           author: text.split("] ")[1].split(":")[0],
-          text: text.split("] ")[1].split(":")[1],
+          text: text.split("] ")[1].split(`${text.split("] ")[1].split(":")[0]}: `).join(""),
+          display: false,
         });
       });
     },
-    change(ind, url, title) {
+    change(ind, url, title, chat) {
       clearInterval(this.timer);
+      this.chat = "";
+      this.parsedChat = [];
       if (this.save.id == ind) this.needSave = true;
       this.nowInd = ind;
       this.video = url;
       this.title = title;
+      if (chat != undefined) this.getChat(chat);
       this.timer = setInterval(() => {
-        if (this.$refs.video.currentTime == undefined) return;
+        if (this.$refs.video == undefined) return;
         if (this.$refs.video.currentTime == 0) return;
         this.save = {
           time: this.$refs.video.currentTime,
@@ -187,6 +219,7 @@ export default {
           volume: this.$refs.video.volume,
         };
         this.nowTime = parseInt(this.save.time.toString().split(".")[0]);
+        this.chatUpdate();
         localStorage.setItem(
           `${window.location.href.split("/watch/")[1]}`,
           JSON.stringify({
@@ -206,6 +239,26 @@ export default {
       }
       this.$refs.video.volume = this.save.volume;
     },
+    chatUpdate() {
+      if (this.$refs.video == undefined) return;
+      if (this.parsedChat.length == 0) return;
+      let mesaages = this.parsedChat.filter((a) => {
+        if (a.time.timesec == this.nowTime) return true;
+      });
+      if (mesaages == undefined) return;
+      mesaages.forEach((a, ind) => {
+        if(a.display) return;
+        a.display = true;
+        a.color = this.getRandomColor();
+        if (ind + 1 == mesaages.length) {
+          setTimeout(() => {
+            this.$refs.chat.scrollTo({
+              top: 9999999999999999,
+            });
+          }, 100);
+        }
+      });
+    },
     formatTime(duration) {
       // Hours, minutes and seconds
       var hrs = ~~(duration / 3600);
@@ -223,18 +276,73 @@ export default {
       ret += "" + secs;
       return ret;
     },
+    getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    },
   },
 };
 </script>
 
 <style>
+html,
+body {
+  max-width: 100%;
+}
+
+.theatre_button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  background: #2b2b2b;
+  border-radius: 50%;
+  cursor: pointer;
+  bottom: 10px;
+  right: 10px;
+}
+
+.theatre_button.theatre {
+  bottom: unset;
+  top: 10px;
+  transition: 0.5s ease;
+}
+
+.arches-block {
+  width: 100%;
+  word-wrap: normal;
+}
+
+.arches-block pre {
+  width: 100%;
+  word-wrap: normal;
+  white-space: pre-wrap;
+}
+
 .chat-block {
+  width: 30%;
   overflow: auto;
-  height: 400px;
+  height: 70vh;
+  padding: 10px;
+}
+
+.emote {
+  display: inline-block;
+  height: 25px;
+  width: auto;
+  transform: translateY(5px);
 }
 
 .history {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -270,22 +378,60 @@ export default {
   flex-wrap: wrap;
 }
 
+.right {
+  margin-left: 5px;
+}
+
 .episode {
   cursor: pointer;
-  display: inline-block;
+  display: flex;
   padding: 5px 10px;
   background: #2b2b2b;
   border: 1px solid #2b2b2b;
   border-radius: 5px;
   transition: 0.3s ease;
   margin: 5px;
+  font-size: 14px;
+}
+
+.player-block.theatre {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: #1b1b1b;
+}
+
+.player.theatre {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.video.theatre {
+  width: 100%;
+  height: 100%;
+}
+
+.chat-block.theatre {
+  height: 100vh;
+  width: 25%;
 }
 
 @media screen and (min-width: 768px) {
+  .history {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .episode {
     width: calc((100% - 10px) / 4);
-    display: flex;
     justify-content: space-between;
+    font-size: 16px;
   }
 
   .episode span {
@@ -304,7 +450,7 @@ export default {
     width: 50%;
     /* opacity: 1 !important; */
     display: -webkit-flex !important;
-    height: auto;
+    height: 70px;
 
     background: #2b2b2be5;
 
@@ -341,9 +487,6 @@ export default {
 
   video::-webkit-media-controls-play-button {
     cursor: pointer;
-  }
-
-  video::-webkit-media-controls-play-button:hover {
   }
 }
 
