@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto" v-if="watched.length > 0">
     <div class="popular">
       <div class="head text-2xl m-5 flex justify-start items-center">
         <h2>Сейчас смотрит <i class="fas fa-chevron-right text-sm"></i></h2>
