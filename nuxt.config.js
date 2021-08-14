@@ -17,6 +17,8 @@ export default {
     ],
   },
 
+  loading: '~/components/loadingBar.vue',
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     "~assets/css/global.css"
@@ -41,7 +43,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa  ],
   ],
-  
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 

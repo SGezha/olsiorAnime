@@ -314,38 +314,4 @@ export default {
   display: block;
   width: 100%;
 }
-
-.episode-scroll::-webkit-scrollbar {
-  width: 2px;
-  height: 2px;
-}
-.episode-scroll::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
-}
-.episode-scroll::-webkit-scrollbar-thumb {
-  background: #e1e1e1;
-  border: 0px none #ffffff;
-  border-radius: 50px;
-}
-.episode-scroll::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
-}
-.episode-scroll::-webkit-scrollbar-thumb:active {
-  background: #000000;
-}
-.episode-scroll::-webkit-scrollbar-track {
-  background: #666666;
-  border: 0px none #ffffff;
-  border-radius: 50px;
-}
-.episode-scroll::-webkit-scrollbar-track:hover {
-  background: #666666;
-}
-.episode-scroll::-webkit-scrollbar-track:active {
-  background: #333333;
-}
-.episode-scroll::-webkit-scrollbar-corner {
-  background: transparent;
-}
 </style>

@@ -2,19 +2,21 @@
   <div>
     <Header />
     <Main />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "@/components/header.vue";
 import Main from "@/components/main.vue";
+import Footer from "@/components/footer.vue"
 
 export default {
   data() {
     return {
-      // component options
       Header,
       Main,
+      Footer,
     };
   },
   mounted() {
@@ -24,13 +26,13 @@ export default {
 
   },
   methods: {
-   
+
   },
 };
 </script>
 
 <style>
-  body {
-    background: #1b1b1b;
-  }
+body {
+  background: #1b1b1b;
+}
 </style>
