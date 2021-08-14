@@ -20,7 +20,7 @@
       <i class="fas fa-expand"></i>
     </div>
 
-    <div class="theatre_button bot-2" @click="hideChat = !hideChat" v-if="video != null && !theatre">
+    <div class="theatre_button bot-2" @click="hideChat = !hideChat" v-if="video != null && !theatre && anime.episodes[nowInd].chat != undefined">
       <i class="fas" :class="{ 'fa-comment-slash': hideChat, 'fa-comment': !hideChat }"></i>
     </div>
 
