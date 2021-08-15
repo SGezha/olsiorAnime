@@ -294,7 +294,7 @@ export default {
   methods: {
     async getChat(url) {
       const emotes = await this.$axios.$get(
-        `https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes.json?v=1629031864311`
+        `https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes.json?v=1629032530736`
       );
       this.emotes = emotes;
       let chat = await this.$axios.$get(`${url}`);
@@ -787,7 +787,7 @@ body {
   transform: translateY(3px);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .chat-block.theatre {
     height: 100vh;
     width: 20%;
