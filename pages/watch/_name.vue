@@ -591,33 +591,6 @@ body {
   background: #3b3b3b;
 }
 
-.player-block.theatre {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  background: #1b1b1b;
-}
-
-.player.theatre {
-  width: 100%;
-  height: 100%;
-  transition: 0.5s ease;
-}
-
-.video.theatre {
-  width: 100%;
-  height: 100%;
-}
-
-.chat-block.theatre {
-  height: 100vh;
-  width: 25%;
-}
-
 @media screen and (min-width: 768px) {
   .history {
     display: flex;
@@ -740,5 +713,32 @@ body {
   margin-left: 5px;
   display: block;
   width: 100%;
+}
+
+.player-block.theatre {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: #1b1b1b;
+}
+
+.player.theatre {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.video.theatre {
+  width: 100%;
+  height: 100%;
+}
+
+.chat-block.theatre {
+  height: 100vh;
+  width: 25%;
 }
 </style>
