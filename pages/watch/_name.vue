@@ -74,6 +74,7 @@
             class="video"
             @loadeddata="loadedVideo"
             controls
+            autoplay
             :key="video"
             :class="{ theatre: theatre }"
             @keydown="rewind"
