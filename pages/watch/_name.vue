@@ -78,7 +78,15 @@
             :key="video"
             :class="{ theatre: theatre }"
             @keydown="rewind"
-            @ended="nowInd++; change(nowInd, anime.episodes[nowInd].url, anime.title, anime.episodes[nowInd].chat)"
+            @ended="
+              nowInd++;
+              change(
+                nowInd,
+                anime.episodes[nowInd].url,
+                anime.title,
+                anime.episodes[nowInd].chat
+              );
+            "
           >
             <source :src="video" />
           </video>
@@ -87,7 +95,7 @@
         <div
           @mouseenter="lockChat = true"
           @mouseleave="lockChat = false"
-          class="chat-block"
+          class="chat-block overflow-x-hidden"
           ref="chat"
           v-if="
             nowInd != -1 &&
@@ -111,7 +119,10 @@
       </div>
 
       <div class="m-5">
-        <div class="play-rate-block flex items-center" v-if="nowInd != -1">
+        <div
+          class="play-rate-block flex items-center flex-wrap"
+          v-if="nowInd != -1"
+        >
           <h2>Скорость проигрывания:</h2>
           <div
             class="ml-2 mr-2 cursor-pointer playrate"
@@ -232,7 +243,9 @@ import Footer from "@/components/footer.vue";
 
 export default {
   async asyncData({ params, $axios }) {
-    let anime = await $axios.$get(`https://olsior.herokuapp.com/api/anime?${params.name}`);
+    let anime = await $axios.$get(
+      `https://olsior.herokuapp.com/api/anime?${params.name}`
+    );
     // let anime = await $axios.$get(`/api/anime?${params.name}`);
     anime = JSON.parse(anime);
     return { anime };
@@ -281,7 +294,7 @@ export default {
   methods: {
     async getChat(url) {
       const emotes = await this.$axios.$get(
-        `https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes.json?v=1629026720164`
+        `https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes.json?v=1629031864311`
       );
       this.emotes = emotes;
       let chat = await this.$axios.$get(`${url}`);
@@ -356,6 +369,24 @@ export default {
         );
       }, 1000);
     },
+    openFullscreen() {
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) {
+        document.documentElement.msRequestFullscreen();
+      }
+    },
+    closeFullscreen() {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    },
     changePlayRate(value) {
       this.playRate = value;
       this.$refs.video.playbackRate = this.playRate;
@@ -404,11 +435,13 @@ export default {
     },
     toggleTheatre() {
       this.theatre = !this.theatre;
-      console.log(this.theatre)
-      if(this.theatre) {
+      console.log(this.theatre);
+      if (this.theatre) {
         document.body.style.overflow = "hidden";
+        this.openFullscreen();
       } else {
         document.body.style.overflow = "auto";
+        this.closeFullscreen();
       }
     },
     rewind(event) {
@@ -529,13 +562,6 @@ body {
   white-space: pre-wrap;
 }
 
-.emote {
-  display: inline-block;
-  height: 25px;
-  width: auto;
-  transform: translateY(5px);
-}
-
 .history {
   display: flex;
   flex-direction: column;
@@ -552,7 +578,7 @@ body {
 
 .chat-block {
   width: 30%;
-  overflow: auto;
+  overflow-y: auto;
   height: 30vh;
   padding: 10px;
 }
@@ -750,6 +776,29 @@ body {
 
 .chat-block.theatre {
   height: 100vh;
-  width: 25%;
+  width: 30%;
+  font-size: 10px;
+}
+
+.emote {
+  display: inline-block;
+  height: 15px;
+  width: auto;
+  transform: translateY(3px);
+}
+
+@media screen and (min-width: 768px) {
+  .chat-block.theatre {
+    height: 100vh;
+    width: 20%;
+    font-size: 100%;
+  }
+
+  .emote {
+    display: inline-block;
+    height: 25px;
+    width: auto;
+    transform: translateY(5px);
+  }
 }
 </style>
