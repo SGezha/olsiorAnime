@@ -26,6 +26,7 @@
       v-if="
         video != null && !theatre && anime.episodes[nowInd].chat != undefined
       "
+      title="Вкл/выкл чата"
     >
       <i
         class="fas"
