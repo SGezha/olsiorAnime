@@ -3,7 +3,7 @@
     <Header />
 
     <div
-      @click="theatre = !theatre"
+      @click="toggleTheatre"
       class="theatre_button top"
       title="Режим кинотеатра"
       v-if="theatre && video != null"
@@ -12,7 +12,7 @@
     </div>
 
     <div
-      @click="theatre = !theatre"
+      @click="toggleTheatre"
       class="theatre_button bot"
       title="Режим кинотеатра"
       v-if="!theatre && video != null"
@@ -398,6 +398,15 @@ export default {
           .forEach((a) => {
             a.display = false;
           });
+      }
+    },
+    toggleTheatre() {
+      this.theatre = !this.theatre;
+      console.log(this.theatre)
+      if(this.theatre) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
       }
     },
     rewind(event) {
