@@ -234,7 +234,7 @@
         </div>
       </div>
     </div>
-    <Footer />
+    <Footer :class="{ hidden: this.theatre} " />
   </div>
 </template>
 
@@ -436,7 +436,6 @@ export default {
     },
     toggleTheatre() {
       this.theatre = !this.theatre;
-      console.log(this.theatre);
       if (this.theatre) {
         document.body.style.overflow = "hidden";
         this.openFullscreen();
