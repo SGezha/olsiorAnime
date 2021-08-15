@@ -6,7 +6,6 @@
         <h2>Поддержать автора сайта денюшкой</h2>
       </div>
       <div class="m-5">
-        <p>Номер карты: 4276520013949280 Галина Николаевна А.</p>
         <a
           href="https://www.donationalerts.com/r/sgezha"
           class="flex mt-2 items-center"
