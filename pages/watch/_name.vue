@@ -299,9 +299,13 @@ export default {
       this.emotes = emotes;
       let chat = await this.$axios.$get(`${url}`);
       this.emotes.forEach((m) => {
-        chat = chat
-          .split(`${m.name}`)
-          .join(`<img class="emote" src="${m.url}">`);
+        if (m.name == "AYAYA_ILYA_KEKW" || m.name == "Darth_D") {
+          chat = chat.split(`${m.name}`).join(m.name);
+        } else {
+          chat = chat
+            .split(`${m.name}`)
+            .join(`<img class="emote" src="${m.url}">`);
+        }
       });
       this.chat = chat;
       this.parseChat();
