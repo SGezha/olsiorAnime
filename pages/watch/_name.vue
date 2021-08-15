@@ -109,6 +109,65 @@
       </div>
 
       <div class="m-5">
+        <div class="play-rate-block flex items-center" v-if="nowInd != -1">
+          <h2>Скорость проигрывания:</h2>
+          <div
+            class="ml-2 mr-2 cursor-pointer playrate"
+            @click="changePlayRate(0.25)"
+            :class="{ active: playRate == 0.25 }"
+          >
+            0.25
+          </div>
+          <div
+            class="ml-2 mr-2 cursor-pointer playrate"
+            @click="changePlayRate(0.5)"
+            :class="{ active: playRate == 0.5 }"
+          >
+            0.50
+          </div>
+          <div
+            class="ml-2 mr-2 cursor-pointer playrate"
+            @click="changePlayRate(0.75)"
+            :class="{ active: playRate == 0.75 }"
+          >
+            0.75
+          </div>
+          <div
+            class="ml-2 mr-2 cursor-pointer playrate"
+            @click="changePlayRate(1)"
+            :class="{ active: playRate == 1 }"
+          >
+            1
+          </div>
+          <div
+            class="ml-2 mr-2 cursor-pointer playrate"
+            @click="changePlayRate(1.25)"
+            :class="{ active: playRate == 1.25 }"
+          >
+            1.25
+          </div>
+          <div
+            class="ml-2 mr-2 cursor-pointer playrate"
+            @click="changePlayRate(1.5)"
+            :class="{ active: playRate == 1.5 }"
+          >
+            1.50
+          </div>
+          <div
+            class="ml-2 mr-2 cursor-pointer playrate"
+            @click="changePlayRate(1.75)"
+            :class="{ active: playRate == 1.75 }"
+          >
+            1.75
+          </div>
+          <div
+            class="ml-2 mr-2 cursor-pointer playrate"
+            @click="changePlayRate(2)"
+            :class="{ active: playRate == 2 }"
+          >
+            2
+          </div>
+        </div>
         <div class="episode-block" :class="{ active: video != null }">
           <div class="episode-scroll" :class="{ active: video != null }">
             <div
@@ -201,6 +260,7 @@ export default {
       emotes: [],
       lockChat: false,
       hideChat: false,
+      playRate: 1,
     };
   },
   mounted() {
@@ -294,6 +354,10 @@ export default {
         );
       }, 1000);
     },
+    changePlayRate(value) {
+      this.playRate = value;
+      this.$refs.video.playbackRate = this.playRate;
+    },
     loadedVideo() {
       if (this.$refs.video == undefined) return;
       if (this.save.time == 0) return;
@@ -386,6 +450,14 @@ body {
 .video:focus {
   border: none;
   outline: none;
+}
+
+.playrate {
+  transition: color 0.3s ease;
+}
+
+.playrate.active {
+  color: aqua;
 }
 
 .video:hover {
