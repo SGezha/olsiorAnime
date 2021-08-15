@@ -77,6 +77,7 @@
             :key="video"
             :class="{ theatre: theatre }"
             @keydown="rewind"
+            @ended="nowInd++; change(nowInd, anime.episodes[nowInd].url, anime.title, anime.episodes[nowInd].chat)"
           >
             <source :src="video" />
           </video>
