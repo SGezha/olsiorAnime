@@ -6,10 +6,10 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Сайт с записями стримов просмотра аниме Olsior\'а! С удобным интерфейсом и крутыми фишками. Сохранение прогресса просмотра, запись чата, режим театра, мобильный интерфейс.' },
-      { property='og:description', hid: 'og:description', name: 'og:description', content: 'Сайт с записями стримов просмотра аниме Olsior\'а! С удобным интерфейсом и крутыми фишками. Сохранение прогресса просмотра, запись чата, режим театра, мобильный интерфейс.' },
-      { property='og:title', hid: 'og:title', name: 'og:title', content: 'Олсиор смотрит аниме' },
-      { property='og:url', hid: 'og:url', name: 'og:url', content: 'https://olsior.herokuapp.com' },
-      { property='og:image', hid: 'og:image', name: 'og:image', content: 'https://olsior.herokuapp.com/site.jpg' },
+      { property: 'og:description', hid: 'og:description', name: 'og:description', content: 'Сайт с записями стримов просмотра аниме Olsior\'а! С удобным интерфейсом и крутыми фишками. Сохранение прогресса просмотра, запись чата, режим театра, мобильный интерфейс.' },
+      { property: 'og:title', hid: 'og:title', name: 'og:title', content: 'Олсиор смотрит аниме' },
+      { property: 'og:url', hid: 'og:url', name: 'og:url', content: 'https://olsior.herokuapp.com' },
+      { property: 'og:image', hid: 'og:image', name: 'og:image', content: 'https://olsior.herokuapp.com/site.jpg' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
