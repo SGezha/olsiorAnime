@@ -22,6 +22,10 @@ a.link {
   color: aqua;
 }
 
+a.link:hover {
+  text-decoration: underline;
+}
+
 .footer {
   height: 50px;
 }

@@ -1,6 +1,70 @@
 {
   "title": "Наруто / Naruto",
   "arches": "1. Арка «Введение» — 1-5\n2. Арка «Страна Волн» — 6-19\n3. Арка «Экзамен На Звание Чуунина» — 20-25, 26, 27-52, 53, 54-56, 57,58-67\n4. Арка «Вторжение в Деревню Скрытого Листа» — 68-80\n5. Арка «Возвращение Итачи» — 81-85\n6. Арка «Цунаде» — 86-96, 97, 98, 99, 100\n7. Арка «Страна Чая» — 101-106\n8. Арка «Преследование Саске» — 107-135\n9. Арка «Проникновение в Убежище Орочимару» — 136-140, 141\n10. Арка «Возвращение Мидзуки» — 142, 143-147\n11. Арка «Бикочу» — 148-151\n12. Арка «Райга» — 152-157\n13. Арка «План По Самовыживанию» — 158\n14. Арка «Охотники За Преступниками» — 159-160\n15. Арка «Зелёные Звери» — 161\n16. Арка «Страна Птиц» — 162-167\n17. Арка «Пылающая Ваза» — 168",
+  "seasons": [
+    {
+      "title": "Наруто",
+      "url": "https://olsior.herokuapp.com/watch/naruto",
+      "text": "ТВ (220 эп.), первый сериал, адаптация манги, 2002"
+    },
+    {
+      "title": "Наруто: Ураганные хроники",
+      "url": "https://olsior.herokuapp.com/watch/naruto",
+      "text": "ТВ (500 эп.), второй сериал, адаптация манги, 2007"
+    },
+    {
+      "title": "Наруто: Последний фильм",
+      "url": "https://olsior.herokuapp.com/watch/narutolastfilm",
+      "text": "п/ф, после 480 серии, дополнение, 2014"
+    }
+  ],
+  "op": [
+    {
+      "url": "https://www.youtube.com/watch?v=4t__wczfpRI",
+      "episodes": "1-25",
+      "title": "R★O★C★K★S - Hound Dog"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SRn99oN1p_c",
+      "episodes": "26-53",
+      "title": "Far Away (遥か彼方, Haruka Kanata) - Asian Kung-Fu Generation"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XwJEFzsqNoY",
+      "episodes": "54-77",
+      "title": "Turning Sadness Into Kindness (悲しみをやさしさに, Kanashimi o Yasashisa ni) - little"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xjBTNbEXbAA",
+      "episodes": "78-103",
+      "title": "GO!!! - FLOW"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lilv4MvBY6E",
+      "episodes": "104-128",
+      "title": "Rhapsody of Youth (青春狂騷曲, Seishun Kyōsōkyoku) - Sambomaster (サンボマスター, Sanbomasutā)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=pWyoHrMzAZQ",
+      "episodes": "129-153",
+      "title": "No Boy, No Cry (ノーボーイ・ノークライ, Nō Bōi, Nō Kurai) - Stance Punks"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=pY15k20Hqq0",
+      "episodes": "154-178",
+      "title": "Wind and Waves Satellite (波風サテライト, Namikaze Sateraito) - Snowkel (シュノーケル, Shunōkeru)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=yB2g22359Fg",
+      "episodes": "179-202",
+      "title": "Re:member - FLOW"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-m8kR0FQ7Wk",
+      "episodes": "203-220",
+      "title": "Swaying (ユラユラ, Yurayura) - Hearts Grow"
+    }
+  ],
   "episodes": [
     {
       "title": "1-2 серия",

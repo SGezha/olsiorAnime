@@ -1,5 +1,27 @@
 {
   "title": "Врата Штейна: Найти недостающее звено — Деление на ноль / Steins;Gate: Kyoukaimenjou no Missing Link - Divide By Zero",
+  "seasons": [
+    {
+      "title": "Врата Штейна",
+      "url": "https://olsior.herokuapp.com/watch/steinsgate",
+      "text": "ТВ (24 эп.), адаптация игры, 2011"
+    },
+    {
+      "title": "Врата Штейна: Эгоистичная пориомания",
+      "url": "https://olsior.herokuapp.com/watch/steinsgateego",
+      "text": "Спэшл (1 эп.), дополнение, 2012"
+    },
+    {
+      "title": "Врата Штейна: Найти недостающее звено - Деление на ноль",
+      "url": "https://olsior.herokuapp.com/watch/steinsgatedel",
+      "text": "Спэшл (1 эп.), адаптация игры, 2015"
+    },
+    {
+      "title": "Врата Штейна 0",
+      "url": "https://olsior.herokuapp.com/watch/steinsgatezero",
+      "text": "ТВ (23 эп.), адаптация игры, 2018"
+    }
+  ],
   "episodes": [
     {
       "title": "OVA",

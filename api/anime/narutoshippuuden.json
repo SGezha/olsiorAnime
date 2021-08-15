@@ -1,6 +1,125 @@
 {
   "title": "Наруто: Ураганные хроники / Naruto: Shippuuden",
   "arches": "1. Арка «Спасение Казекаге» — 1-32\n2. Арка «Долгожданная встреча» — 33-53\n3. Арка «История о Двенадцати Стражах-Ниндзя» — 54-71\n4. Арка «Бессмертные опустошители - Хидан и Какузу» — 72-88 \n5. Арка «Трёххвостая Черепаха-монстр» — 89-112\n6. Арка «Предсказание учителя и месть» — 113-143\n7. Арка «История Шестихвостого» — 144-151\n8. Арка «Два спасителя» — 152-175\n9. Арка «Хроники Деревни Скрытого Листа» — 176-196\n10. Арка «Совет Пяти Каге» — 197-222\n11. Арка «Райская жизнь на борту» — 223-242\n12. Арка «Приручение Девятихвостого» — 243-260\n13. Арка «Четвёртая Мировая Война (1 ч.)» — 261-289\n14. Арка «Сила» — 290-295\n15. Арка «Четвёртая Мировая Война (2 ч.)» — 296-348\n16. Арка «Ниндзя, живущий во тьме» — 349-361\n17. Арка «Четвёртая Мировая Война (3 ч.)» — 362-393\n18. Арка «Прошлое Наруто: по следам друзей» — 394-413\n19. Арка «Четвёртая Мировая Война (4 ч.)» — 414-431\n20. Арка «Хроники Джирайи: сказание о храбром Наруто» — 432-450\n21. Арка «Настоящая легенда Итачи: Свет и Тьма» — 451-458\n22. Арка «Четвёртая Мировая Война (5 ч.)» — 459-479\n23. Арка «Детство» — 480-483\n24. Арка «История Саске: Рассвет» — 484-488\n25. Арка «Хроники Шикамару: Облако, плывущее в тихом сумраке» — 489-493\n26. Арка «Хроники Скрытого Листа: Идеальный день для свадьбы» — 494-500",
+  "seasons": [
+    {
+      "title": "Наруто",
+      "url": "https://olsior.herokuapp.com/watch/naruto",
+      "text": "ТВ (220 эп.), первый сериал, адаптация манги, 2002"
+    },
+    {
+      "title": "Наруто: Ураганные хроники",
+      "url": "https://olsior.herokuapp.com/watch/naruto",
+      "text": "ТВ (500 эп.), второй сериал, адаптация манги, 2007"
+    },
+    {
+      "title": "Наруто: Последний фильм",
+      "url": "https://olsior.herokuapp.com/watch/narutolastfilm",
+      "text": "п/ф, после 480 серии, дополнение, 2014"
+    }
+  ],
+  "op": [
+    {
+      "url": "https://www.youtube.com/watch?v=vxvP9zSOL7s",
+      "episodes": "1-30",
+      "title": "Hero's Come Back!! - nobodyknows+"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=r6EPMvIhtyA",
+      "episodes": "31-53",
+      "title": "Distance - LONG SHOT PARTY"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aJRu5ltxXjc",
+      "episodes": "54-77",
+      "title": "Blue Bird (ブルーバード, Burū Bādo) - Ikimono-Gakari (いきものがかり, Ikimono-Gakari)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kmL3EuiiWXM",
+      "episodes": "78-102",
+      "title": "Closer - Joe Inoue (井上ジョー, Inoue Joe)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=H3aqR_n3sM4",
+      "episodes": "103-128",
+      "title": "Light of a Firefly (ホタルノヒカリ, Hotaru no Hikari) - Ikimono-Gakari (いきものがかり, Ikimono-Gakari)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SavhHnWla6c",
+      "episodes": "129-153",
+      "title": "Sign - FLOW"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lGTp4VogNaQ",
+      "episodes": "154-179",
+      "title": "A World That Was Transparent (透明だった世界, Tōmei datta Sekai) - Hata Motohiro (秦基博, Motohiro Hata)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=L2ncHzfts_0",
+      "episodes": "180-205",
+      "title": "Diver (ダイバー, Daibā) - NICO Touches the Walls"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KmrTuNXVrf4",
+      "episodes": "206-230",
+      "title": "Lovers (ラヴァーズ, Ravazu) - 7!! Seven Oops"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=yu12tTrkJ-g",
+      "episodes": "231-256",
+      "title": "Newsong - tacica"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZR5ZCVQ0puE",
+      "episodes": "257-281",
+      "title": "Assault Rock (突撃ロック, Totsugeki Rokku) - THE CRO-MAGNONS"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=PBsMuTPEJ_A",
+      "episodes": "282-306",
+      "title": "If (もしも, Moshimo) - Daisuke"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BylkQHFemTw",
+      "episodes": "307-332",
+      "title": "Not Even Sudden Rain Can Defeat Me (ニワカ雨ニモ負ケズ, Niwaka Ame ni mo Makezu) - NICO Touches the Walls"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lBPqob1QYL4",
+      "episodes": "333-356",
+      "title": "Size of the Moon (月の大きさ, Tsuki no Ōkisa) - Nogizaka46"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=a5l2OF1byrE",
+      "episodes": "357-379",
+      "title": "Crimson Lotus (紅蓮, Guren) - DOES"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=uCbpPfnfQ7U",
+      "episodes": "380-405",
+      "title": "Silhouette (シルエット, Shiruetto) - KANA-BOON"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0Uk1OeC7-4g",
+      "episodes": "406-431",
+      "title": "Wind (風, Kaze) - Yamazaru"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HdgD7E6JEE4",
+      "episodes": "432-458",
+      "title": "LINE - Sukima Switch"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VMkg2F4QfIA",
+      "episodes": "459-479",
+      "title": "Blood Circulator (ブラッドサーキュレーター, Buraddo Sākyurētā) - Asian Kung-Fu Generation"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xQKlfIeqTGM",
+      "episodes": "480-500",
+      "title": "Empty Heart (カラノココロ, Karanokokoro) - Anly"
+    }
+  ],
   "episodes": [
     {
       "title": "1-2 серия",

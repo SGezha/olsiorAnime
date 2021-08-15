@@ -1,5 +1,34 @@
 {
   "title": "Врата Штейна / Steins;Gate",
+  "op": [
+    {
+      "url": "https://www.youtube.com/watch?v=dd7BILZcYAY",
+      "episodes": "1-24",
+      "title": "Itou Kanako - Hacking to the Gate"
+    }
+  ],
+  "seasons": [
+    {
+      "title": "Врата Штейна",
+      "url": "https://olsior.herokuapp.com/watch/steinsgate",
+      "text": "ТВ (24 эп.), адаптация игры, 2011"
+    },
+    {
+      "title": "Врата Штейна: Эгоистичная пориомания",
+      "url": "https://olsior.herokuapp.com/watch/steinsgateego",
+      "text": "Спэшл (1 эп.), дополнение, 2012"
+    },
+    {
+      "title": "Врата Штейна: Найти недостающее звено - Деление на ноль",
+      "url": "https://olsior.herokuapp.com/watch/steinsgatedel",
+      "text": "Спэшл (1 эп.), адаптация игры, 2015"
+    },
+    {
+      "title": "Врата Штейна 0",
+      "url": "https://olsior.herokuapp.com/watch/steinsgatezero",
+      "text": "ТВ (23 эп.), адаптация игры, 2018"
+    }
+  ],
   "episodes": [
     {
       "title": "1-3 серия",

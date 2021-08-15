@@ -20,8 +20,17 @@
       <i class="fas fa-expand"></i>
     </div>
 
-    <div class="theatre_button bot-2" @click="hideChat = !hideChat" v-if="video != null && !theatre && anime.episodes[nowInd].chat != undefined">
-      <i class="fas" :class="{ 'fa-comment-slash': hideChat, 'fa-comment': !hideChat }"></i>
+    <div
+      class="theatre_button bot-2"
+      @click="hideChat = !hideChat"
+      v-if="
+        video != null && !theatre && anime.episodes[nowInd].chat != undefined
+      "
+    >
+      <i
+        class="fas"
+        :class="{ 'fa-comment-slash': hideChat, 'fa-comment': !hideChat }"
+      ></i>
     </div>
 
     <div class="container mx-auto">
@@ -67,6 +76,7 @@
             controls
             :key="video"
             :class="{ theatre: theatre }"
+            @keydown="rewind"
           >
             <source :src="video" />
           </video>
@@ -77,7 +87,11 @@
           @mouseleave="lockChat = false"
           class="chat-block"
           ref="chat"
-          v-if="nowInd != -1 && anime.episodes[nowInd].chat != undefined && !hideChat"
+          v-if="
+            nowInd != -1 &&
+            anime.episodes[nowInd].chat != undefined &&
+            !hideChat
+          "
           :class="{ theatre: theatre }"
         >
           <div v-for="(msg, index) in parsedChat" :key="index">
@@ -116,10 +130,34 @@
         </div>
       </div>
 
+      <div class="m-5" v-if="anime.seasons">
+        <div class="arches-block">
+          <h2 class="text-xl">Порядок просмотра:</h2>
+          <div v-for="(seas, index) in anime.seasons" :key="index">
+            {{ index + 1 }}.
+            <a class="link" target="_blank" :href="seas.url">{{
+              seas.title
+            }}</a>
+            - {{ seas.text }}
+          </div>
+        </div>
+      </div>
+
       <div class="m-5" v-if="anime.arches">
         <div class="arches-block">
           <h2 class="text-xl">Список арок:</h2>
           <pre v-text="anime.arches.split('Арка ').join('')"></pre>
+        </div>
+      </div>
+
+      <div class="m-5" v-if="anime.op">
+        <div class="arches-block">
+          <h2 class="text-xl">Опенинги:</h2>
+          <div v-for="(op, index) in anime.op" :key="index">
+            {{ index + 1 }}.
+            <a class="link" target="_blank" :href="op.url">{{ op.title }}</a>
+            ({{ op.episodes }})
+          </div>
         </div>
       </div>
     </div>
@@ -166,6 +204,7 @@ export default {
     };
   },
   mounted() {
+    // window.addEventListener("keydown", this.rewind);
     if (
       localStorage.getItem(`${window.location.href.split("/watch/")[1]}`) !=
       null
@@ -178,12 +217,9 @@ export default {
   },
   computed: {},
   methods: {
-    checkHover() {
-      console.log("test");
-    },
     async getChat(url) {
       const emotes = await this.$axios.$get(
-        `https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes.json?v=1628967948823`
+        `https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes.json?v=1629022805687`
       );
       this.emotes = emotes;
       let chat = await this.$axios.$get(`${url}`);
@@ -196,6 +232,7 @@ export default {
       this.parseChat();
     },
     parseChat() {
+      this.parsedChat = [];
       let timeStart;
       this.chat.split("\r\n").forEach((text, ind) => {
         if (ind == 0) {
@@ -285,6 +322,31 @@ export default {
           }, 100);
         }
       });
+      if (
+        this.parsedChat.filter((a) => {
+          if (a.display == true) return true;
+        }).length >= 200
+      ) {
+        this.parsedChat
+          .filter((a) => {
+            if (a.display == true) return true;
+          })
+          .forEach((a) => {
+            a.display = false;
+          });
+      }
+    },
+    rewind(event) {
+      switch (event.keyCode) {
+        case 37:
+          event.preventDefault();
+          this.$refs.video.currentTime = this.$refs.video.currentTime - 5;
+          break;
+        case 39:
+          event.preventDefault();
+          this.$refs.video.currentTime = this.$refs.video.currentTime + 5;
+          break;
+      }
     },
     formatTime(duration) {
       // Hours, minutes and seconds
@@ -319,6 +381,16 @@ export default {
 html,
 body {
   max-width: 100%;
+}
+
+.video:focus {
+  border: none;
+  outline: none;
+}
+
+.video:hover {
+  border: none;
+  outline: none;
 }
 
 .hide-chat {
@@ -374,13 +446,6 @@ body {
   white-space: pre-wrap;
 }
 
-.chat-block {
-  width: 30%;
-  overflow: auto;
-  height: 70vh;
-  padding: 10px;
-}
-
 .emote {
   display: inline-block;
   height: 25px;
@@ -402,15 +467,22 @@ body {
   margin-left: 5px;
 }
 
+.chat-block {
+  width: 30%;
+  overflow: auto;
+  height: 30vh;
+  padding: 10px;
+}
+
 .player {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 30vh;
 }
 
 .player .video {
   width: 100%;
-  height: 70vh;
+  height: 30vh;
   background: black;
   /* z-index: -100; */
 }
@@ -479,6 +551,26 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .chat-block {
+    width: 30%;
+    overflow: auto;
+    height: 70vh;
+    padding: 10px;
+  }
+
+  .player {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+  }
+
+  .player .video {
+    width: 100%;
+    height: 70vh;
+    background: black;
+    /* z-index: -100; */
   }
 
   .episode {

@@ -1,5 +1,22 @@
 {
   "title": "Наруто: Последний фильм / The Last: Naruto the Movie",
+  "seasons": [
+    {
+      "title": "Наруто",
+      "url": "https://olsior.herokuapp.com/watch/naruto",
+      "text": "ТВ (220 эп.), первый сериал, адаптация манги, 2002"
+    },
+    {
+      "title": "Наруто: Ураганные хроники",
+      "url": "https://olsior.herokuapp.com/watch/naruto",
+      "text": "ТВ (500 эп.), второй сериал, адаптация манги, 2007"
+    },
+    {
+      "title": "Наруто: Последний фильм",
+      "url": "https://olsior.herokuapp.com/watch/narutolastfilm",
+      "text": "п/ф, после 480 серии, дополнение, 2014"
+    }
+  ],
   "episodes": [
     {
       "title": "Фильм",

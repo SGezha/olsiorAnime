@@ -1,5 +1,31 @@
 {
   "title": "Стальной алхимик: Братство / Fullmetal Alchemist: Brotherhood",
-  "episodes": [
-  ]
+  "op": [
+    {
+      "url": "https://www.youtube.com/watch?v=2uq34TeWEdQ",
+      "episodes": "1-14",
+      "title": "Again - YUI"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UqIahGU9ZtY",
+      "episodes": "15-26",
+      "title": "Hologram Nico - Touches the Walls"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=et7oxRRkPEo",
+      "episodes": "27-38",
+      "title": "Golden Time Lover - Sukima Switc"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KMZBauH47Jo",
+      "episodes": "39-50",
+      "title": "Period - CHEMISTRY"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cRA5gsdCf4c",
+      "episodes": "51-64",
+      "title": "Rain - SID"
+    }
+  ],
+  "episodes": []
 }

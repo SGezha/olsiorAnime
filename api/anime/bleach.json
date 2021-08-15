@@ -1,6 +1,83 @@
 {
   "title": "Блич / Bleach",
   "arches": "1. Арка «Временный Шинигами» — 1-20\n2. Арка «Общество Душ: Проникновение» — 21-32, 33, 34-41\n3. Арка «Общество Душ: Спасение» — 42-49, 50, 51-63\n4. Арка «Зависимые» — 64-91\n5. Арка «Нападение Зависимых На Сообщество Душ» — 92-109\n6. Арка «Арранкары» — 110-127, 128-131",
+  "op": [
+    {
+      "url": "https://www.youtube.com/watch?v=dfh4JuzYNpM",
+      "episodes": "1-25",
+      "title": "*~Asterisk~ - Orange Range"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oeqvhwjYBws",
+      "episodes": "26-51",
+      "title": "D-tecnoLife - UVERworld"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2edBgIH7y68",
+      "episodes": "52-74",
+      "title": "Ichirin no Hana - High and Mighty Color"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=375Axn5QB_s",
+      "episodes": "75-97",
+      "title": "Tonight, Tonight, Tonight - Beat Crusaders"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=r15yXAZ32Fg",
+      "episodes": "98-120",
+      "title": "Rolling Star - Yui"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3U8NnnYzV7A",
+      "episodes": "121-143",
+      "title": "Alones - Aqua Timez"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OvahxFH7IGg",
+      "episodes": "144-167",
+      "title": "After Dark - Asian Kung-Fu Generation"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wKMybibgt6Q",
+      "episodes": "168-189",
+      "title": "Chu-Bura - Kelun"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7O87OdsVOIE",
+      "episodes": "190-214",
+      "title": "Velonica Aqua - Timez"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=b9vIpu0kAbE",
+      "episodes": "215-242",
+      "title": "Shōjo S - SCANDAL"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VUgxCUd3Bsk",
+      "episodes": "243-265",
+      "title": "Anima Rossa - Porno Graffitti"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rUuHxyYqUSU",
+      "episodes": "266-291",
+      "title": "chAngE - miwa"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XXjgwpayNoM",
+      "episodes": "292-316",
+      "title": "Ranbu no Melody - SID"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ifrTLAd6UQY",
+      "episodes": "317-342",
+      "title": "BLUE - ViViD"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=E-ejE--Q3UE",
+      "episodes": "343-366",
+      "title": "Harukaze - SCANDAL"
+    }
+  ],
   "episodes": [
     {
       "title": "1-2 серия",
@@ -93,7 +170,7 @@
     {
       "title": "110-112 серия",
       "url": "https://stream.wrench.gq/7430",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fbleach_110.txt?v=1628953678359"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fbleach_110-112.txt?v=1629023036267"
     },
     {
       "title": "113-115 серия",
