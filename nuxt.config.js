@@ -45,17 +45,6 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    [
-      '@rkaliev/nuxtjs-yandex-metrika',
-      {
-        id: '84051220',
-        webvisor: true,
-        clickmap: true,
-        debug: true,
-        noJS: false,
-        disabled: false,
-      },
-    ]
     // https://go.nuxtjs.dev/pwa  ],
   ],
 
