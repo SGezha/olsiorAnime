@@ -5,7 +5,7 @@
     <div
       @click="toggleTheatre"
       class="theatre_button top"
-      title="Режим кинотеатра"
+      title="Режим кинотеатра [T]"
       v-if="theatre && video != null"
     >
       <i class="fas fa-compress"></i>
@@ -14,7 +14,7 @@
     <div
       @click="toggleTheatre"
       class="theatre_button bot"
-      title="Режим кинотеатра"
+      title="Режим кинотеатра [T]"
       v-if="!theatre && video != null"
     >
       <i class="fas fa-expand"></i>
@@ -26,7 +26,7 @@
       v-if="
         video != null && !theatre && anime.episodes[nowInd].chat != undefined
       "
-      title="Вкл/выкл чата"
+      title="Вкл/выкл чата [C]"
     >
       <i
         class="fas"
@@ -234,7 +234,7 @@
         </div>
       </div>
     </div>
-    <Footer :class="{ hidden: this.theatre} " />
+    <Footer :class="{ hidden: this.theatre }" />
   </div>
 </template>
 
@@ -453,6 +453,14 @@ export default {
         case 39:
           event.preventDefault();
           this.$refs.video.currentTime = this.$refs.video.currentTime + 5;
+          break;
+        case 84:
+          event.preventDefault();
+          this.toggleTheatre();
+          break;
+        case 67:
+          event.preventDefault();
+          this.hideChat = !this.hideChat
           break;
       }
     },
