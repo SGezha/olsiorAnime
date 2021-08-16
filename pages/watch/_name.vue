@@ -589,17 +589,20 @@ body {
   overflow-y: auto;
   height: 30vh;
   padding: 10px;
+  max-height: 700px;
 }
 
 .player {
   position: relative;
   width: 100%;
   height: 30vh;
+  max-height: 700px;
 }
 
 .player .video {
   width: 100%;
   height: 30vh;
+  max-height: 700px;
   background: black;
   /* z-index: -100; */
 }
@@ -775,17 +778,20 @@ body {
   width: 100%;
   height: 100%;
   transition: 0.5s ease;
+  max-height: unset;
 }
 
 .video.theatre {
   width: 100%;
   height: 100%;
+  max-height: unset;
 }
 
 .chat-block.theatre {
   height: 100vh;
   width: 30%;
   font-size: 10px;
+  max-height: unset;
 }
 
 .emote {
