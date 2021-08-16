@@ -648,7 +648,7 @@ body {
 
   .chat-block {
     width: 30%;
-    overflow: auto;
+    overflow-y: auto;
     height: 70vh;
     padding: 10px;
   }
