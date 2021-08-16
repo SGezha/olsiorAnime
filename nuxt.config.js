@@ -45,6 +45,21 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    ['@rabota/yandex-metrika',
+      [{
+        counter: 84051220,
+        options: {
+          defer: true, // required by single page applications
+          webvisor: true,
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+        },
+        noscript: true, // insert `noscript` content for each counter
+        logging: true, // logs all events to each counter
+        development: true
+      }]
+    ]
     // https://go.nuxtjs.dev/pwa  ],
   ],
 
@@ -55,6 +70,11 @@ export default {
   serverMiddleware: {
     '/api': '~/api'
   },
+
+  transpile: [
+    '@rabota/analytics-layer',
+    '@rabota/yandex-metrika'
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
