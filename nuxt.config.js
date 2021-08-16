@@ -41,6 +41,11 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
 
+  transpile: [
+    '@rabota/analytics-layer',
+    '@rabota/yandex-metrika'
+  ],
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
@@ -70,11 +75,6 @@ export default {
   serverMiddleware: {
     '/api': '~/api'
   },
-
-  transpile: [
-    '@rabota/analytics-layer',
-    '@rabota/yandex-metrika'
-  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
