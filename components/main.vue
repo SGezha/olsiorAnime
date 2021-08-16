@@ -4,7 +4,16 @@
       <div class="head text-2xl m-5 flex justify-start items-center">
         <h2>Сейчас смотрит <i class="fas fa-chevron-right text-sm"></i></h2>
       </div>
-      <div class="main-block flex sm:justify-center md:justify-start items-center flex-wrap">
+      <div
+        class="
+          main-block
+          flex
+          sm:justify-center
+          md:justify-start
+          items-center
+          flex-wrap
+        "
+      >
         <Nuxt-link
           v-for="(pop, index) in smotrit"
           :key="index"
@@ -17,7 +26,9 @@
               :style="{ backgroundImage: 'url(' + pop.img + ')' }"
             ></div>
             <div class="anime-stats">
-              <span class="stars">{{ pop.stars }} <i class="fas fa-star"></i></span>
+              <span class="stars"
+                >{{ pop.stars }} <i class="fas fa-star"></i
+              ></span>
               <span class="episodes" v-text="pop.episodes + ' серий'"></span>
             </div>
           </div>
@@ -31,7 +42,16 @@
       <div class="head text-2xl m-5 flex justify-start items-center">
         <h2>Посмотрел <i class="fas fa-chevron-right text-sm"></i></h2>
       </div>
-      <div class="main-block flex sm:justify-center md:justify-start items-center flex-wrap">
+      <div
+        class="
+          main-block
+          flex
+          sm:justify-center
+          md:justify-start
+          items-center
+          flex-wrap
+        "
+      >
         <Nuxt-link
           v-for="(pop, index) in watched"
           :key="index"
@@ -44,7 +64,9 @@
               :style="{ backgroundImage: 'url(' + pop.img + ')' }"
             ></div>
             <div class="anime-stats">
-              <span class="stars">{{ pop.stars }} <i class="fas fa-star"></i></span>
+              <span class="stars"
+                >{{ pop.stars }} <i class="fas fa-star"></i
+              ></span>
               <span class="episodes" v-text="pop.episodes + ' серий'"></span>
             </div>
           </div>
@@ -103,16 +125,14 @@ export default {
 
 .preview-img {
   width: 100%;
-  height: 200px;
-  max-height: 450px;
+  height: 30vh;
   overflow: hidden;
   border-radius: 4px;
 }
 
 .card img {
   width: 100%;
-  height: 200px;
-  max-height: 450px;
+  height: 30vh;
   overflow: hidden;
   border-radius: 4px;
   transform: scale(1);
@@ -127,6 +147,7 @@ export default {
   word-spacing: normal;
   white-space: nowrap;
   color: white;
+  font-size: 14px;
 }
 
 .anime-stats {
@@ -139,7 +160,7 @@ export default {
 .anime-stats span {
   display: inline-block;
   color: white;
-  font-size: 10px;
+  font-size: 8px;
   padding: 5px 10px;
 }
 
@@ -165,6 +186,17 @@ span.stars .fa-star {
 }
 
 @media (min-width: 768px) {
+  .anime-title h2 {
+    font-size: 16px;
+  }
+
+  .anime-stats span {
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
   .card {
     min-width: 192px;
     width: 10vw;
@@ -183,6 +215,41 @@ span.stars .fa-star {
     width: 100%;
     height: 260px;
     max-height: 450px;
+    overflow: hidden;
+    border-radius: 4px;
+    transform: scale(1);
+    transition: 0.3s ease;
+  }
+}
+
+@media (min-width: 1921px) {
+  .anime-title h2 {
+    font-size: 16px;
+  }
+
+  .anime-stats span {
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .card {
+    min-width: 192px;
+    width: 10vw;
+    margin: 0 10px;
+  }
+
+  .preview-img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 350px;
     overflow: hidden;
     border-radius: 4px;
     transform: scale(1);
