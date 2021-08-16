@@ -8,19 +8,16 @@ const app = express()
 app.get('/', (req, res) => res.status(200).json([{ name: "sss" }, { name: "John" }]))
 
 app.get('/list', (req, res) => {
-  users++;
   let data = JSON.parse(fs.readFileSync(`${__dirname}/list.json`).toString());
   res.status(200).json(JSON.stringify(data))
 })
 
 app.get('/anime', (req, res) => {
-  users++;
   let data = JSON.parse(fs.readFileSync(`${__dirname}/anime/${req.url.split("?")[1]}.json`).toString());
   res.status(200).json(JSON.stringify(data))
 })
 
 app.get('/getdonations', (req, res) => {
-  users++;
   let data = fs.readFileSync(`${__dirname}/donations.txt`).toString();
   res.status(200).send(data);
 })
