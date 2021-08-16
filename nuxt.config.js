@@ -41,11 +41,6 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
 
-  transpile: [
-    '@rabota/analytics-layer',
-    '@rabota/yandex-metrika'
-  ],
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
@@ -78,6 +73,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: [
+      '@rabota/analytics-layer',
+      '@rabota/yandex-metrika'
+    ],
     babel: {
       plugins: [
         ['@babel/plugin-proposal-private-property-in-object', { loose: true }]
