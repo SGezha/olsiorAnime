@@ -1,4 +1,5 @@
 ﻿<ul class="da-donationslist">
+    <li><span class="username">Death</span><span class="delimiter"> - </span><span class="amount">100 <span class="currency">RUB</span></span></li>
     <li><span class="username">Morter</span><span class="delimiter"> - </span><span class="amount">500 <span class="currency">RUB</span></span></li>
     <li><span class="username">Daria</span><span class="delimiter"> - </span><span class="amount">150 <span class="currency">RUB</span></span></li>
 </ul>
