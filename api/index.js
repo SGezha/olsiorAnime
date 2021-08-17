@@ -22,6 +22,13 @@ app.get('/getdonations', (req, res) => {
   res.status(200).send(data);
 })
 
+const got = require('got');
+
+app.get('/video', (req, res) => {
+    const mp4Url = 'https://stream.wrench.gq/7933';
+    got.stream(mp4Url).pipe(res);
+});
+
 // Export express app
 module.exports = app
 
