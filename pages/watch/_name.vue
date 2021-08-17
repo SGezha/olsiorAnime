@@ -233,6 +233,17 @@
           </div>
         </div>
       </div>
+
+      <div class="m-5" v-if="anime.ed">
+        <div class="arches-block">
+          <h2 class="text-xl">Ендинги:</h2>
+          <div v-for="(ed, index) in anime.ed" :key="index">
+            {{ index + 1 }}.
+            <a class="link" target="_blank" :href="ed.url">{{ ed.title }}</a>
+            ({{ ed.episodes }})
+          </div>
+        </div>
+      </div>
     </div>
     <Footer :class="{ hidden: this.theatre }" />
   </div>

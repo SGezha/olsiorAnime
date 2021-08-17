@@ -27,5 +27,32 @@
       "title": "Rain - SID"
     }
   ],
+  "ed": [
+    {
+      "url": "https://www.youtube.com/watch?v=PHbUcpXypd8",
+      "episodes": "1-14",
+      "title": "SID - Uso"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Vi9zgj8foKo",
+      "episodes": "15-26",
+      "title": "Miho Fukuhara - LET IT OUT"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WVqvHWYIzac",
+      "episodes": "27-38",
+      "title": "Lil'B - Tsunaida Te"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=yxkyElx0pXI",
+      "episodes": "39-50",
+      "title": "SCANDAL - Shunkan Sentimental"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cRA5gsdCf4c",
+      "episodes": "51-62",
+      "title": "Shoko Nakagawa - RAY OF LIGHT"
+    }
+  ],
   "episodes": []
 }
