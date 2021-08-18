@@ -15,6 +15,35 @@
     }
   ],
   "episodes": [
-
+    {
+      "title": "1-2 серия",
+      "url": "https://stream.wrench.gq/8390",
+      "chat": ""
+    },
+    {
+      "title": "3-4 серия",
+      "url": "https://stream.wrench.gq/8394",
+      "chat": ""
+    },
+    {
+      "title": "5-6 серия",
+      "url": "https://stream.wrench.gq/8395",
+      "chat": ""
+    },
+    {
+      "title": "7-8 серия",
+      "url": "https://stream.wrench.gq/8391",
+      "chat": ""
+    },
+    {
+      "title": "9-10 серия",
+      "url": "https://stream.wrench.gq/8392",
+      "chat": ""
+    },
+    {
+      "title": "11-12 серия",
+      "url": "https://stream.wrench.gq/8393",
+      "chat": ""
+    }
   ]
 }
