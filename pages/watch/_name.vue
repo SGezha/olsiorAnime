@@ -206,18 +206,53 @@
 
       <div class="m-5">
         <div class="menu flex jusity-center items-center border-b-2">
-          <div v-if="anime.desc" class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer" :class="{ active: activeTab == 'desc'}" @click="activeTab = 'desc'">Описание</div>
-          <div v-if="anime.seasons" class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer" :class="{ active: activeTab == 'seasons'}" @click="activeTab = 'seasons'">Породяк просмотра</div>
-          <div v-if="anime.arches" class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer" :class="{ active: activeTab == 'arches'}" @click="activeTab = 'arches'">Арки</div>
-          <div v-if="anime.op" class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer" :class="{ active: activeTab == 'op'}" @click="activeTab = 'op'">Опенинги</div>
-          <div v-if="anime.ed" class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer" :class="{ active: activeTab == 'ed'}" @click="activeTab = 'ed'">Ендинги</div>
+          <div
+            v-if="anime.desc"
+            class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+            :class="{ active: activeTab == 'desc' }"
+            @click="activeTab = 'desc'"
+          >
+            Описание
+          </div>
+          <div
+            v-if="anime.seasons"
+            class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+            :class="{ active: activeTab == 'seasons' }"
+            @click="activeTab = 'seasons'"
+          >
+            Породяк просмотра
+          </div>
+          <div
+            v-if="anime.arches"
+            class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+            :class="{ active: activeTab == 'arches' }"
+            @click="activeTab = 'arches'"
+          >
+            Арки
+          </div>
+          <div
+            v-if="anime.op"
+            class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+            :class="{ active: activeTab == 'op' }"
+            @click="activeTab = 'op'"
+          >
+            Опенинги
+          </div>
+          <div
+            v-if="anime.ed"
+            class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+            :class="{ active: activeTab == 'ed' }"
+            @click="activeTab = 'ed'"
+          >
+            Ендинги
+          </div>
         </div>
       </div>
 
       <div class="m-5" v-if="activeTab == 'desc'">
         <div class="arches-block">
           <div class="genre_block flex mb-2 flex-wrap">
-            <div class="genre_name mr-2">Жанры: </div>
+            <div class="genre_name mr-2">Жанры:</div>
             <div class="genre mr-2" v-for="(g, ind) in anime.genres" :key="ind">
               {{ g }}
             </div>
@@ -269,7 +304,7 @@
 </template>
 
 <script>
-import "@/assets/css/watch.css"
+import "@/assets/css/watch.css";
 import Header from "@/components/header.vue";
 import Footer from "@/components/footer.vue";
 
@@ -308,7 +343,7 @@ export default {
       lockChat: false,
       hideChat: false,
       playRate: 1,
-      activeTab: 'desc'
+      activeTab: "desc",
     };
   },
   mounted() {
@@ -492,7 +527,7 @@ export default {
           break;
         case 67:
           event.preventDefault();
-          this.hideChat = !this.hideChat
+          this.hideChat = !this.hideChat;
           break;
       }
     },
@@ -526,5 +561,4 @@ export default {
 </script>
 
 <style>
-
 </style>
