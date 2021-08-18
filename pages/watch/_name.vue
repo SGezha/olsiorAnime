@@ -215,7 +215,7 @@
 
       <div class="m-5" v-if="activeTab == 'desc'">
         <div class="arches-block">
-          <div class="genre_block flex mb-2">
+          <div class="genre_block flex mb-2 flex-wrap">
             <div class="genre_name mr-2">Жанры: </div>
             <div class="genre mr-2" v-for="(g, ind) in anime.genres" :key="ind">
               {{ g }}
