@@ -9,10 +9,19 @@
     "watched": false
   },
   {
+    "title": "Ванпанчмен 2 / One Punch Man 2nd Season",
+    "img": "https://dere.shikimori.one/system/animes/original/34134.jpg?1611210635",
+    "id": "y269-bleach",
+    "episodes": "0/12",
+    "stars": "?",
+    "url": "onepunchman2",
+    "watched": false
+  },
+  {
     "title": "Ванпанчмен / One Punch Man",
     "img": "https://kawai.shikimori.one/system/animes/original/30276.jpg?1617282941",
     "id": "y269-bleach",
-    "episodes": "0/12",
+    "episodes": "12/12",
     "stars": "8",
     "url": "onepunchman",
     "watched": true
