@@ -36,7 +36,7 @@
 
     <div class="container mx-auto">
       <div class="head text-2xl m-5 flex justify-start items-center">
-        <h2>{{ anime.title }} <i class="fas fa-chevron-right text-sm"></i></h2>
+        <h2>{{ anime.title }}</h2>
       </div>
       <div class="m-5">
         <div
@@ -203,9 +203,30 @@
         </div>
       </div>
 
-      <div class="m-5" v-if="anime.seasons">
+      <div class="m-5">
+        <div class="menu flex jusity-center items-center border-b-2">
+          <div v-if="anime.desc" class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer" :class="{ active: activeTab == 'desc'}" @click="activeTab = 'desc'">Описание</div>
+          <div v-if="anime.seasons" class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer" :class="{ active: activeTab == 'seasons'}" @click="activeTab = 'seasons'">Породяк просмотра</div>
+          <div v-if="anime.arches" class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer" :class="{ active: activeTab == 'arches'}" @click="activeTab = 'arches'">Арки</div>
+          <div v-if="anime.op" class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer" :class="{ active: activeTab == 'op'}" @click="activeTab = 'op'">Опенинги</div>
+          <div v-if="anime.ed" class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer" :class="{ active: activeTab == 'ed'}" @click="activeTab = 'ed'">Ендинги</div>
+        </div>
+      </div>
+
+      <div class="m-5" v-if="activeTab == 'desc'">
         <div class="arches-block">
-          <h2 class="text-xl">Порядок просмотра:</h2>
+          <div class="genre_block flex mb-2">
+            <div class="genre_name mr-2">Жанры: </div>
+            <div class="genre mr-2" v-for="(g, ind) in anime.genres" :key="ind">
+              {{ g }}
+            </div>
+          </div>
+          <pre v-text="anime.desc"></pre>
+        </div>
+      </div>
+
+      <div class="m-5" v-if="activeTab == 'seasons'">
+        <div class="arches-block">
           <div v-for="(seas, index) in anime.seasons" :key="index">
             {{ index + 1 }}.
             <a class="link" target="_blank" :href="seas.url">{{
@@ -216,16 +237,14 @@
         </div>
       </div>
 
-      <div class="m-5" v-if="anime.arches">
+      <div class="m-5" v-if="activeTab == 'arches'">
         <div class="arches-block">
-          <h2 class="text-xl">Список арок:</h2>
           <pre v-text="anime.arches.split('Арка ').join('')"></pre>
         </div>
       </div>
 
-      <div class="m-5" v-if="anime.op">
+      <div class="m-5" v-if="activeTab == 'op'">
         <div class="arches-block">
-          <h2 class="text-xl">Опенинги:</h2>
           <div v-for="(op, index) in anime.op" :key="index">
             {{ index + 1 }}.
             <a class="link" target="_blank" :href="op.url">{{ op.title }}</a>
@@ -234,9 +253,8 @@
         </div>
       </div>
 
-      <div class="m-5" v-if="anime.ed">
+      <div class="m-5" v-if="activeTab == 'ed'">
         <div class="arches-block">
-          <h2 class="text-xl">Ендинги:</h2>
           <div v-for="(ed, index) in anime.ed" :key="index">
             {{ index + 1 }}.
             <a class="link" target="_blank" :href="ed.url">{{ ed.title }}</a>
@@ -250,6 +268,7 @@
 </template>
 
 <script>
+import "@/assets/css/watch.css"
 import Header from "@/components/header.vue";
 import Footer from "@/components/footer.vue";
 
@@ -288,6 +307,7 @@ export default {
       lockChat: false,
       hideChat: false,
       playRate: 1,
+      activeTab: 'desc'
     };
   },
   mounted() {
@@ -505,325 +525,5 @@ export default {
 </script>
 
 <style>
-html,
-body {
-  max-width: 100%;
-}
 
-.video:focus {
-  border: none;
-  outline: none;
-}
-
-.playrate {
-  transition: color 0.3s ease;
-}
-
-.playrate.active {
-  color: aqua;
-}
-
-.video:hover {
-  border: none;
-  outline: none;
-}
-
-.hide-chat {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-}
-
-.theatre_button {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  z-index: 999;
-  background: #2b2b2b;
-  border-radius: 50%;
-  cursor: pointer;
-  bottom: 10px;
-  right: 10px;
-  transition: background 0.3s ease;
-}
-
-.theatre_button:hover {
-  background: #3b3b3b;
-}
-
-.theatre_button.bot {
-  bottom: 10px;
-  right: 10px;
-}
-
-.theatre_button.bot-2 {
-  bottom: 10px;
-  right: 70px;
-}
-
-.theatre_button.top {
-  top: 10px;
-  right: 10px;
-  opacity: 0.5;
-}
-
-.arches-block {
-  width: 100%;
-  word-wrap: normal;
-}
-
-.arches-block pre {
-  width: 100%;
-  word-wrap: normal;
-  white-space: pre-wrap;
-}
-
-.history {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.history.active {
-  display: none;
-}
-
-.down {
-  margin-left: 5px;
-}
-
-.chat-block {
-  width: 30%;
-  overflow-y: auto;
-  height: 30vh;
-  padding: 10px;
-  max-height: 700px;
-}
-
-.player {
-  position: relative;
-  width: 100%;
-  height: 30vh;
-  max-height: 700px;
-}
-
-.player .video {
-  width: 100%;
-  height: 30vh;
-  max-height: 700px;
-  background: black;
-  /* z-index: -100; */
-}
-
-.episode-block {
-  margin-left: -5px;
-  margin-top: 10px;
-}
-
-.episode-scroll {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.right {
-  margin-left: 5px;
-}
-
-.episode {
-  cursor: pointer;
-  display: flex;
-  padding: 5px 10px;
-  background: #2b2b2b;
-  border: 1px solid #2b2b2b;
-  border-radius: 5px;
-  transition: 0.3s ease;
-  margin: 5px;
-  font-size: 14px;
-  transition: background 0.3s ease;
-}
-
-.episode:hover {
-  background: #3b3b3b;
-}
-
-@media screen and (min-width: 768px) {
-  .history {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .chat-block {
-    width: 30%;
-    overflow-y: auto;
-    height: 70vh;
-    padding: 10px;
-  }
-
-  .player {
-    position: relative;
-    width: 100%;
-    height: 70vh;
-  }
-
-  .player .video {
-    width: 100%;
-    height: 70vh;
-    background: black;
-    /* z-index: -100; */
-  }
-
-  .episode {
-    width: calc((100% - 10px) / 4);
-    justify-content: space-between;
-    font-size: 16px;
-  }
-
-  .episode span {
-    display: inline-flex;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .episode {
-    width: calc((100% - 10px) / 6);
-  }
-
-  video::-webkit-media-controls-enclosure {
-    padding: 0px;
-    height: auto;
-  }
-
-  video::-webkit-media-controls-panel {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    width: 50%;
-    /* opacity: 1 !important; */
-    display: -webkit-flex !important;
-    height: 70px;
-
-    background: #2b2b2be5;
-
-    z-index: 1;
-    transform: translateX(-50%);
-    border-radius: 10px;
-    padding-top: 20px;
-  }
-
-  video::-webkit-media-controls-timeline {
-    background: transparent;
-    position: absolute;
-    bottom: 45px;
-    height: 4px;
-    left: 50%;
-    width: 92%;
-    transform: translateX(-50%);
-  }
-
-  video::-webkit-media-controls-volume-slider,
-  video::-webkit-media-controls-timeline {
-    background: transparent;
-  }
-
-  video::-webkit-media-controls-volume-slider::-webkit-media-slider-container,
-  video::-webkit-media-controls-timeline::-webkit-media-slider-container {
-    cursor: pointer;
-    background: transparent;
-  }
-
-  ::-webkit-media-slider-thumb {
-    background: red;
-  }
-
-  video::-webkit-media-controls-play-button {
-    cursor: pointer;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .episode {
-    width: calc((100% - 10px) / 7);
-  }
-}
-
-.oneepisode {
-  cursor: pointer;
-  width: fit-content;
-  padding: 5px 10px;
-  background: #2b2b2b;
-  border: 1px solid #2b2b2b;
-  border-radius: 5px;
-  transition: 0.3s ease;
-  margin: 0px;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.episode.active {
-  border: 1px solid white;
-}
-
-.episode-block h2 {
-  margin-left: 5px;
-  display: block;
-  width: 100%;
-}
-
-.player-block.theatre {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  background: #1b1b1b;
-}
-
-.player.theatre {
-  width: 100%;
-  height: 100%;
-  transition: 0.5s ease;
-  max-height: unset;
-}
-
-.video.theatre {
-  width: 100%;
-  height: 100%;
-  max-height: unset;
-}
-
-.chat-block.theatre {
-  height: 100vh;
-  width: 30%;
-  font-size: 10px;
-  max-height: unset;
-}
-
-.emote {
-  display: inline-block;
-  height: 15px;
-  width: auto;
-  transform: translateY(3px);
-}
-
-@media screen and (min-width: 1024px) {
-  .chat-block.theatre {
-    height: 100vh;
-    width: 20%;
-    font-size: 100%;
-  }
-
-  .emote {
-    display: inline-block;
-    height: 25px;
-    width: auto;
-    transform: translateY(5px);
-  }
-}
 </style>

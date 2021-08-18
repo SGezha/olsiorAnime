@@ -2,7 +2,7 @@
   <div class="container mx-auto" v-if="watched.length > 0">
     <div class="popular">
       <div class="head text-2xl m-5 flex justify-start items-center">
-        <h2>Сейчас смотрит <i class="fas fa-chevron-right text-sm"></i></h2>
+        <h2 class="flex justify-center items-center">Сейчас смотрит <i class="fas fa-chevron-right text-base ml-2 mt-1"></i></h2>
       </div>
       <div
         class="
@@ -40,7 +40,7 @@
       </div>
 
       <div class="head text-2xl m-5 flex justify-start items-center">
-        <h2>Посмотрел <i class="fas fa-chevron-right text-sm"></i></h2>
+        <h2 class="flex justify-content items-center">Посмотрел <i class="fas fa-chevron-right text-base ml-2 mt-1"></i></h2>
       </div>
       <div
         class="

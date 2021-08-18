@@ -1,0 +1,340 @@
+html,
+body {
+  max-width: 100%;
+}
+
+.video:focus {
+  border: none;
+  outline: none;
+}
+
+.playrate {
+  transition: color 0.3s ease;
+}
+
+.playrate.active {
+  color: aqua;
+}
+
+.video:hover {
+  border: none;
+  outline: none;
+}
+
+.hide-chat {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.theatre_button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  background: #2b2b2b;
+  border-radius: 50%;
+  cursor: pointer;
+  bottom: 10px;
+  right: 10px;
+  transition: background 0.3s ease;
+}
+
+.theatre_button:hover {
+  background: #3b3b3b;
+}
+
+.theatre_button.bot {
+  bottom: 10px;
+  right: 10px;
+}
+
+.theatre_button.bot-2 {
+  bottom: 10px;
+  right: 70px;
+}
+
+.theatre_button.top {
+  top: 10px;
+  right: 10px;
+  opacity: 0.5;
+}
+
+.arches-block {
+  width: 100%;
+  word-wrap: normal;
+}
+
+.arches-block pre {
+  width: 100%;
+  word-wrap: normal;
+  white-space: pre-wrap;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history.active {
+  display: none;
+}
+
+.down {
+  margin-left: 5px;
+}
+
+.chat-block {
+  width: 30%;
+  overflow-y: auto;
+  height: 30vh;
+  padding: 10px;
+  max-height: 700px;
+}
+
+.player {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  max-height: 700px;
+}
+
+.player .video {
+  width: 100%;
+  height: 30vh;
+  max-height: 700px;
+  background: black;
+  /* z-index: -100; */
+}
+
+.episode-block {
+  margin-left: -5px;
+  margin-top: 10px;
+}
+
+.episode-scroll {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right {
+  margin-left: 5px;
+}
+
+.episode {
+  cursor: pointer;
+  display: flex;
+  padding: 5px 10px;
+  background: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  margin: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.episode:hover {
+  background: #3b3b3b;
+}
+
+.menu {
+  border-bottom: 1px solid #2b2b2b;
+}
+
+.menu_item {
+  color: #5b5b5b;
+  transition: 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.menu_item.active {
+  color: aqua;
+  border-bottom: 2px solid aqua;
+}
+
+.genre {
+  color: aqua;
+}
+
+@media screen and (min-width: 768px) {
+  .history {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .chat-block {
+    width: 30%;
+    overflow-y: auto;
+    height: 70vh;
+    padding: 10px;
+  }
+
+  .player {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+  }
+
+  .player .video {
+    width: 100%;
+    height: 70vh;
+    background: black;
+    /* z-index: -100; */
+  }
+
+  .episode {
+    width: calc((100% - 10px) / 4);
+    justify-content: space-between;
+    font-size: 16px;
+  }
+
+  .episode span {
+    display: inline-flex;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .episode {
+    width: calc((100% - 10px) / 6);
+  }
+
+  video::-webkit-media-controls-enclosure {
+    padding: 0px;
+    height: auto;
+  }
+
+  video::-webkit-media-controls-panel {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 50%;
+    /* opacity: 1 !important; */
+    display: -webkit-flex !important;
+    height: 70px;
+
+    background: #2b2b2be5;
+
+    z-index: 1;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding-top: 20px;
+  }
+
+  video::-webkit-media-controls-timeline {
+    background: transparent;
+    position: absolute;
+    bottom: 45px;
+    height: 4px;
+    left: 50%;
+    width: 92%;
+    transform: translateX(-50%);
+  }
+
+  video::-webkit-media-controls-volume-slider,
+  video::-webkit-media-controls-timeline {
+    background: transparent;
+  }
+
+  video::-webkit-media-controls-volume-slider::-webkit-media-slider-container,
+  video::-webkit-media-controls-timeline::-webkit-media-slider-container {
+    cursor: pointer;
+    background: transparent;
+  }
+
+  ::-webkit-media-slider-thumb {
+    background: red;
+  }
+
+  video::-webkit-media-controls-play-button {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .episode {
+    width: calc((100% - 10px) / 7);
+  }
+}
+
+.oneepisode {
+  cursor: pointer;
+  width: fit-content;
+  padding: 5px 10px;
+  background: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  margin: 0px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.episode.active {
+  border: 1px solid white;
+}
+
+.episode-block h2 {
+  margin-left: 5px;
+  display: block;
+  width: 100%;
+}
+
+.player-block.theatre {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: #1b1b1b;
+}
+
+.player.theatre {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  max-height: unset;
+}
+
+.video.theatre {
+  width: 100%;
+  height: 100%;
+  max-height: unset;
+}
+
+.chat-block.theatre {
+  height: 100vh;
+  width: 30%;
+  font-size: 10px;
+  max-height: unset;
+}
+
+.emote {
+  display: inline-block;
+  height: 15px;
+  width: auto;
+  transform: translateY(3px);
+}
+
+@media screen and (min-width: 1024px) {
+  .chat-block.theatre {
+    height: 100vh;
+    width: 20%;
+    font-size: 100%;
+  }
+
+  .emote {
+    display: inline-block;
+    height: 25px;
+    width: auto;
+    transform: translateY(5px);
+  }
+}
