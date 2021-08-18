@@ -1,0 +1,32 @@
+{
+  "title": "Ванпанчмен 2 / One Punch Man 2nd Season",
+  "op": [
+    {
+      "url": "https://www.youtube.com/watch?v=-e4rOplLrQg",
+      "episodes": "1-12",
+      "title": "JAM Project — Uncrowned Greatest Hero"
+    }
+  ],
+  "ed": [
+    {
+      "url": "https://www.youtube.com/watch?v=ZaatG1SCVDY",
+      "episodes": "1-12",
+      "title": "Chizu ga Nakutemo Modoru kara - Saitama"
+    }
+  ],
+  "seasons": [
+    {
+      "title": "Ванпанчмен",
+      "url": "https://olsior.herokuapp.com/watch/onepunchman",
+      "text": "ТВ (12 эп.), адаптация манги, 2015"
+    },
+    {
+      "title": "Ванпанчмен 2",
+      "url": "https://olsior.herokuapp.com/watch/onepunchman2",
+      "text": "ТВ, продолжение, 2019"
+    }
+  ],
+  "episodes": [
+
+  ]
+}

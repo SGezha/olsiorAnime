@@ -14,6 +14,18 @@
       "title": "Hoshi yori Saki ni Mitsukete Ageru - Hiroko Moriguchi"
     }
   ],
+  "seasons": [
+    {
+      "title": "Ванпанчмен",
+      "url": "https://olsior.herokuapp.com/watch/onepunchman",
+      "text": "ТВ (12 эп.), адаптация манги, 2015"
+    },
+    {
+      "title": "Ванпанчмен 2",
+      "url": "https://olsior.herokuapp.com/watch/onepunchman2",
+      "text": "ТВ, продолжение, 2019"
+    }
+  ],
   "episodes": [
     {
       "title": "1-2 серия",
