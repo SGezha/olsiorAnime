@@ -162,7 +162,7 @@
 
       <div class="m-5">
         <div class="episode-block" :class="{ active: video != null }">
-          <div class="episode-scroll" :class="{ active: video != null }">
+          <div class="episode-scroll w-full flex flex-wrap" :class="{ active: video != null }">
             <div
               v-for="(post, index) in anime.episodes"
               :key="index"
@@ -171,7 +171,7 @@
               @click="change(index, post.url, anime.title, post.chat, post)"
             >
               <span>{{ post.title }}</span>
-              <div class="right">
+              <div class="ml-[5px] flex items-center">
                 <i class="fas fa-comment-alt" v-if="post.chat"></i>
                 <a :href="post.url" class="down">
                   <i class="fas fa-download"></i>
