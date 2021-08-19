@@ -89,7 +89,7 @@ body {
 }
 
 .chat-block {
-  width: 30%;
+  width: 100%;
   overflow-y: auto;
   height: 30vh;
   padding: 10px;
@@ -199,6 +199,7 @@ body {
   .player .video {
     width: 100%;
     height: 70vh;
+    object-fit: cover;
     background: black;
     /* z-index: -100; */
   }
