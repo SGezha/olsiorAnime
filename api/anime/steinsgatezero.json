@@ -52,52 +52,92 @@
     {
       "title": "1-2 серия",
       "url": "https://stream.wrench.gq/7305",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_1-2.txt?v=1628972916505"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_1-2.txt?v=1628972916505",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/8967"
+      }]
     },
     {
       "title": "3-4 серия",
       "url": "https://stream.wrench.gq/7313",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_3-4.txt?v=1628972920373"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_3-4.txt?v=1628972920373",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/8968"
+      }]
     },
     {
       "title": "5-7 серия",
       "url": "https://stream.wrench.gq/7314",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_5-7.txt?v=1628972925234"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_5-7.txt?v=1628972925234",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/8969"
+      }]
     },
     {
       "title": "8-9 серия",
       "url": "https://stream.wrench.gq/7306",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_8-9.txt?v=1628972930136"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_8-9.txt?v=1628972930136",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/8975"
+      }]
     },
     {
       "title": "10-12 серия",
       "url": "https://stream.wrench.gq/7307",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_10-12.txt?v=1628972935431"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_10-12.txt?v=1628972935431",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/8976"
+      }]
     },
     {
-      "title": "13-14 серия",
+      "title": "13-15 серия",
       "url": "https://stream.wrench.gq/7308",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_13-15.txt?v=1628972940682"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_13-15.txt?v=1628972940682",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/8970"
+      }]
     },
     {
       "title": "16-17 серия",
       "url": "https://stream.wrench.gq/7309",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_16-17.txt?v=1628972949455"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_16-17.txt?v=1628972949455",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/8971"
+      }]
     },
     {
       "title": "18-19 серия",
       "url": "https://stream.wrench.gq/7310",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_18-19.txt?v=1628972958233"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_18-19.txt?v=1628972958233",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/8972"
+      }]
     },
     {
       "title": "20-21 серия",
       "url": "https://stream.wrench.gq/7311",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_20-21.txt?v=1628972966817"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_20-21.txt?v=1628972966817",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/8973"
+      }]
     },
     {
       "title": "22-23 серия",
       "url": "https://stream.wrench.gq/7312",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_22-23.txt?v=1628972971447"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_22-23.txt?v=1628972971447",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/8974"
+      }]
     }
   ]
 }

@@ -133,13 +133,13 @@
                 :key="ind"
                 :value="q.name"
               >
-                {{ q.name }}
+                {{ q.name }} SD
               </option>
               <option
                 @click="changeQuality(anime.episodes[nowInd].url)"
                 value="1080p"
               >
-                1080p
+                1080p <span class="text-[1px] text-[aqua]">FHD</span>
               </option>
             </select>
           </div>
