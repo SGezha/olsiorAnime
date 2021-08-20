@@ -39,32 +39,56 @@
     {
       "title": "1-2 серия",
       "url": "https://stream.wrench.gq/8390",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_1-2.txt?v=1629272438728"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_1-2.txt?v=1629272438728",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/9024"
+      }]
     },
     {
       "title": "3-4 серия",
       "url": "https://stream.wrench.gq/8394",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_3-4.txt?v=1629272441238"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_3-4.txt?v=1629272441238",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/9026"
+      }]
     },
     {
       "title": "5-6 серия",
       "url": "https://stream.wrench.gq/8395",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_5-6.txt?v=1629272446454"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_5-6.txt?v=1629272446454",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/9017"
+      }]
     },
     {
       "title": "7-8 серия",
       "url": "https://stream.wrench.gq/8391",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_7-8.txt?v=1629272450815"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_7-8.txt?v=1629272450815",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/9018"
+      }]
     },
     {
       "title": "9-10 серия",
       "url": "https://stream.wrench.gq/8392",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_9-10.txt?v=1629272464213"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_9-10.txt?v=1629272464213",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/9020"
+      }]
     },
     {
       "title": "11-12 серия",
       "url": "https://stream.wrench.gq/8393",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_11-12.txt?v=1629272466965"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone_11-12.txt?v=1629272466965",
+      "quality": [{
+        "name": "480p",
+        "url": "https://stream.wrench.gq/9021"
+      }]
     }
   ]
 }
