@@ -421,18 +421,22 @@ export default {
     },
     change(ind, url, title, chat, post) {
       this.post = post;
-      if (post.quality) {
-        this.quality = post.quality;
-      } else {
-        this.quality = [];
-      }
       clearInterval(this.timer);
       this.chat = "";
       this.parsedChat = [];
       if (this.save.id == ind) this.needSave = true;
       this.nowInd = ind;
       this.video = url;
-      this.title = title;
+      if (post.quality) {
+        this.quality = post.quality;
+        if(this.selectQuality == "480p") {
+          this.video = this.quality[0].url;
+        }
+      } else {
+        this.selectQuality = "1080p"
+        this.quality = [];
+      }
+      this.title = `${title}`;
       if (chat != undefined) this.getChat(chat);
       this.timer = setInterval(() => {
         if (this.$refs.video == undefined) return;
