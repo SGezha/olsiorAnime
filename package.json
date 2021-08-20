@@ -1,6 +1,6 @@
 {
-  "name": "olsior",
-  "version": "1.0.0",
+  "name": "olsior-anime",
+  "version": "3.2.2",
   "private": true,
   "scripts": {
     "dev": "nuxt",
