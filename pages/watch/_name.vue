@@ -1,293 +1,321 @@
 <template>
   <div>
     <Header />
-
     <div
-      @click="toggleTheatre"
-      class="theatre_button top"
-      title="Режим кинотеатра [T]"
-      v-if="theatre && video != null"
-    >
-      <i class="fas fa-compress"></i>
-    </div>
-
+      class="fixed w-full top-[0px] left-[0px] -z-5 h-screen"
+      :style="{ 'background': `url('${anime.background}') no-repeat center center fixed`, 'background-size': 'cover' }"
+    />
     <div
-      @click="toggleTheatre"
-      class="theatre_button bot"
-      title="Режим кинотеатра [T]"
-      v-if="!theatre && video != null"
+      class="bg-hex-[#000000dd] flex flex-col mx-auto min-h-screen object-cover"
     >
-      <i class="fas fa-expand"></i>
-    </div>
-
-    <div
-      class="theatre_button bot-2"
-      @click="hideChat = !hideChat"
-      v-if="
-        video != null && !theatre && anime.episodes[nowInd].chat != undefined
-      "
-      title="Вкл/выкл чата [C]"
-    >
-      <i
-        class="fas"
-        :class="{ 'fa-comment-slash': hideChat, 'fa-comment': !hideChat }"
-      ></i>
-    </div>
-
-    <div class="container mx-auto">
-      <div class="head text-2xl m-5 flex justify-start items-center">
-        <h2>{{ anime.title }}</h2>
+      <div
+        @click="toggleTheatre"
+        class="theatre_button top"
+        title="Режим кинотеатра [T]"
+        v-if="theatre && video != null"
+      >
+        <i class="fas fa-compress"></i>
       </div>
-      <div class="m-5">
-        <div
-          class="history"
-          :class="{ active: video != null }"
-          v-if="save.time != 0"
-        >
-          <h2>Вы остановились на</h2>
+
+      <div
+        @click="toggleTheatre"
+        class="theatre_button bot"
+        title="Режим кинотеатра [T]"
+        v-if="!theatre && video != null"
+      >
+        <i class="fas fa-expand"></i>
+      </div>
+
+      <div
+        class="theatre_button bot-2"
+        @click="hideChat = !hideChat"
+        v-if="
+          video != null && !theatre && anime.episodes[nowInd].chat != undefined
+        "
+        title="Вкл/выкл чата [C]"
+      >
+        <i
+          class="fas"
+          :class="{ 'fa-comment-slash': hideChat, 'fa-comment': !hideChat }"
+        ></i>
+      </div>
+
+      <div class="container mx-auto">
+        <div class="head text-2xl m-5 flex justify-start items-center">
+          <h2>{{ anime.title }}</h2>
+        </div>
+        <div class="m-5">
           <div
-            class="oneepisode"
-            @click="
-              change(
-                save.id,
-                anime.episodes[save.id].url,
-                anime.episodes[save.id].title,
-                anime.episodes[save.id].chat,
-                anime.episodes[save.id]
-              )
-            "
+            class="history"
+            :class="{ active: video != null }"
+            v-if="save.time != 0"
           >
-            <span>
-              {{ anime.episodes[save.id].title }} ({{ formatTime(save.time) }})
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="player-block m-5 flex md:flex-row" :class="{ theatre: theatre, 'flex-col': !theatre }">
-        <div
-          class="player"
-          :class="{ hidden: video == null, theatre: theatre }"
-        >
-          <video
-            ref="video"
-            class="video"
-            @loadeddata="loadedVideo"
-            controls
-            autoplay
-            preload="auto"
-            :key="video"
-            :class="{ theatre: theatre }"
-            @keydown="rewind"
-            @ended="
-              nowInd++;
-              change(
-                nowInd,
-                anime.episodes[nowInd].url,
-                anime.title,
-                anime.episodes[nowInd].chat
-              );
-            "
-          >
-            <source :src="video" />
-          </video>
-        </div>
-
-        <div
-          @mouseenter="lockChat = true"
-          @mouseleave="lockChat = false"
-          class="chat-block overflow-x-hidden"
-          ref="chat"
-          v-if="
-            nowInd != -1 &&
-            anime.episodes[nowInd].chat != undefined &&
-            !hideChat
-          "
-          :class="{ theatre: theatre }"
-        >
-          <div v-for="(msg, index) in parsedChat" :key="index">
-            <div v-if="msg.display" class="message">
-              <!-- <span class="time" v-text="`[${msg.time.time}]`"></span> -->
-              <span
-                class="author"
-                v-text="msg.author + ':'"
-                :style="{ color: `${msg.color}` }"
-              ></span>
-              <span class="text" v-html="msg.text"></span>
+            <h2>Вы остановились на</h2>
+            <div
+              class="oneepisode"
+              @click="
+                change(
+                  save.id,
+                  anime.episodes[save.id].url,
+                  anime.episodes[save.id].title,
+                  anime.episodes[save.id].chat,
+                  anime.episodes[save.id]
+                )
+              "
+            >
+              <span>
+                {{ anime.episodes[save.id].title }} ({{
+                  formatTime(save.time)
+                }})
+              </span>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="m-5" v-if="video != null">
-        <div class="flex justify-start items-center space-x-[10px] flex-wrap">
-          <div class="flex flwx-wrap" v-if="quality.length > 0">
-            <select
-              class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
-              name="quality"
-              v-model="selectQuality"
+        <div
+          class="player-block m-5 flex md:flex-row"
+          :class="{ theatre: theatre, 'flex-col': !theatre }"
+        >
+          <div
+            class="player"
+            :class="{ hidden: video == null, theatre: theatre }"
+          >
+            <video
+              ref="video"
+              class="video"
+              @loadeddata="loadedVideo"
+              controls
+              autoplay
+              preload="auto"
+              :key="video"
+              :class="{ theatre: theatre }"
+              @keydown="rewind"
+              @ended="
+                nowInd++;
+                change(
+                  nowInd,
+                  anime.episodes[nowInd].url,
+                  anime.title,
+                  anime.episodes[nowInd].chat
+                );
+              "
             >
-              <option
-                @click="changeQuality(q.url)"
-                v-for="(q, ind) in quality"
-                :key="ind"
-                :value="q.name"
-              >
-                {{ q.name }} SD
-              </option>
-              <option
-                @click="changeQuality(anime.episodes[nowInd].url)"
-                value="1080p"
-              >
-                1080p <span class="text-[1px] text-[aqua]">FHD</span>
-              </option>
-            </select>
+              <source :src="video" />
+            </video>
           </div>
-          <select
-            class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
-            name="speed"
-            v-model="playRate"
-          >
-            <option value="0.25">0.25x</option>
-            <option value="0.50">0.50x</option>
-            <option value="0.75">0.75x</option>
-            <option value="1">1x</option>
-            <option value="1.25">1.25x</option>
-            <option value="1.50">1.50x</option>
-            <option value="1.75">1.75x</option>
-            <option value="2">2x</option>
-          </select>
 
-          <select
-            class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
-            name="fit"
-            v-model="objectFit"
+          <div
+            @mouseenter="lockChat = true"
+            @mouseleave="lockChat = false"
+            class="
+              chat-block
+              overflow-x-hidden
+              bg-hex-[#1b1b1b99]
+              rounded-tr-[10px] rounded-br-[10px]
+            "
+            ref="chat"
+            v-if="
+              nowInd != -1 &&
+              anime.episodes[nowInd].chat != undefined &&
+              !hideChat
+            "
+            :class="{ theatre: theatre }"
           >
-            <option value="fill">Растянуть</option>
-            <option value="contain">Обычный</option>
-            <option value="cover">Заполнение</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="m-5">
-        <div class="episode-block" :class="{ active: video != null }">
-          <div class="episode-scroll w-full flex flex-wrap" :class="{ active: video != null }">
-            <div
-              v-for="(post, index) in anime.episodes"
-              :key="index"
-              class="episode"
-              :class="{ active: nowInd == index }"
-              @click="change(index, post.url, anime.title, post.chat, post)"
-            >
-              <span>{{ post.title }}</span>
-              <div class="ml-[5px] flex items-center">
-                <i class="fas fa-comment-alt" v-if="post.chat"></i>
-                <a :href="post.url" class="down">
-                  <i class="fas fa-download"></i>
-                </a>
+            <div v-for="(msg, index) in parsedChat" :key="index">
+              <div
+                v-if="msg.display"
+                class="message"
+                style="text-shadow: 1px 1px 5px black"
+              >
+                <!-- <span class="time" v-text="`[${msg.time.time}]`"></span> -->
+                <span
+                  class="author"
+                  v-text="msg.author + ':'"
+                  :style="{ color: `${msg.color}` }"
+                ></span>
+                <span class="text" v-html="msg.text"></span>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="m-5">
-        <div class="menu flex jusity-center items-center border-b-2">
-          <div
-            v-if="anime.desc"
-            class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
-            :class="{ active: activeTab == 'desc' }"
-            @click="activeTab = 'desc'"
-          >
-            Описание
-          </div>
-          <div
-            v-if="anime.seasons"
-            class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
-            :class="{ active: activeTab == 'seasons' }"
-            @click="activeTab = 'seasons'"
-          >
-            Породяк просмотра
-          </div>
-          <div
-            v-if="anime.arches"
-            class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
-            :class="{ active: activeTab == 'arches' }"
-            @click="activeTab = 'arches'"
-          >
-            Арки
-          </div>
-          <div
-            v-if="anime.op"
-            class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
-            :class="{ active: activeTab == 'op' }"
-            @click="activeTab = 'op'"
-          >
-            Опенинги
-          </div>
-          <div
-            v-if="anime.ed"
-            class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
-            :class="{ active: activeTab == 'ed' }"
-            @click="activeTab = 'ed'"
-          >
-            Ендинги
+        <div class="m-5" v-if="video != null">
+          <div class="flex justify-start items-center space-x-[10px] flex-wrap">
+            <div class="flex flwx-wrap" v-if="quality.length > 0">
+              <select
+                class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
+                name="quality"
+                v-model="selectQuality"
+              >
+                <option
+                  @click="changeQuality(q.url)"
+                  v-for="(q, ind) in quality"
+                  :key="ind"
+                  :value="q.name"
+                >
+                  {{ q.name }} SD
+                </option>
+                <option
+                  @click="changeQuality(anime.episodes[nowInd].url)"
+                  value="1080p"
+                >
+                  1080p <span class="text-[1px] text-[aqua]">FHD</span>
+                </option>
+              </select>
+            </div>
+            <select
+              class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
+              name="speed"
+              v-model="playRate"
+            >
+              <option value="0.25">0.25x</option>
+              <option value="0.50">0.50x</option>
+              <option value="0.75">0.75x</option>
+              <option value="1">1x</option>
+              <option value="1.25">1.25x</option>
+              <option value="1.50">1.50x</option>
+              <option value="1.75">1.75x</option>
+              <option value="2">2x</option>
+            </select>
+
+            <select
+              class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
+              name="fit"
+              v-model="objectFit"
+            >
+              <option value="fill">Растянуть</option>
+              <option value="contain">Обычный</option>
+              <option value="cover">Заполнение</option>
+            </select>
           </div>
         </div>
-      </div>
 
-      <div class="m-5" v-if="activeTab == 'desc'">
-        <div class="arches-block">
-          <div class="genre_block flex mb-2 flex-wrap">
-            <div class="genre_name mr-2">Жанры:</div>
-            <div class="genre mr-2" v-for="(g, ind) in anime.genres" :key="ind">
-              {{ g }}
+        <div class="m-5">
+          <div class="episode-block" :class="{ active: video != null }">
+            <div
+              class="episode-scroll w-full flex flex-wrap"
+              :class="{ active: video != null }"
+            >
+              <div
+                v-for="(post, index) in anime.episodes"
+                :key="index"
+                class="episode"
+                :class="{ active: nowInd == index }"
+                @click="change(index, post.url, anime.title, post.chat, post)"
+              >
+                <span>{{ post.title }}</span>
+                <div class="ml-[5px] flex items-center">
+                  <i class="fas fa-comment-alt" v-if="post.chat"></i>
+                  <a :href="post.url" class="down">
+                    <i class="fas fa-download"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <pre v-text="anime.desc"></pre>
         </div>
-      </div>
 
-      <div class="m-5" v-if="activeTab == 'seasons'">
-        <div class="arches-block">
-          <div v-for="(seas, index) in anime.seasons" :key="index">
-            {{ index + 1 }}.
-            <a class="link" target="_blank" :href="seas.url">
-              {{ seas.title }}
-            </a>
-            - {{ seas.text }}
+        <div class="m-5">
+          <div class="menu flex jusity-center items-center border-b-2">
+            <div
+              v-if="anime.desc"
+              class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+              :class="{ active: activeTab == 'desc' }"
+              @click="activeTab = 'desc'"
+            >
+              Описание
+            </div>
+            <div
+              v-if="anime.seasons"
+              class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+              :class="{ active: activeTab == 'seasons' }"
+              @click="activeTab = 'seasons'"
+            >
+              Породяк просмотра
+            </div>
+            <div
+              v-if="anime.arches"
+              class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+              :class="{ active: activeTab == 'arches' }"
+              @click="activeTab = 'arches'"
+            >
+              Арки
+            </div>
+            <div
+              v-if="anime.op"
+              class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+              :class="{ active: activeTab == 'op' }"
+              @click="activeTab = 'op'"
+            >
+              Опенинги
+            </div>
+            <div
+              v-if="anime.ed"
+              class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+              :class="{ active: activeTab == 'ed' }"
+              @click="activeTab = 'ed'"
+            >
+              Ендинги
+            </div>
+          </div>
+        </div>
+
+        <div class="m-5" v-if="activeTab == 'desc'">
+          <div class="arches-block">
+            <div class="genre_block flex mb-2 flex-wrap">
+              <div class="genre_name mr-2">Жанры:</div>
+              <div
+                class="genre mr-2"
+                v-for="(g, ind) in anime.genres"
+                :key="ind"
+              >
+                {{ g }}
+              </div>
+            </div>
+            <pre v-text="anime.desc"></pre>
+          </div>
+        </div>
+
+        <div class="m-5" v-if="activeTab == 'seasons'">
+          <div class="arches-block">
+            <div v-for="(seas, index) in anime.seasons" :key="index">
+              {{ index + 1 }}.
+              <a class="link" target="_blank" :href="seas.url">
+                {{ seas.title }}
+              </a>
+              - {{ seas.text }}
+            </div>
+          </div>
+        </div>
+
+        <div class="m-5" v-if="activeTab == 'arches'">
+          <div class="arches-block">
+            <pre v-text="anime.arches.split('Арка ').join('')"></pre>
+          </div>
+        </div>
+
+        <div class="m-5" v-if="activeTab == 'op'">
+          <div class="arches-block">
+            <div v-for="(op, index) in anime.op" :key="index">
+              {{ index + 1 }}.
+              <a class="link" target="_blank" :href="op.url">{{ op.title }}</a>
+              ({{ op.episodes }})
+            </div>
+          </div>
+        </div>
+
+        <div class="m-5" v-if="activeTab == 'ed'">
+          <div class="arches-block">
+            <div v-for="(ed, index) in anime.ed" :key="index">
+              {{ index + 1 }}.
+              <a class="link" target="_blank" :href="ed.url">{{ ed.title }}</a>
+              ({{ ed.episodes }})
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="m-5" v-if="activeTab == 'arches'">
-        <div class="arches-block">
-          <pre v-text="anime.arches.split('Арка ').join('')"></pre>
-        </div>
-      </div>
-
-      <div class="m-5" v-if="activeTab == 'op'">
-        <div class="arches-block">
-          <div v-for="(op, index) in anime.op" :key="index">
-            {{ index + 1 }}.
-            <a class="link" target="_blank" :href="op.url">{{ op.title }}</a>
-            ({{ op.episodes }})
-          </div>
-        </div>
-      </div>
-
-      <div class="m-5" v-if="activeTab == 'ed'">
-        <div class="arches-block">
-          <div v-for="(ed, index) in anime.ed" :key="index">
-            {{ index + 1 }}.
-            <a class="link" target="_blank" :href="ed.url">{{ ed.title }}</a>
-            ({{ ed.episodes }})
-          </div>
-        </div>
-      </div>
+      <Footer :class="{ hidden: this.theatre }" />
     </div>
-    <Footer :class="{ hidden: this.theatre }" />
   </div>
 </template>
 
@@ -335,7 +363,7 @@ export default {
       quality: [],
       selectQuality: "1080p",
       post: [],
-      objectFit: "contain"
+      objectFit: "contain",
     };
   },
   mounted() {
@@ -363,7 +391,7 @@ export default {
       }
     },
     playRate(value) {
-      if(this.$refs.video) this.$refs.video.playbackRate = Number(value);
+      if (this.$refs.video) this.$refs.video.playbackRate = Number(value);
     },
   },
   methods: {
@@ -429,11 +457,11 @@ export default {
       this.video = url;
       if (post.quality) {
         this.quality = post.quality;
-        if(this.selectQuality == "480p") {
+        if (this.selectQuality == "480p") {
           this.video = this.quality[0].url;
         }
       } else {
-        this.selectQuality = "1080p"
+        this.selectQuality = "1080p";
         this.quality = [];
       }
       this.title = `${title}`;
