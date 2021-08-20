@@ -157,6 +157,16 @@
             <option value="1.75">1.75x</option>
             <option value="2">2x</option>
           </select>
+
+          <select
+            class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
+            name="fit"
+            v-model="objectFit"
+          >
+            <option value="fill">Растянуть</option>
+            <option value="contain">Обычный</option>
+            <option value="cover">Заполнение</option>
+          </select>
         </div>
       </div>
 
@@ -325,6 +335,7 @@ export default {
       quality: [],
       selectQuality: "1080p",
       post: [],
+      objectFit: "contain"
     };
   },
   mounted() {
@@ -341,6 +352,9 @@ export default {
   },
   computed: {},
   watch: {
+    objectFit(value) {
+      this.$refs.video.style.objectFit = value;
+    },
     selectQuality(value) {
       if (value == "480p") {
         this.changeQuality(this.quality[0].url);
