@@ -73,8 +73,8 @@
         </div>
 
         <div
-          class="player-block m-5 flex md:flex-row"
-          :class="{ theatre: theatre, 'flex-col': !theatre }"
+          class="player-block m-5 flex md:flex-row overflow-hidden"
+          :class="{ theatre: theatre, 'flex-col': !theatre, 'rounded-[10px]': !theatre }"
         >
           <div
             class="player"
@@ -111,7 +111,6 @@
               chat-block
               overflow-x-hidden
               bg-hex-[#1b1b1b99]
-              rounded-tr-[10px] rounded-br-[10px]
             "
             ref="chat"
             v-if="
