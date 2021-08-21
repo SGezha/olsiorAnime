@@ -44,9 +44,6 @@
       </div>
 
       <div class="container mx-auto">
-        <div class="head text-2xl m-5 flex justify-start items-center">
-          <h2>{{ anime.title }}</h2>
-        </div>
         <div class="m-5">
           <div
             class="history"
@@ -130,7 +127,8 @@
                   nowInd,
                   anime.episodes[nowInd].url,
                   anime.title,
-                  anime.episodes[nowInd].chat
+                  anime.episodes[nowInd].chat,
+                  anime.episodes[nowInd]
                 );
               "
             >
@@ -294,7 +292,8 @@
 
         <div class="m-5" v-if="activeTab == 'desc'">
           <div class="arches-block">
-            <div class="genre_block flex mb-2 flex-wrap">
+            <h2 class="text-2xl -ml-[2px]">{{ anime.title }}</h2>
+            <div class="genre_block flex mb-2 mt-2 flex-wrap">
               <div class="genre_name mr-2">Жанры:</div>
               <div
                 class="genre mr-2"
