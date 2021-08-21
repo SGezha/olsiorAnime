@@ -3,7 +3,10 @@
     <Header />
     <div
       class="fixed w-full top-[0px] left-[0px] -z-5 h-screen"
-      :style="{ 'background': `url('${anime.background}') no-repeat center center fixed`, 'background-size': 'cover' }"
+      :style="{
+        background: `url('${anime.background}') no-repeat center center fixed`,
+        'background-size': 'cover',
+      }"
     />
     <div
       class="bg-hex-[#000000dd] flex flex-col mx-auto min-h-screen object-cover"
@@ -74,7 +77,11 @@
 
         <div
           class="player-block m-5 flex md:flex-row overflow-hidden"
-          :class="{ theatre: theatre, 'flex-col': !theatre, 'rounded-[10px]': !theatre }"
+          :class="{
+            theatre: theatre,
+            'flex-col': !theatre,
+            'rounded-[10px]': !theatre,
+          }"
         >
           <div
             class="player"
@@ -90,6 +97,7 @@
               :key="video"
               :class="{ theatre: theatre }"
               @keydown="rewind"
+              @loadedmetadata="getResolution"
               @ended="
                 nowInd++;
                 change(
@@ -107,11 +115,7 @@
           <div
             @mouseenter="lockChat = true"
             @mouseleave="lockChat = false"
-            class="
-              chat-block
-              overflow-x-hidden
-              bg-hex-[#1b1b1b99]
-            "
+            class="chat-block overflow-x-hidden bg-hex-[#1b1b1b99]"
             ref="chat"
             v-if="
               nowInd != -1 &&
@@ -156,9 +160,9 @@
                 </option>
                 <option
                   @click="changeQuality(anime.episodes[nowInd].url)"
-                  value="1080p"
+                  :value="height"
                 >
-                  1080p <span class="text-[1px] text-[aqua]">FHD</span>
+                  {{height}} <span class="text-[1px] text-[aqua]">{{ `${height == '1080p' ? 'FHD' : 'HD'}` }}</span>
                 </option>
               </select>
             </div>
@@ -360,6 +364,7 @@ export default {
       playRate: 1,
       activeTab: "desc",
       quality: [],
+      height: "1080p",
       selectQuality: "1080p",
       post: [],
       objectFit: "contain",
@@ -501,6 +506,12 @@ export default {
         document.webkitExitFullscreen();
       } else if (document.msExitFullscreen) {
         document.msExitFullscreen();
+      }
+    },
+    getResolution(event) {
+      if(event.target.videoHeight != 480) {
+        this.height = event.target.videoHeight + "p";
+        this.selectQuality = this.height;
       }
     },
     loadedVideo() {
