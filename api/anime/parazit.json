@@ -27,35 +27,83 @@
   "episodes": [
     {
       "title": "1-3 серия",
-      "url": "https://stream.wrench.gq/7365"
+      "url": "https://stream.wrench.gq/7365",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9203"
+        }
+      ]
     },
     {
       "title": "4-6 серия",
-      "url": "https://stream.wrench.gq/7371"
+      "url": "https://stream.wrench.gq/7371",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9209"
+        }
+      ]
     },
     {
       "title": "7-9 серия",
-      "url": "https://stream.wrench.gq/7372"
+      "url": "https://stream.wrench.gq/7372",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9210"
+        }
+      ]
     },
     {
       "title": "10-12 серия",
-      "url": "https://stream.wrench.gq/7366"
+      "url": "https://stream.wrench.gq/7366",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9204"
+        }
+      ]
     },
     {
       "title": "13-15 серия",
-      "url": "https://stream.wrench.gq/7367"
+      "url": "https://stream.wrench.gq/7367",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9205"
+        }
+      ]
     },
     {
       "title": "16-18 серия",
-      "url": "https://stream.wrench.gq/7368"
+      "url": "https://stream.wrench.gq/7368",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9206"
+        }
+      ]
     },
     {
       "title": "19-21 серия",
-      "url": "https://stream.wrench.gq/7369"
+      "url": "https://stream.wrench.gq/7369",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9207"
+        }
+      ]
     },
     {
       "title": "22-24 серия",
-      "url": "https://stream.wrench.gq/7370"
+      "url": "https://stream.wrench.gq/7370",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9208"
+        }
+      ]
     }
   ]
 }

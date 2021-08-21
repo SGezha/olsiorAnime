@@ -35,10 +35,12 @@
       "title": "OVA",
       "url": "https://stream.wrench.gq/7437",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_ova.txt?v=1628972611454",
-      "quality": [{
-        "name": "480p",
-        "url": "https://stream.wrench.gq/8825"
-      }]
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/8825"
+        }
+      ]
     }
   ]
 }
