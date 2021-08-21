@@ -92,20 +92,17 @@ html, body {
   overflow-y: auto;
   height: 30vh;
   padding: 10px;
-  max-height: 700px;
 }
 
 .player {
   position: relative;
   width: 100%;
   height: 30vh;
-  max-height: 700px;
 }
 
 .player .video {
   width: 100%;
   height: 30vh;
-  max-height: 700px;
   background: black;
   /* z-index: -100; */
 }
@@ -183,17 +180,17 @@ html, body {
   .chat-block {
     width: 30%;
     overflow-y: auto;
-    height: 90vh;
+    height: 85vh;
     padding: 10px;
   }
   .player {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 85vh;
   }
   .player .video {
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     object-fit: contain;
     background: black;
     /* z-index: -100; */
