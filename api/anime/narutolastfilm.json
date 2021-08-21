@@ -30,7 +30,13 @@
   "episodes": [
     {
       "title": "Фильм",
-      "url": "https://stream.wrench.gq/7634"
+      "url": "https://stream.wrench.gq/7634",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9261"
+        }
+      ]
     }
   ]
 }
