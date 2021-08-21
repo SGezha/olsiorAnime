@@ -534,7 +534,7 @@ export default {
     },
     handleVideo(event) {
       let video = event.target;
-      console.log(video.readyState);
+      // console.log(video.readyState);
       if (event.type == "loadstart" || video.readyState != 4) {
         this.needLoad = true;
       } else {
