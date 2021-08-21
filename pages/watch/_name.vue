@@ -87,6 +87,26 @@
             class="player"
             :class="{ hidden: video == null, theatre: theatre }"
           >
+            <div
+              class="
+                video_loading
+                absolute
+                top-[0px]
+                left-[0px]
+                w-full
+                h-full
+                flex flex-col
+                justify-center
+                items-center
+              "
+              v-if="needLoad"
+            >
+              <img
+                src="https://olsior.herokuapp.com/loading.gif"
+                class="rounded-full w-[70px]"
+              />
+              <h1 class="text-xs mt-1 text-shadow-xl">Загрузка...</h1>
+            </div>
             <video
               ref="video"
               class="video"
@@ -98,6 +118,12 @@
               :class="{ theatre: theatre }"
               @keydown="rewind"
               @loadedmetadata="getResolution"
+              @timeupdate="handleVideo"
+              @abort="handleVideo"
+              @loadstart="handleVideo"
+              @progress="handleVideo"
+              @canplay="handleVideo"
+              @canplaythrough="handleVideo"
               @ended="
                 nowInd++;
                 change(
@@ -162,7 +188,10 @@
                   @click="changeQuality(anime.episodes[nowInd].url)"
                   :value="height"
                 >
-                  {{height}} <span class="text-[1px] text-[aqua]">{{ `${height == '1080p' ? 'FHD' : 'HD'}` }}</span>
+                  {{ height }}
+                  <span class="text-[1px] text-[aqua]">{{
+                    `${height == "1080p" ? "FHD" : "HD"}`
+                  }}</span>
                 </option>
               </select>
             </div>
@@ -352,7 +381,6 @@ export default {
         id: 0,
         time: 0,
       },
-      timer: null,
       needSave: false,
       chat: "",
       parsedChat: [],
@@ -368,6 +396,7 @@ export default {
       selectQuality: "1080p",
       post: [],
       objectFit: "contain",
+      needLoad: true,
     };
   },
   mounted() {
@@ -453,7 +482,6 @@ export default {
     },
     change(ind, url, title, chat, post) {
       this.post = post;
-      clearInterval(this.timer);
       this.chat = "";
       this.parsedChat = [];
       if (this.save.id == ind) this.needSave = true;
@@ -470,25 +498,6 @@ export default {
       }
       this.title = `${title}`;
       if (chat != undefined) this.getChat(chat);
-      this.timer = setInterval(() => {
-        if (this.$refs.video == undefined) return;
-        if (this.$refs.video.currentTime == 0) return;
-        this.save = {
-          time: this.$refs.video.currentTime,
-          id: this.nowInd,
-          volume: this.$refs.video.volume,
-        };
-        this.nowTime = parseInt(this.save.time.toString().split(".")[0]);
-        this.chatUpdate();
-        localStorage.setItem(
-          `${window.location.href.split("/watch/")[1]}`,
-          JSON.stringify({
-            time: this.$refs.video.currentTime,
-            id: this.nowInd,
-            volume: this.$refs.video.volume,
-          })
-        );
-      }, 1000);
     },
     openFullscreen() {
       if (document.documentElement.requestFullscreen) {
@@ -509,7 +518,7 @@ export default {
       }
     },
     getResolution(event) {
-      if(event.target.videoHeight != 480) {
+      if (event.target.videoHeight != 480) {
         this.height = event.target.videoHeight + "p";
         this.selectQuality = this.height;
       }
@@ -522,6 +531,43 @@ export default {
         this.needSave = false;
       }
       this.$refs.video.volume = this.save.volume;
+    },
+    handleVideo(event) {
+      let video = event.target;
+      console.log(video.readyState);
+      if (event.type == "loadstart" || video.readyState != 4) {
+        this.needLoad = true;
+      } else {
+        this.needLoad = false;
+      }
+
+      if (event.type == "timeupdate") {
+        if (video == undefined && video.currentTime == 0) return;
+        if (this.nowTime > video.currentTime) {
+          this.parsedChat
+            .filter((a) => {
+              if (a.display == true) return true;
+            })
+            .forEach((a) => {
+              a.display = false;
+            });
+        }
+        this.save = {
+          time: video.currentTime,
+          id: this.nowInd,
+          volume: video.volume,
+        };
+        this.nowTime = parseInt(this.save.time.toString().split(".")[0]);
+        this.chatUpdate();
+        localStorage.setItem(
+          `${window.location.href.split("/watch/")[1]}`,
+          JSON.stringify({
+            time: video.currentTime,
+            id: this.nowInd,
+            volume: video.volume,
+          })
+        );
+      }
     },
     chatUpdate() {
       if (this.$refs.video == undefined) return;
