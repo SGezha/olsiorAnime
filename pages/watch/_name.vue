@@ -167,10 +167,10 @@
         </div>
 
         <div class="m-5" v-if="video != null">
-          <div class="flex justify-start items-center space-x-[10px] flex-wrap">
+          <div class="flex justify-start items-center flex-wrap -mt-2">
             <div class="flex flwx-wrap" v-if="quality.length > 0">
               <select
-                class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
+                class="bg-[#2b2b2b] p-[2px] rounded-[2px] mr-2 mt-2"
                 name="quality"
                 v-model="selectQuality"
               >
@@ -195,7 +195,7 @@
             </div>
 
             <select
-              class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
+              class="bg-[#2b2b2b] p-[2px] rounded-[2px] mr-2 mt-2"
               name="speed"
               v-model="playRate"
             >
@@ -210,7 +210,7 @@
             </select>
 
             <select
-              class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
+              class="bg-[#2b2b2b] p-[2px] rounded-[2px] mr-2 mt-2"
               name="fit"
               v-model="objectFit"
             >
@@ -220,7 +220,7 @@
             </select>
 
             <div
-              class="flex flwx-wrap items-center"
+              class="flex flwx-wrap items-center mt-2"
               v-if="anime.episodes[nowInd].heroku != undefined"
             >
               <input
