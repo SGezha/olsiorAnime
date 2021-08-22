@@ -788,6 +788,11 @@
     {
       "title": "Караоке стрим",
       "url": "https://stream.wrench.gq/7630"
+    },
+    {
+      "title": "Своя игра по наруто",
+      "url": "https://stream.wrench.gq/9752",
+      "heroku": "https://olsiorvideo.herokuapp.com/462"
     }
   ]
 }

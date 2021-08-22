@@ -31,6 +31,7 @@
     {
       "title": "Фильм",
       "url": "https://stream.wrench.gq/7634",
+      "heroku": "https://olsiorvideo.herokuapp.com/498",
       "quality": [
         {
           "name": "480p",

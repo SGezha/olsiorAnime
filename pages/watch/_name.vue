@@ -193,6 +193,7 @@
                 </option>
               </select>
             </div>
+
             <select
               class="bg-[#2b2b2b] p-[2px] rounded-[2px]"
               name="speed"
@@ -217,6 +218,19 @@
               <option value="contain">Обычный</option>
               <option value="cover">Заполнение</option>
             </select>
+
+            <div
+              class="flex flwx-wrap items-center"
+              v-if="anime.episodes[nowInd].heroku != undefined"
+            >
+              <input
+                class="bg-[#2b2b2b] rounded-[2px] mr-2"
+                type="checkbox"
+                id="scales"
+                v-model="heroku"
+              />
+              <label for="scales">Использовать другой сервер</label>
+            </div>
           </div>
         </div>
 
@@ -396,6 +410,7 @@ export default {
       post: [],
       objectFit: "contain",
       needLoad: true,
+      heroku: false,
     };
   },
   mounted() {
@@ -412,6 +427,14 @@ export default {
   },
   computed: {},
   watch: {
+    heroku(value) {
+      if (this.save.id == this.nowInd) this.needSave = true;
+      if (value) {
+        this.video = this.post.heroku;
+      } else {
+        this.video = this.post.url;
+      }
+    },
     objectFit(value) {
       this.$refs.video.style.objectFit = value;
     },
@@ -485,7 +508,6 @@ export default {
       this.parsedChat = [];
       if (this.save.id == ind) this.needSave = true;
       this.nowInd = ind;
-      this.video = url;
       if (post.quality) {
         this.quality = post.quality;
         if (this.selectQuality == "480p") {
@@ -494,6 +516,11 @@ export default {
       } else {
         this.selectQuality = "1080p";
         this.quality = [];
+      }
+      if (this.heroku && post.heroku) {
+        this.video = post.heroku;
+      } else {
+        this.video = url;
       }
       this.title = `${title}`;
       if (chat != undefined) this.getChat(chat);

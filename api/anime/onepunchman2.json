@@ -40,6 +40,7 @@
     {
       "title": "1-2 серия",
       "url": "https://stream.wrench.gq/8520",
+      "heroku": "https://olsiorvideo.herokuapp.com/422",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_1-2.txt?v=1629306695654",
       "quality": [
         {
@@ -51,6 +52,7 @@
     {
       "title": "3-4 серия",
       "url": "https://stream.wrench.gq/8533",
+      "heroku": "https://olsiorvideo.herokuapp.com/426",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_3-4.txt?v=1629309281240",
       "quality": [
         {
@@ -62,6 +64,7 @@
     {
       "title": "5-6 серия",
       "url": "https://stream.wrench.gq/8541",
+      "heroku": "https://olsiorvideo.herokuapp.com/427",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_5-6.txt?v=1629312437561",
       "quality": [
         {
@@ -73,6 +76,7 @@
     {
       "title": "7-8 серия",
       "url": "https://stream.wrench.gq/8542",
+      "heroku": "https://olsiorvideo.herokuapp.com/423",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_7-8.txt?v=1629316328274",
       "quality": [
         {
@@ -84,6 +88,7 @@
     {
       "title": "9-10 серия",
       "url": "https://stream.wrench.gq/8547",
+      "heroku": "https://olsiorvideo.herokuapp.com/424",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_9-10.txt?v=1629320349835",
       "quality": [
         {
@@ -95,6 +100,7 @@
     {
       "title": "11-12 серия",
       "url": "https://stream.wrench.gq/8584",
+      "heroku": "https://olsiorvideo.herokuapp.com/425",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_11-12.txt?v=1629325497114",
       "quality": [
         {

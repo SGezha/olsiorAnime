@@ -26,6 +26,7 @@
     {
       "title": "1-3 серия",
       "url": "https://stream.wrench.gq/7158",
+      "heroku": "https://olsiorvideo.herokuapp.com/391",
       "quality": [
         {
           "name": "480p",
@@ -36,6 +37,7 @@
     {
       "title": "4-6 серия",
       "url": "https://stream.wrench.gq/7159",
+      "heroku": "https://olsiorvideo.herokuapp.com/393",
       "quality": [
         {
           "name": "480p",
@@ -46,6 +48,7 @@
     {
       "title": "7-9 серия",
       "url": "https://stream.wrench.gq/7160",
+      "heroku": "https://olsiorvideo.herokuapp.com/394",
       "quality": [
         {
           "name": "480p",
@@ -56,6 +59,7 @@
     {
       "title": "10-12 серия",
       "url": "https://stream.wrench.gq/7161",
+      "heroku": "https://olsiorvideo.herokuapp.com/392",
       "quality": [
         {
           "name": "480p",
