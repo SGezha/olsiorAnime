@@ -37,97 +37,211 @@
     {
       "title": "1 серия",
       "url": "https://stream.wrench.gq/7410",
-      "heroku": "https://olsiorvideo.herokuapp.com/437"
+      "heroku": "https://olsiorvideo.herokuapp.com/437",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9933"
+        }
+      ]
     },
     {
       "title": "2-3 серия",
       "url": "https://stream.wrench.gq/7411",
-      "heroku": "https://olsiorvideo.herokuapp.com/450"
+      "heroku": "https://olsiorvideo.herokuapp.com/450",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9934"
+        }
+      ]
     },
     {
       "title": "4-5 серия",
       "url": "https://stream.wrench.gq/7412",
-      "heroku": "https://olsiorvideo.herokuapp.com/438"
+      "heroku": "https://olsiorvideo.herokuapp.com/438",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9947"
+        }
+      ]
     },
     {
       "title": "6-7 серия",
       "url": "https://stream.wrench.gq/7413",
-      "heroku": "https://olsiorvideo.herokuapp.com/439"
+      "heroku": "https://olsiorvideo.herokuapp.com/439",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9935"
+        }
+      ]
     },
     {
       "title": "8 серия",
       "url": "https://stream.wrench.gq/7414",
-      "heroku": "https://olsiorvideo.herokuapp.com/440"
+      "heroku": "https://olsiorvideo.herokuapp.com/440",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9951"
+        }
+      ]
     },
     {
       "title": "9-10 серия",
       "url": "https://stream.wrench.gq/7415",
-      "heroku": "https://olsiorvideo.herokuapp.com/441"
+      "heroku": "https://olsiorvideo.herokuapp.com/441",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9936"
+        }
+      ]
     },
     {
       "title": "11-12 серия",
       "url": "https://stream.wrench.gq/7416",
-      "heroku": "https://olsiorvideo.herokuapp.com/442"
+      "heroku": "https://olsiorvideo.herokuapp.com/442",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9937"
+        }
+      ]
     },
     {
       "title": "13-15 серия",
       "url": "https://stream.wrench.gq/7417",
-      "heroku": "https://olsiorvideo.herokuapp.com/443"
+      "heroku": "https://olsiorvideo.herokuapp.com/443",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9938"
+        }
+      ]
     },
     {
       "title": "16-17 серия",
       "url": "https://stream.wrench.gq/7418",
-      "heroku": "https://olsiorvideo.herokuapp.com/444"
+      "heroku": "https://olsiorvideo.herokuapp.com/444",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9940"
+        }
+      ]
     },
     {
       "title": "18-20 серия",
       "url": "https://stream.wrench.gq/7419",
-      "heroku": "https://olsiorvideo.herokuapp.com/455"
+      "heroku": "https://olsiorvideo.herokuapp.com/455",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9939"
+        }
+      ]
     },
     {
       "title": "21-22 серия",
       "url": "https://stream.wrench.gq/7420",
-      "heroku": "https://olsiorvideo.herokuapp.com/445"
+      "heroku": "https://olsiorvideo.herokuapp.com/445",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9941"
+        }
+      ]
     },
     {
       "title": "23-24 серия",
       "url": "https://stream.wrench.gq/7421",
-      "heroku": "https://olsiorvideo.herokuapp.com/446"
+      "heroku": "https://olsiorvideo.herokuapp.com/446",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9942"
+        }
+      ]
     },
     {
       "title": "25-26 серия",
       "url": "https://stream.wrench.gq/7422",
-      "heroku": "https://olsiorvideo.herokuapp.com/447"
+      "heroku": "https://olsiorvideo.herokuapp.com/447",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9943"
+        }
+      ]
     },
     {
       "title": "27-28 серия",
       "url": "https://stream.wrench.gq/7423",
-      "heroku": "https://olsiorvideo.herokuapp.com/448"
+      "heroku": "https://olsiorvideo.herokuapp.com/448",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9944"
+        }
+      ]
     },
     {
       "title": "29-31 серия",
       "url": "https://stream.wrench.gq/7424",
-      "heroku": "https://olsiorvideo.herokuapp.com/449"
+      "heroku": "https://olsiorvideo.herokuapp.com/449",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9945"
+        }
+      ]
     },
     {
       "title": "32-34 серия",
       "url": "https://stream.wrench.gq/7425",
-      "heroku": "https://olsiorvideo.herokuapp.com/451"
+      "heroku": "https://olsiorvideo.herokuapp.com/451",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9946"
+        }
+      ]
     },
     {
       "title": "35-37 серия",
       "url": "https://stream.wrench.gq/7426",
-      "heroku": "https://olsiorvideo.herokuapp.com/452"
+      "heroku": "https://olsiorvideo.herokuapp.com/452",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9948"
+        }
+      ]
     },
     {
       "title": "38-40 серия",
       "url": "https://stream.wrench.gq/7427",
-      "heroku": "https://olsiorvideo.herokuapp.com/453"
+      "heroku": "https://olsiorvideo.herokuapp.com/453",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9949"
+        }
+      ]
     },
     {
       "title": "41-43 серия",
       "url": "https://stream.wrench.gq/7428",
-      "heroku": "https://olsiorvideo.herokuapp.com/454"
+      "heroku": "https://olsiorvideo.herokuapp.com/454",
+      "quality": [
+        {
+          "name": "480p",
+          "url": "https://stream.wrench.gq/9950"
+        }
+      ]
     }
   ]
 }
