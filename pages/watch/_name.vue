@@ -631,6 +631,7 @@ export default {
     toggleTheatre() {
       this.theatre = !this.theatre;
       if (this.theatre) {
+        window.scrollTo(0,0);
         document.body.style.overflow = "hidden";
         this.openFullscreen();
       } else {
@@ -639,6 +640,7 @@ export default {
       }
     },
     rewind(event) {
+      console.log(event)
       switch (event.keyCode) {
         case 37:
           event.preventDefault();
@@ -655,6 +657,10 @@ export default {
         case 67:
           event.preventDefault();
           this.hideChat = !this.hideChat;
+          break;
+        case 70:
+          event.preventDefault();
+          this.toggleTheatre();
           break;
       }
     },
