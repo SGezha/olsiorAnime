@@ -26,18 +26,20 @@ import Footer from "@/components/footer.vue";
 
 export default {
   async asyncData({ params, $axios }) {
-    let donats = await $axios.$get(`https://olsior.herokuapp.com/api/getdonations`);
+    let donats = await $axios.$get(
+      `https://olsior.herokuapp.com/api/getdonations`
+    );
     return { donats };
   },
   data() {
     return {
       Header,
-      Footer,
+      Footer
     };
   },
   mounted() {},
   computed: {},
-  methods: {},
+  methods: {}
 };
 </script>
 

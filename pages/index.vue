@@ -16,12 +16,12 @@ export default {
     return {
       Header,
       Main,
-      Footer,
+      Footer
     };
   },
   mounted() {},
   computed: {},
-  methods: {},
+  methods: {}
 };
 </script>
 

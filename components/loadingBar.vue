@@ -7,7 +7,7 @@
 <script>
 export default {
   data: () => ({
-    loading: false,
+    loading: false
   }),
   methods: {
     start() {
@@ -17,12 +17,13 @@ export default {
       setTimeout(() => {
         this.loading = false;
       }, 500);
-    },
-  },
+    }
+  }
 };
 </script>
 <style scoped>
-html, body {
+html,
+body {
   overflow-x: hidden !important;
   overflow-y: hidden !important;
 }

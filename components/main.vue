@@ -2,7 +2,14 @@
   <div class="container mx-auto" v-if="watched.length > 0">
     <div class="popular">
       <div class="head text-2xl m-5 flex justify-start items-center">
-        <h2 class="flex justify-center items-center">Сейчас смотрит <font-awesome-icon class="ml-2 mt-1" style="font-size: 1rem;" :icon="['fa', 'chevron-right']"/></h2>
+        <h2 class="flex justify-center items-center">
+          Сейчас смотрит
+          <font-awesome-icon
+            class="ml-2 mt-1"
+            style="font-size: 1rem;"
+            :icon="['fa', 'chevron-right']"
+          />
+        </h2>
       </div>
       <div
         class="
@@ -27,7 +34,7 @@
             ></div>
             <div class="anime-stats">
               <span class="stars">
-                {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']"/>
+                {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']" />
               </span>
               <span class="episodes" v-text="pop.episodes + ' серий'"></span>
             </div>
@@ -40,7 +47,14 @@
       </div>
 
       <div class="head text-2xl m-5 flex justify-start items-center">
-        <h2 class="flex justify-content items-center">Посмотрел <font-awesome-icon class="ml-2 mt-1" style="font-size: 1rem;" :icon="['fa', 'chevron-right']"/></h2>
+        <h2 class="flex justify-content items-center">
+          Посмотрел
+          <font-awesome-icon
+            class="ml-2 mt-1"
+            style="font-size: 1rem;"
+            :icon="['fa', 'chevron-right']"
+          />
+        </h2>
       </div>
       <div
         class="
@@ -65,7 +79,7 @@
             ></div>
             <div class="anime-stats">
               <span class="stars">
-                {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']"/>
+                {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']" />
               </span>
               <span class="episodes" v-text="pop.episodes + ' серий'"></span>
             </div>
@@ -85,20 +99,20 @@ export default {
   data() {
     return {
       smotrit: [],
-      watched: [],
+      watched: []
     };
   },
   async mounted() {
     const animes = await this.$axios.$get(`${window.location.href}api/list`);
     let data = JSON.parse(animes);
-    data.forEach((a) => {
+    data.forEach(a => {
       if (a.watched) {
         this.watched.push(a);
       } else {
         this.smotrit.push(a);
       }
     });
-  },
+  }
 };
 </script>
 

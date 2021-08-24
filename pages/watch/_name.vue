@@ -5,7 +5,7 @@
       class="fixed w-full top-[0px] left-[0px] -z-5 h-screen"
       :style="{
         background: `url('${anime.background}') no-repeat center center fixed`,
-        'background-size': 'cover',
+        'background-size': 'cover'
       }"
     />
     <div
@@ -17,7 +17,7 @@
         title="Режим кинотеатра [T]"
         v-if="theatre && video != null"
       >
-        <font-awesome-icon :icon="['fa', 'compress']"/>
+        <font-awesome-icon :icon="['fa', 'compress']" />
       </div>
 
       <div
@@ -26,7 +26,7 @@
         title="Режим кинотеатра [T]"
         v-if="!theatre && video != null"
       >
-        <font-awesome-icon :icon="['fa', 'expand']"/>
+        <font-awesome-icon :icon="['fa', 'expand']" />
       </div>
 
       <div
@@ -37,7 +37,9 @@
         "
         title="Вкл/выкл чата [C]"
       >
-        <font-awesome-icon :icon="['fa', hideChat ? 'comment-slash' : 'comment']"/>
+        <font-awesome-icon
+          :icon="['fa', hideChat ? 'comment-slash' : 'comment']"
+        />
       </div>
 
       <div class="container mx-auto">
@@ -74,7 +76,7 @@
           :class="{
             theatre: theatre,
             'flex-col': !theatre,
-            'rounded-[10px]': !theatre,
+            'rounded-[10px]': !theatre
           }"
         >
           <div
@@ -140,8 +142,8 @@
             ref="chat"
             v-if="
               nowInd != -1 &&
-              anime.episodes[nowInd].chat != undefined &&
-              !hideChat
+                anime.episodes[nowInd].chat != undefined &&
+                !hideChat
             "
             :class="{ theatre: theatre }"
           >
@@ -246,9 +248,12 @@
               >
                 <span>{{ post.title }}</span>
                 <div class="ml-[5px] flex items-center">
-                  <font-awesome-icon :icon="['fa', 'comment-alt']" v-if="post.chat"/>
+                  <font-awesome-icon
+                    :icon="['fa', 'comment-alt']"
+                    v-if="post.chat"
+                  />
                   <a :href="post.url" class="down">
-                    <font-awesome-icon :icon="['fa', 'download']"/>
+                    <font-awesome-icon :icon="['fa', 'download']" />
                   </a>
                 </div>
               </div>
@@ -377,7 +382,7 @@ export default {
   },
   head() {
     return {
-      title: this.title,
+      title: this.title
     };
   },
   data() {
@@ -389,7 +394,7 @@ export default {
       title: "Олсиор смотрит аниме",
       save: {
         id: 0,
-        time: 0,
+        time: 0
       },
       needSave: false,
       chat: "",
@@ -407,7 +412,7 @@ export default {
       post: [],
       objectFit: "contain",
       needLoad: true,
-      heroku: false,
+      heroku: false
     };
   },
   mounted() {
@@ -444,7 +449,7 @@ export default {
     },
     playRate(value) {
       if (this.$refs.video) this.$refs.video.playbackRate = Number(value);
-    },
+    }
   },
   methods: {
     async getChat(url) {
@@ -453,7 +458,7 @@ export default {
       );
       this.emotes = emotes;
       let chat = await this.$axios.$get(`${url}`);
-      this.emotes.forEach((m) => {
+      this.emotes.forEach(m => {
         chat = chat
           .split(`${m.name}`)
           .join(`<img class="emote" src="${m.url}">`);
@@ -491,7 +496,7 @@ export default {
             .split("] ")[1]
             .split(`${text.split("] ")[1].split(":")[0]}: `)
             .join(""),
-          display: false,
+          display: false
         });
       });
     },
@@ -568,17 +573,17 @@ export default {
         if (video == undefined && video.currentTime == 0) return;
         if (this.nowTime > video.currentTime) {
           this.parsedChat
-            .filter((a) => {
+            .filter(a => {
               if (a.display == true) return true;
             })
-            .forEach((a) => {
+            .forEach(a => {
               a.display = false;
             });
         }
         this.save = {
           time: video.currentTime,
           id: this.nowInd,
-          volume: video.volume,
+          volume: video.volume
         };
         this.nowTime = parseInt(this.save.time.toString().split(".")[0]);
         this.chatUpdate();
@@ -587,7 +592,7 @@ export default {
           JSON.stringify({
             time: video.currentTime,
             id: this.nowInd,
-            volume: video.volume,
+            volume: video.volume
           })
         );
       }
@@ -595,7 +600,7 @@ export default {
     chatUpdate() {
       if (this.$refs.video == undefined) return;
       if (this.parsedChat.length == 0) return;
-      let mesaages = this.parsedChat.filter((a) => {
+      let mesaages = this.parsedChat.filter(a => {
         if (a.time.timesec == this.nowTime) return true;
       });
       if (mesaages == undefined) return;
@@ -606,21 +611,21 @@ export default {
         if (ind + 1 == mesaages.length && !this.lockChat) {
           setTimeout(() => {
             this.$refs.chat.scrollTo({
-              top: 9999999999999999,
+              top: 9999999999999999
             });
           }, 100);
         }
       });
       if (
-        this.parsedChat.filter((a) => {
+        this.parsedChat.filter(a => {
           if (a.display == true) return true;
         }).length >= 200
       ) {
         this.parsedChat
-          .filter((a) => {
+          .filter(a => {
             if (a.display == true) return true;
           })
-          .forEach((a) => {
+          .forEach(a => {
             a.display = false;
           });
       }
@@ -628,7 +633,7 @@ export default {
     toggleTheatre() {
       this.theatre = !this.theatre;
       if (this.theatre) {
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         document.body.style.overflow = "hidden";
         this.openFullscreen();
       } else {
@@ -637,7 +642,7 @@ export default {
       }
     },
     rewind(event) {
-      console.log(event)
+      console.log(event);
       switch (event.keyCode) {
         case 37:
           event.preventDefault();
@@ -685,7 +690,7 @@ export default {
         color += letters[Math.floor(Math.random() * 16)];
       }
       return color;
-    },
-  },
+    }
+  }
 };
 </script>

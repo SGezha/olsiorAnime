@@ -15,7 +15,10 @@
     >
       <NuxtLink to="/">
         <h1>
-          <img src="https://olsior.herokuapp.com/minloading.webp" class="logo" />
+          <img
+            src="https://olsior.herokuapp.com/minloading.webp"
+            class="logo"
+          />
           Олсиор смотрит аниме <span class="small">BETA</span>
         </h1>
       </NuxtLink>
@@ -35,7 +38,11 @@ export default {
     return {};
   },
   mounted() {
-    if (window.location.protocol == 'http:' && window.location.href.indexOf('localhost') == -1) window.location.href = window.location.href.replace(/^http:/, 'https:')
+    if (
+      window.location.protocol == "http:" &&
+      window.location.href.indexOf("localhost") == -1
+    )
+      window.location.href = window.location.href.replace(/^http:/, "https:");
   }
 };
 </script>
@@ -84,10 +91,6 @@ h1 {
   height: 32px;
   border-radius: 50%;
   overflow: hidden;
-}
-
-input::placeholder {
-  @apply absolute text-gray-300;
 }
 
 input:focus {
