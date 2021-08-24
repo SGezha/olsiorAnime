@@ -23,7 +23,7 @@
           <div class="preview shadow">
             <div
               class="preview-img bg-center bg-cover"
-              :style="{ backgroundImage: 'url(' + pop.img + ')' }"
+              :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
             ></div>
             <div class="anime-stats">
               <span class="stars"
@@ -61,7 +61,7 @@
           <div class="preview shadow">
             <div
               class="preview-img bg-center bg-cover"
-              :style="{ backgroundImage: 'url(' + pop.img + ')' }"
+              :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
             ></div>
             <div class="anime-stats">
               <span class="stars"
