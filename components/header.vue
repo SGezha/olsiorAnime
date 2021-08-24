@@ -15,7 +15,7 @@
     >
       <NuxtLink to="/">
         <h1>
-          <img src="https://olsior.herokuapp.com/loading.gif" class="logo" />
+          <img src="https://olsior.herokuapp.com/loading.webp" class="logo" />
           Олсиор смотрит аниме <span class="small">BETA</span>
         </h1>
       </NuxtLink>

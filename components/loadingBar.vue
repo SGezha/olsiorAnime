@@ -1,6 +1,6 @@
 <template>
   <div v-if="loading" class="loading-page">
-    <img src="https://olsior.herokuapp.com/loading.gif" class="loading" />
+    <img src="https://olsior.herokuapp.com/loading.webp" class="loading" />
     <h1 class="text-sm mt-1">Загрузка...</h1>
   </div>
 </template>
