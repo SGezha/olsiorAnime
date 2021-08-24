@@ -15,10 +15,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href: 'https://use.fontawesome.com/releases/v5.10.1/css/all.css',
-      }
     ],
   },
 
@@ -26,7 +22,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "~assets/css/global.css"
+    '~assets/css/global.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -40,7 +36,18 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     'nuxt-windicss',
+    '@nuxtjs/fontawesome'
   ],
+
+  fontawesome: {
+    icons: {
+			solid: ['faChevronRight', 'faCommentAlt', 'faDownload', 'faStar', 'faCommentSlash', 'faComment', 'faExpand', 'faCompress'],
+			regular: [],
+			light: [],
+			duotone: [],
+			brands: []
+		}
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

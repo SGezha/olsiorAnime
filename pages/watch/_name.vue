@@ -17,7 +17,7 @@
         title="Режим кинотеатра [T]"
         v-if="theatre && video != null"
       >
-        <i class="fas fa-compress"></i>
+        <font-awesome-icon :icon="['fa', 'compress']"/>
       </div>
 
       <div
@@ -26,7 +26,7 @@
         title="Режим кинотеатра [T]"
         v-if="!theatre && video != null"
       >
-        <i class="fas fa-expand"></i>
+        <font-awesome-icon :icon="['fa', 'expand']"/>
       </div>
 
       <div
@@ -37,10 +37,7 @@
         "
         title="Вкл/выкл чата [C]"
       >
-        <i
-          class="fas"
-          :class="{ 'fa-comment-slash': hideChat, 'fa-comment': !hideChat }"
-        ></i>
+        <font-awesome-icon :icon="['fa', hideChat ? 'comment-slash' : 'comment']"/>
       </div>
 
       <div class="container mx-auto">
@@ -249,9 +246,9 @@
               >
                 <span>{{ post.title }}</span>
                 <div class="ml-[5px] flex items-center">
-                  <i class="fas fa-comment-alt" v-if="post.chat"></i>
+                  <font-awesome-icon :icon="['fa', 'comment-alt']" v-if="post.chat"/>
                   <a :href="post.url" class="down">
-                    <i class="fas fa-download"></i>
+                    <font-awesome-icon :icon="['fa', 'download']"/>
                   </a>
                 </div>
               </div>

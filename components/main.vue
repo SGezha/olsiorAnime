@@ -2,7 +2,7 @@
   <div class="container mx-auto" v-if="watched.length > 0">
     <div class="popular">
       <div class="head text-2xl m-5 flex justify-start items-center">
-        <h2 class="flex justify-center items-center">Сейчас смотрит <i class="fas fa-chevron-right text-base ml-2 mt-1"></i></h2>
+        <h2 class="flex justify-center items-center">Сейчас смотрит <font-awesome-icon class="ml-2 mt-1" style="font-size: 1rem;" :icon="['fa', 'chevron-right']"/></h2>
       </div>
       <div
         class="
@@ -26,9 +26,9 @@
               :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
             ></div>
             <div class="anime-stats">
-              <span class="stars"
-                >{{ pop.stars }} <i class="fas fa-star"></i
-              ></span>
+              <span class="stars">
+                {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']"/>
+              </span>
               <span class="episodes" v-text="pop.episodes + ' серий'"></span>
             </div>
           </div>
@@ -40,7 +40,7 @@
       </div>
 
       <div class="head text-2xl m-5 flex justify-start items-center">
-        <h2 class="flex justify-content items-center">Посмотрел <i class="fas fa-chevron-right text-base ml-2 mt-1"></i></h2>
+        <h2 class="flex justify-content items-center">Посмотрел <font-awesome-icon class="ml-2 mt-1" style="font-size: 1rem;" :icon="['fa', 'chevron-right']"/></h2>
       </div>
       <div
         class="
@@ -64,9 +64,9 @@
               :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
             ></div>
             <div class="anime-stats">
-              <span class="stars"
-                >{{ pop.stars }} <i class="fas fa-star"></i
-              ></span>
+              <span class="stars">
+                {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']"/>
+              </span>
               <span class="episodes" v-text="pop.episodes + ' серий'"></span>
             </div>
           </div>
