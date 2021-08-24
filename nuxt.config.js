@@ -4,6 +4,7 @@ export default {
     title: 'Олсиор смотрит аниме',
     meta: [
       { charset: 'utf-8' },
+      { 'http-equiv': 'cache-control', content: 'max-age=31536000' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Сайт с записями стримов просмотра аниме Olsior\'а! С удобным интерфейсом и крутыми фишками. Сохранение прогресса просмотра, запись чата, режим театра, мобильный интерфейс.' },
       { property: 'og:description', hid: 'og:description', name: 'og:description', content: 'Сайт с записями стримов просмотра аниме Olsior\'а! С удобным интерфейсом и крутыми фишками. Сохранение прогресса просмотра, запись чата, режим театра, мобильный интерфейс.' },
@@ -41,12 +42,12 @@ export default {
 
   fontawesome: {
     icons: {
-			solid: ['faChevronRight', 'faCommentAlt', 'faDownload', 'faStar', 'faCommentSlash', 'faComment', 'faExpand', 'faCompress'],
-			regular: [],
-			light: [],
-			duotone: [],
-			brands: []
-		}
+      solid: ['faChevronRight', 'faCommentAlt', 'faDownload', 'faStar', 'faCommentSlash', 'faComment', 'faExpand', 'faCompress'],
+      regular: [],
+      light: [],
+      duotone: [],
+      brands: []
+    }
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
