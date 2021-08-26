@@ -436,13 +436,13 @@
     },
     {
       "title": "133 филлер",
-      "url": "https://stream.wrench.gq/8810",
-      "heroku": "https://olsiorvideo.herokuapp.com/495",
+      "url": "https://stream.wrench.gq/10392",
+      "heroku": "https://olsiorvideo.herokuapp.com/709",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fbleach_133.txt?v=1629404846876",
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/8822"
+          "url": "https://stream.wrench.gq/10393"
         }
       ]
     },
