@@ -25,7 +25,7 @@
         <h2 class="mt-2">История донатов:</h2>
         <ul class="da-donationslist flex flex-wrap -ml-1">
           <li
-            v-for="(user, ind) in donate.reverse()"
+            v-for="(user, ind) in donate"
             :key="ind"
             class="bg-hex-[#2b2b2b] px-[10px] py-[7px] rounded-[8px] m-1 flex justify-between w-full md:w-[48%] lg:w-[32%]"
           >
@@ -100,7 +100,9 @@ export default {
       ]
     };
   },
-  mounted() {},
+  mounted() {
+    this.donate = this.donate.reverse();
+  },
   computed: {},
   methods: {}
 };
