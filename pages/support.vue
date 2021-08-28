@@ -20,10 +20,22 @@
             alt=""
             class="w-[100px] h-[55px] -mt-[15px] mr-[10px]"
           />
-          <span >С помощью сервиса DeStream (для жителей Украины)</span></a
+          <span>С помощью сервиса DeStream (для жителей Украины)</span></a
         >
         <h2 class="mt-2">История донатов:</h2>
-        <div class="p-[10px]" v-html="donats"></div>
+        <ul class="da-donationslist flex flex-wrap -ml-1">
+          <li
+            v-for="(user, ind) in donate.reverse()"
+            :key="ind"
+            class="bg-hex-[#2b2b2b] px-[10px] py-[7px] rounded-[8px] m-1 flex justify-between w-full md:w-[48%] lg:w-[32%]"
+          >
+            <span class="username">{{ user.username }}</span
+            ><span class="amount text-green-500"
+              >+ {{ user.amount }}
+              <span class="currency">{{ user.type }}</span></span
+            >
+          </li>
+        </ul>
       </div>
     </div>
     <Footer />
@@ -35,16 +47,57 @@ import Header from "@/components/header.vue";
 import Footer from "@/components/footer.vue";
 
 export default {
-  async asyncData({ params, $axios }) {
-    let donats = await $axios.$get(
-      `https://olsior.herokuapp.com/api/getdonations`
-    );
-    return { donats };
-  },
   data() {
     return {
       Header,
-      Footer
+      Footer,
+      donate: [
+        {
+          username: "Daria",
+          amount: 150,
+          type: "₽"
+        },
+        {
+          username: "Morter",
+          amount: 500,
+          type: "₽"
+        },
+        {
+          username: "Death",
+          amount: 100,
+          type: "₽"
+        },
+        {
+          username: "swordmaster",
+          amount: 400,
+          type: "₽"
+        },
+        {
+          username: "zovvetra(low budget)",
+          amount: 10,
+          type: "₽"
+        },
+        {
+          username: "yaroslaff",
+          amount: 100,
+          type: "₽"
+        },
+        {
+          username: "yaroslaffb",
+          amount: 100,
+          type: "₽"
+        },
+        {
+          username: "yaroslaffb",
+          amount: 111,
+          type: "₽"
+        },
+        {
+          username: "yaroslaffb",
+          amount: 100,
+          type: "₽"
+        }
+      ]
     };
   },
   mounted() {},
