@@ -519,7 +519,8 @@ export default {
         this.selectQuality = "1080p";
         this.quality = [];
       }
-      if (this.heroku && post.heroku) {
+      console.log((this.heroku == true && post.heroku != undefined))
+      if (this.heroku == true && post.heroku != undefined) {
         this.video = post.heroku;
       } else {
         this.video = url;
