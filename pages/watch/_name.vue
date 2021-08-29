@@ -431,9 +431,9 @@ export default {
     heroku(value) {
       if (this.save.id == this.nowInd) this.needSave = true;
       if (value) {
-        this.video = this.post.heroku;
-      } else {
         this.video = this.post.url;
+      } else {
+        this.video = this.post.heroku;
       }
     },
     objectFit(value) {
@@ -518,11 +518,10 @@ export default {
         this.selectQuality = "1080p";
         this.quality = [];
       }
-      console.log(this.heroku == true && post.heroku != undefined);
       if (this.heroku == true && post.heroku != undefined) {
-        this.video = post.heroku;
-      } else {
         this.video = url;
+      } else {
+        this.video = post.heroku;
       }
       this.title = `${title}`;
       if (chat != undefined) this.getChat(chat);
