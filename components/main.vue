@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="anime_bg"></div>
+    <div class="anime_bg hidden md:block"></div>
     <div class="container mx-auto" v-if="watched.length > 0">
       <div class="popular">
         <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
