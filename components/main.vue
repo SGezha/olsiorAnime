@@ -1,18 +1,20 @@
 <template>
-  <div class="container mx-auto" v-if="watched.length > 0">
-    <div class="popular">
-      <div class="head text-2xl m-5 flex justify-start items-center">
-        <h2 class="flex justify-center items-center">
-          Сейчас смотрит
-          <font-awesome-icon
-            class="ml-2 mt-1"
-            style="font-size: 1rem;"
-            :icon="['fa', 'chevron-right']"
-          />
-        </h2>
-      </div>
-      <div
-        class="
+  <div>
+    <div class="anime_bg"></div>
+    <div class="container mx-auto" v-if="watched.length > 0">
+      <div class="popular">
+        <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
+          <h2 class="flex justify-center items-center">
+            Сейчас смотрит
+            <font-awesome-icon
+              class="ml-2 mt-1"
+              style="font-size: 1rem;"
+              :icon="['fa', 'chevron-right']"
+            />
+          </h2>
+        </div>
+        <div
+          class="
           main-block
           flex
           sm:justify-center
@@ -20,44 +22,44 @@
           items-center
           flex-wrap
         "
-      >
-        <Nuxt-link
-          v-for="(pop, index) in smotrit"
-          :key="index"
-          :to="'/watch/' + pop.url"
-          class="card"
         >
-          <div class="preview shadow">
-            <div
-              class="preview-img bg-center bg-cover"
-              :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
-            ></div>
-            <div class="anime-stats">
-              <span class="stars">
-                {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']" />
-              </span>
-              <span class="episodes" v-text="pop.episodes + ' серий'"></span>
+          <Nuxt-link
+            v-for="(pop, index) in smotrit"
+            :key="index"
+            :to="'/watch/' + pop.url"
+            class="card"
+          >
+            <div class="preview shadow">
+              <div
+                class="preview-img bg-center bg-cover"
+                :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
+              ></div>
+              <div class="anime-stats">
+                <span class="stars">
+                  {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']" />
+                </span>
+                <span class="episodes" v-text="pop.episodes + ' серий'"></span>
+              </div>
             </div>
-          </div>
 
-          <div class="anime-title text-gray-800">
-            <h2 v-text="pop.title" :title="pop.title"></h2>
-          </div>
-        </Nuxt-link>
-      </div>
+            <div class="anime-title text-gray-800">
+              <h2 v-text="pop.title" :title="pop.title"></h2>
+            </div>
+          </Nuxt-link>
+        </div>
 
-      <div class="head text-2xl m-5 flex justify-start items-center">
-        <h2 class="flex justify-content items-center">
-          Посмотрел
-          <font-awesome-icon
-            class="ml-2 mt-1"
-            style="font-size: 1rem;"
-            :icon="['fa', 'chevron-right']"
-          />
-        </h2>
-      </div>
-      <div
-        class="
+        <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
+          <h2 class="flex justify-content items-center">
+            Посмотрел
+            <font-awesome-icon
+              class="ml-2 mt-1"
+              style="font-size: 1rem;"
+              :icon="['fa', 'chevron-right']"
+            />
+          </h2>
+        </div>
+        <div
+          class="
           main-block
           flex
           sm:justify-center
@@ -65,30 +67,31 @@
           items-center
           flex-wrap
         "
-      >
-        <Nuxt-link
-          v-for="(pop, index) in watched"
-          :key="index"
-          :to="'/watch/' + pop.url"
-          class="card"
         >
-          <div class="preview shadow">
-            <div
-              class="preview-img bg-center bg-cover"
-              :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
-            ></div>
-            <div class="anime-stats">
-              <span class="stars">
-                {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']" />
-              </span>
-              <span class="episodes" v-text="pop.episodes + ' серий'"></span>
+          <Nuxt-link
+            v-for="(pop, index) in watched"
+            :key="index"
+            :to="'/watch/' + pop.url"
+            class="card"
+          >
+            <div class="preview shadow">
+              <div
+                class="preview-img bg-center bg-cover"
+                :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
+              ></div>
+              <div class="anime-stats">
+                <span class="stars">
+                  {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']" />
+                </span>
+                <span class="episodes" v-text="pop.episodes + ' серий'"></span>
+              </div>
             </div>
-          </div>
 
-          <div class="anime-title text-gray-800">
-            <h2 v-text="pop.title" :title="pop.title"></h2>
-          </div>
-        </Nuxt-link>
+            <div class="anime-title text-gray-800">
+              <h2 v-text="pop.title" :title="pop.title"></h2>
+            </div>
+          </Nuxt-link>
+        </div>
       </div>
     </div>
   </div>

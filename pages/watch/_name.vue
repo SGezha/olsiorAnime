@@ -2,15 +2,14 @@
   <div>
     <Header />
     <div
-      class="fixed w-full top-[0px] left-[0px] -z-5 h-screen"
+      class="anime_bg"
       :style="{
         background: `url('${anime.background}') no-repeat center center fixed`,
-        'background-size': 'cover'
+        'background-size': '110% 110%',
+        'background-position': 0,
       }"
-    />
-    <div
-      class="bg-hex-[#000000dd] flex flex-col mx-auto min-h-screen object-cover"
-    >
+    ></div>
+    <div class="flex flex-col mx-auto min-h-screen object-cover">
       <div
         @click="toggleTheatre"
         class="theatre_button top"
@@ -56,7 +55,7 @@
                 change(
                   save.id,
                   anime.episodes[save.id].url,
-                  anime.episodes[save.id].title,
+                  anime.title,
                   anime.episodes[save.id].chat,
                   anime.episodes[save.id]
                 )
@@ -519,7 +518,7 @@ export default {
         this.selectQuality = "1080p";
         this.quality = [];
       }
-      console.log((this.heroku == true && post.heroku != undefined))
+      console.log(this.heroku == true && post.heroku != undefined);
       if (this.heroku == true && post.heroku != undefined) {
         this.video = post.heroku;
       } else {

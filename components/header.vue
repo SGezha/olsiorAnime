@@ -7,10 +7,11 @@
         w-full
         mx-auto
         flex
-        justify-around
+        justify-between
         items-center
         text-gray-300
         h-1/6
+        px-[20px]
       "
     >
       <NuxtLink to="/">
@@ -55,7 +56,7 @@ export default {
 }
 
 .bg-header {
-  background: #2b2b2b;
+  background: #2b2b2bb0;
 }
 
 .small {
