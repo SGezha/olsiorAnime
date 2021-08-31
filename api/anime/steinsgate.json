@@ -1,12 +1,7 @@
 {
   "title": "Врата Штейна / Steins;Gate",
   "background": "/bg/steinsgate.jpg",
-  "genres": [
-    "Фантастика",
-    "Психологическое",
-    "Драма",
-    "Триллер"
-  ],
+  "genres": ["Фантастика", "Психологическое", "Драма", "Триллер"],
   "desc": "Действие сериала происходит летом 2010 года в Акихабаре. Группа друзей переделывает микроволновку в некое устройство, способное посылать текстовые сообщения в прошлое. Пока они проводят над устройством различные эксперименты, ими заинтересовывается таинственная организация SERN, которая также проводит исследования по путешествиям во времени. SERN начинает преследовать друзей, и теперь главным героям предстоит найти способ не быть захваченными ими.",
   "op": [
     {
@@ -53,7 +48,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9240"
+          "url": "https://stream.wrench.gq/9240",
+          "heroku": "https://olsiorvideo.herokuapp.com/912"
         }
       ]
     },
@@ -65,7 +61,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9233"
+          "url": "https://stream.wrench.gq/9233",
+          "heroku": "https://olsiorvideo.herokuapp.com/905"
         }
       ]
     },
@@ -77,7 +74,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9241"
+          "url": "https://stream.wrench.gq/9241",
+          "heroku": "https://olsiorvideo.herokuapp.com/913"
         }
       ]
     },
@@ -89,7 +87,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9234 "
+          "url": "https://stream.wrench.gq/9234",
+          "heroku": "https://olsiorvideo.herokuapp.com/914"
         }
       ]
     },
@@ -101,7 +100,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9235"
+          "url": "https://stream.wrench.gq/9235",
+          "heroku": "https://olsiorvideo.herokuapp.com/906"
         }
       ]
     },
@@ -113,7 +113,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9242"
+          "url": "https://stream.wrench.gq/9242",
+          "heroku": "https://olsiorvideo.herokuapp.com/907"
         }
       ]
     },
@@ -125,7 +126,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9236"
+          "url": "https://stream.wrench.gq/9236",
+          "heroku": "https://olsiorvideo.herokuapp.com/908"
         }
       ]
     },
@@ -137,7 +139,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9237"
+          "url": "https://stream.wrench.gq/9237",
+          "heroku": "https://olsiorvideo.herokuapp.com/909"
         }
       ]
     },
@@ -149,7 +152,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9238"
+          "url": "https://stream.wrench.gq/9238",
+          "heroku": "https://olsiorvideo.herokuapp.com/910"
         }
       ]
     },
@@ -161,7 +165,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9239"
+          "url": "https://stream.wrench.gq/9239",
+          "heroku": "https://olsiorvideo.herokuapp.com/911"
         }
       ]
     }

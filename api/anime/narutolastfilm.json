@@ -35,7 +35,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9261"
+          "url": "https://stream.wrench.gq/9261",
+          "heroku": "https://olsiorvideo.herokuapp.com/933"
         }
       ]
     }

@@ -45,7 +45,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9024"
+          "url": "https://stream.wrench.gq/9024",
+          "heroku": "https://olsiorvideo.herokuapp.com/944"
         }
       ]
     },
@@ -57,7 +58,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9026"
+          "url": "https://stream.wrench.gq/9026",
+          "heroku": "https://olsiorvideo.herokuapp.com/946"
         }
       ]
     },
@@ -69,7 +71,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9017"
+          "url": "https://stream.wrench.gq/9017",
+          "heroku": "https://olsiorvideo.herokuapp.com/941"
         }
       ]
     },
@@ -81,7 +84,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9018"
+          "url": "https://stream.wrench.gq/9018",
+          "heroku": "https://olsiorvideo.herokuapp.com/942"
         }
       ]
     },
@@ -93,7 +97,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9020"
+          "url": "https://stream.wrench.gq/9020",
+          "heroku": "https://olsiorvideo.herokuapp.com/945"
         }
       ]
     },
@@ -105,7 +110,8 @@
       "quality": [
         {
           "name": "480p",
-          "url": "https://stream.wrench.gq/9021"
+          "url": "https://stream.wrench.gq/9021",
+          "heroku": "https://olsiorvideo.herokuapp.com/943"
         }
       ]
     }
