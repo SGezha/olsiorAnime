@@ -566,8 +566,8 @@ export default {
         this.height = event.target.videoHeight + "p";
         this.selectQuality = this.height;
       } else {
-        this.height = event.target.videoHeight + "p";
-        this.selectQuality = this.height;
+        this.height = "1080p";
+        this.selectQuality = `480p`;
       }
     },
     loadedVideo() {
