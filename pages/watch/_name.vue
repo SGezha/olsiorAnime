@@ -6,7 +6,7 @@
       :style="{
         background: `url('${anime.background}') no-repeat center center fixed`,
         'background-size': 'auto 130%',
-        'background-position': 0,
+        'background-position': 0
       }"
     ></div>
     <div class="flex flex-col mx-auto min-h-screen object-cover">
@@ -172,18 +172,10 @@
                 name="quality"
                 v-model="selectQuality"
               >
-                <option
-                  @click="changeQuality(q.url)"
-                  v-for="(q, ind) in quality"
-                  :key="ind"
-                  :value="q.name"
-                >
+                <option v-for="(q, ind) in quality" :key="ind" :value="q.name">
                   {{ q.name }} SD
                 </option>
-                <option
-                  @click="changeQuality(anime.episodes[nowInd].url)"
-                  :value="height"
-                >
+                <option :value="height">
                   {{ height }}
                   <span class="text-[1px] text-[aqua]">{{
                     `${height == "1080p" ? "FHD" : "HD"}`
@@ -429,11 +421,26 @@ export default {
   computed: {},
   watch: {
     heroku(value) {
+      this.video = "";
       if (this.save.id == this.nowInd) this.needSave = true;
       if (value) {
-        this.video = this.post.url;
+        if (this.selectQuality == "480p" && this.quality[0].url != undefined) {
+          this.video = this.quality[0].url;
+        } else {
+          this.video = this.post.url;
+        }
       } else {
-        this.video = this.post.heroku;
+        if (this.post.quality) {
+          if (this.selectQuality == "480p") {
+            if (this.heroku == false && this.quality[0].heroku != undefined) {
+              this.video = this.quality[0].heroku;
+            } else {
+              this.video = this.post.url;
+            }
+          }
+        } else {
+          this.selectQuality = "1080p";
+        }
       }
     },
     objectFit(value) {
@@ -441,9 +448,9 @@ export default {
     },
     selectQuality(value) {
       if (value == "480p") {
-        this.changeQuality(this.quality[0].url);
+        this.changeQuality(this.quality[0].url, this.quality[0].heroku);
       } else {
-        this.changeQuality(this.post.url);
+        this.changeQuality(this.post.url, this.post.heroku);
       }
     },
     playRate(value) {
@@ -499,29 +506,39 @@ export default {
         });
       });
     },
-    changeQuality(url) {
+    changeQuality(url, heroku) {
+      this.video = "";
       if (this.save.id == this.nowInd) this.needSave = true;
-      this.video = url;
+      if (this.heroku == false && this.quality[0].heroku != undefined) {
+        this.video = heroku;
+      } else {
+        this.video = url;
+      }
     },
     change(ind, url, title, chat, post) {
+      this.video = "";
       this.post = post;
       this.chat = "";
       this.parsedChat = [];
       if (this.save.id == ind) this.needSave = true;
       this.nowInd = ind;
+      if (this.heroku == false && post.heroku != undefined) {
+        this.video = post.heroku;
+      } else {
+        this.video = url;
+      }
       if (post.quality) {
         this.quality = post.quality;
         if (this.selectQuality == "480p") {
-          this.video = this.quality[0].url;
+          if (this.heroku == false && this.quality[0].heroku != undefined) {
+            this.video = this.quality[0].heroku;
+          } else {
+            this.video = this.quality[0].url;
+          }
         }
       } else {
         this.selectQuality = "1080p";
         this.quality = [];
-      }
-      if (this.heroku == true && post.heroku != undefined) {
-        this.video = url;
-      } else {
-        this.video = post.heroku;
       }
       this.title = `${title}`;
       if (chat != undefined) this.getChat(chat);
