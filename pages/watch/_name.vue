@@ -565,6 +565,9 @@ export default {
       if (event.target.videoHeight != 480) {
         this.height = event.target.videoHeight + "p";
         this.selectQuality = this.height;
+      } else {
+        this.height = event.target.videoHeight + "p";
+        this.selectQuality = this.height;
       }
     },
     loadedVideo() {
