@@ -457,6 +457,18 @@
           "url": "https://stream.wrench.gq/8821"
         }
       ]
+    },
+    {
+      "title": "138-140 серия",
+      "url": "https://stream.wrench.gq/12458",
+      "heroku": "https://olsiorvideo.herokuapp.com/959",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fbleach_138.txt?v=1630519139452"
+    },
+    {
+      "title": "141-142 серия",
+      "url": "https://stream.wrench.gq/12459",
+      "heroku": "https://olsiorvideo.herokuapp.com/960",
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fbleach_141.txt?v=1630519154292"
     }
   ]
 }
