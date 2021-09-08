@@ -5,7 +5,7 @@
       class="anime_bg hidden md:block"
       :style="{
         background: `url('${anime.background}') no-repeat center center fixed`,
-        'background-size': 'auto 130%',
+        'background-size': '100% 130%',
         'background-position': 0
       }"
     ></div>
