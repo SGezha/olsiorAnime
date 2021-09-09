@@ -2,6 +2,7 @@
   <div>
     <Header />
     <div
+      v-if="anime.background != ''"
       class="anime_bg hidden md:block"
       :style="{
         background: `url('${anime.background}') no-repeat center center fixed`,
@@ -232,6 +233,7 @@
             >
               <div
                 v-for="(post, index) in anime.episodes"
+                :title="post.title"
                 :key="index"
                 class="episode"
                 :class="{ active: nowInd == index }"
@@ -261,6 +263,18 @@
               @click="activeTab = 'desc'"
             >
               Описание
+            </div>
+            <div
+              v-if="
+                anime.episodes[nowInd] != undefined
+                  ? anime.episodes[nowInd].taiming
+                  : false
+              "
+              class="menu_item pr-3 pb-2 pt-2 pl-3 cursor-pointer"
+              :class="{ active: activeTab == 'taiming' }"
+              @click="activeTab = 'taiming'"
+            >
+              Таймкоды
             </div>
             <div
               v-if="anime.seasons"
@@ -301,7 +315,12 @@
           <div class="arches-block">
             <h2 class="text-2xl -ml-[2px]">{{ anime.title }}</h2>
             <div class="genre_block flex mb-2 mt-2 flex-wrap">
-              <div class="genre_name mr-2">Жанры:</div>
+              <div
+                class="genre_name mr-2"
+                v-if="anime.genres ? anime.genres.length > 0 : false"
+              >
+                Жанры:
+              </div>
               <div
                 class="genre mr-2"
                 v-for="(g, ind) in anime.genres"
@@ -322,6 +341,20 @@
                 {{ seas.title }}
               </a>
               - {{ seas.text }}
+            </div>
+          </div>
+        </div>
+
+        <div class="m-5" v-if="activeTab == 'taiming'">
+          <div class="arches-block">
+            <div
+              class="cursor-pointer"
+              @click="changeTime(taim.time)"
+              v-for="(taim, index) in anime.episodes[nowInd].taiming"
+              :key="index"
+            >
+              <span :class="{ 'font-medium text-[20px] my-[20px] flex': taim.big }">{{ taim.name }}</span>
+              <span class="text-[aqua]">{{ taim.time }}</span>
             </div>
           </div>
         </div>
@@ -515,6 +548,9 @@ export default {
         this.video = url;
       }
     },
+    changeTime(time) {
+      this.$refs.video.currentTime = this.hmsToSecondsOnly(time);
+    },
     change(ind, url, title, chat, post) {
       this.video = "";
       this.post = post;
@@ -542,6 +578,9 @@ export default {
       }
       this.title = `${title}`;
       if (chat != undefined) this.getChat(chat);
+      if(this.post.taiming) {
+        this.activeTab = "taiming";
+      }
     },
     openFullscreen() {
       if (document.documentElement.requestFullscreen) {
@@ -661,7 +700,6 @@ export default {
       }
     },
     rewind(event) {
-      console.log(event);
       switch (event.keyCode) {
         case 37:
           event.preventDefault();
@@ -684,6 +722,17 @@ export default {
           this.toggleTheatre();
           break;
       }
+    },
+    hmsToSecondsOnly(str) {
+      let p = str.split(':'),
+          s = 0, m = 1;
+
+      while (p.length > 0) {
+          s += m * parseInt(p.pop(), 10);
+          m *= 60;
+      }
+
+      return s;
     },
     formatTime(duration) {
       // Hours, minutes and seconds

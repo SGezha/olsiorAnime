@@ -1,26 +1,27 @@
 [
   {
     "title": "Блич / Bleach",
-    "img": "https://dere.shikimori.one/system/animes/original/269.jpg?1610277167",
-    "id": "y269-bleach",
     "episodes": "152/366",
     "stars": "?",
     "url": "bleach",
     "watched": false
   },
   {
-    "title": "Akira / Акира",
-    "img": "https://dere.shikimori.one/system/animes/original/34134.jpg?1611210635",
-    "id": "y269-bleach",
+    "title": "Ютуб / YouTube",
     "episodes": "1/1",
-    "stars": "HZ",
+    "stars": "-",
+    "url": "youtube",
+    "watched": true
+  },
+  {
+    "title": "Akira / Акира",
+    "episodes": "1/1",
+    "stars": "-",
     "url": "akira",
     "watched": true
   },
   {
     "title": "Ванпанчмен 2 / One Punch Man 2nd Season",
-    "img": "https://dere.shikimori.one/system/animes/original/34134.jpg?1611210635",
-    "id": "y269-bleach",
     "episodes": "12/12",
     "stars": "6",
     "url": "onepunchman2",
@@ -28,8 +29,6 @@
   },
   {
     "title": "Ванпанчмен / One Punch Man",
-    "img": "https://kawai.shikimori.one/system/animes/original/30276.jpg?1617282941",
-    "id": "y269-bleach",
     "episodes": "12/12",
     "stars": "8",
     "url": "onepunchman",
@@ -37,8 +36,6 @@
   },
   {
     "title": "Врата Штейна 0 / Steins;Gate 0",
-    "img": "https://dere.shikimori.one/system/animes/original/30484.jpg?1609698777",
-    "id": "z30484-steins-gate-0",
     "episodes": "23/23",
     "stars": "10",
     "url": "steinsgatezero",
@@ -46,8 +43,6 @@
   },
   {
     "title": "Врата Штейна / Steins;Gate",
-    "img": "https://desu.shikimori.one/system/animes/original/9253.jpg?1617285067",
-    "id": "z9253-steins-gate",
     "episodes": "24/24",
     "stars": "10",
     "url": "steinsgate",
@@ -55,8 +50,6 @@
   },
   {
     "title": "Врата Штейна: Найти недостающее звено — Деление на ноль / Steins;Gate: Kyoukaimenjou no Missing Link - Divide By Zero",
-    "img": "https://desu.shikimori.one/system/animes/original/32188.jpg?1617285093",
-    "id": "z9253-steins-gate",
     "episodes": "1/1",
     "stars": "-",
     "url": "steinsgatedel",
@@ -64,8 +57,6 @@
   },
   {
     "title": "Врата Штейна: Эгоистичная пориомания / Steins;Gate: Oukoubakko no Poriomania",
-    "img": "https://desu.shikimori.one/system/animes/original/10863.jpg?1617285077",
-    "id": "z9253-steins-gate",
     "episodes": "1/1",
     "stars": "-",
     "url": "steinsgateego",
@@ -73,8 +64,6 @@
   },
   {
     "title": "Город, в котором меня нет / Boku dake ga Inai Machi",
-    "img": "https://desu.shikimori.one/system/animes/original/31043.jpg?1617255769",
-    "id": "z9253-steins-gate",
     "episodes": "12/12",
     "stars": "9",
     "url": "gorod",
@@ -82,8 +71,6 @@
   },
   {
     "title": "Наруто: Ураганные хроники / Naruto: Shippuuden",
-    "img": "https://nyaa.shikimori.one/system/animes/original/1735.jpg?1617282523",
-    "id": "z9253-steins-gate",
     "episodes": "500/500",
     "stars": "9",
     "url": "narutoshippuuden",
@@ -91,8 +78,6 @@
   },
   {
     "title": "Наруто / Naruto",
-    "img": "https://nyaa.shikimori.one/system/animes/original/20.jpg?1610181991",
-    "id": "z9253-steins-gate",
     "episodes": "220/220",
     "stars": "8",
     "url": "naruto",
@@ -100,8 +85,6 @@
   },
   {
     "title": "Наруто: Последний фильм / The Last: Naruto the Movie",
-    "img": "https://nyaa.shikimori.one/system/animes/original/16870.jpg?1610341276",
-    "id": "z9253-steins-gate",
     "episodes": "1/1",
     "stars": "-",
     "url": "narutolastfilm",
@@ -109,8 +92,6 @@
   },
   {
     "title": "Крутой учитель Онидзука / Great Teacher Onizuka",
-    "img": "https://nyaa.shikimori.one/system/animes/original/245.jpg?1617279041",
-    "id": "z9253-steins-gate",
     "episodes": "43/43",
     "stars": "8",
     "url": "gto",
@@ -118,8 +99,6 @@
   },
   {
     "title": "Тетрадь смерти / Death Note",
-    "img": "https://nyaa.shikimori.one/system/animes/original/1535.jpg?1617265898",
-    "id": "z9253-steins-gate",
     "episodes": "25/37",
     "stars": "7",
     "url": "deathnote",
@@ -127,8 +106,6 @@
   },
   {
     "title": "Паразит: Учение о жизни / Kiseijuu: Sei no Kakuritsu",
-    "img": "https://nyaa.shikimori.one/system/animes/original/22535.jpg?1617280768",
-    "id": "z9253-steins-gate",
     "episodes": "24/24",
     "stars": "7",
     "url": "parazit",
@@ -136,8 +113,6 @@
   },
   {
     "title": "Стальной алхимик: Братство / Fullmetal Alchemist: Brotherhood",
-    "img": "https://dere.shikimori.one/system/animes/original/5114.jpg?1617271632",
-    "id": "z9253-steins-gate",
     "episodes": "64/64",
     "stars": "8",
     "url": "fullmetalalchemist",
