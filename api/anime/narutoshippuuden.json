@@ -906,7 +906,19 @@
     {
       "title": "Караоке стрим",
       "url": "https://stream.wrench.gq/7630",
-      "heroku": "https://olsiorvideo.herokuapp.com/545"
+      "heroku": "https://olsiorvideo.herokuapp.com/545",
+      "taiming": [
+        { "time": "03:57", "name": "OP16 - «Silhouette»" },
+        { "time": "10:15", "name": "осторожно генджитцу" },
+        { "time": "12:44", "name": "OP3 - «Blue Bird»" },
+        { "time": "19:40", "name": "OP5 - «Seishun Kyousoukyoku»" },
+        { "time": "26:28", "name": "OP8 - «Diver»" },
+        { "time": "33:50", "name": "OP6 - «Sign»" },
+        { "time": "39:55", "name": "OP4 - «Closer»" },
+        { "time": "47:50", "name": "OP1 - «Hero's come back»" },
+        { "time": "54:02", "name": "не шутка" },
+        { "time": "54:32", "name": "Лицо Какаши))" }
+      ]
     },
     {
       "title": "Своя игра по наруто",
