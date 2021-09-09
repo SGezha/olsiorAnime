@@ -1,0 +1,16 @@
+{
+  "title": "Космос: Пространство и время / Cosmos: A SpaceTime Odyssey",
+  "background": "",
+  "episodes": [
+    {
+      "title": "1 серия",
+      "url": "https://stream.wrench.gq/14921",
+      "heroku": "https://olsiorvideo.herokuapp.com/1022"
+    },
+    {
+      "title": "2 серия",
+      "url": "https://stream.wrench.gq/14922",
+      "heroku": "https://olsiorvideo.herokuapp.com/1023"
+    }
+  ]
+}
