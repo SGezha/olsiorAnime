@@ -96,6 +96,11 @@ export default {
           username: "yaroslaffb",
           amount: 100,
           type: "₽"
+        },
+        {
+          username: "fanat_anime_ot_olsi",
+          amount: 10,
+          type: "₽"
         }
       ]
     };
