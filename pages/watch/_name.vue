@@ -554,6 +554,7 @@ export default {
       this.$refs.video.currentTime = this.hmsToSecondsOnly(time);
     },
     fixVolumeIphone() {
+      this.$refs.video.muted = false;
       this.$refs.video.volume = 1;
     },
     change(ind, url, title, chat, post) {
