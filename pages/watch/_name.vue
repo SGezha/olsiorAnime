@@ -221,7 +221,9 @@
                 v-model="heroku"
               />
               <label for="scales">Использовать другой сервер</label>
+              <font-awesome-icon class="ml-2 cursor-pointer" @click="fixVolumeIphone" :icon="['fa', 'phone-volume']" />
             </div>
+
           </div>
         </div>
 
@@ -550,6 +552,9 @@ export default {
     },
     changeTime(time) {
       this.$refs.video.currentTime = this.hmsToSecondsOnly(time);
+    },
+    fixVolumeIphone() {
+      this.$refs.video.volume = 1;
     },
     change(ind, url, title, chat, post) {
       this.video = "";

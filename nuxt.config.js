@@ -42,7 +42,7 @@ export default {
 
   fontawesome: {
     icons: {
-      solid: ['faChevronRight', 'faCommentAlt', 'faDownload', 'faStar', 'faCommentSlash', 'faComment', 'faExpand', 'faCompress'],
+      solid: ['faChevronRight', 'faCommentAlt', 'faDownload', 'faStar', 'faCommentSlash', 'faComment', 'faExpand', 'faCompress', 'faPhoneVolume'],
       regular: [],
       light: [],
       duotone: [],
