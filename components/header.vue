@@ -26,7 +26,10 @@
       <NuxtLink to="/support">
         <h1>
           Поддержать работу сайта
-          <img src="https://olsior.herokuapp.com/money.jpg" class="logo h-[24px] w-[24px]" />
+          <img
+            src="https://olsior.herokuapp.com/money.jpg"
+            class="logo h-[24px] w-[24px]"
+          />
         </h1>
       </NuxtLink>
     </div>

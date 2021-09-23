@@ -3,11 +3,10 @@
     <Header />
     <div
       v-if="anime.background != ''"
-      class="anime_bg hidden md:block"
+      class="fixed w-[100vw] h-[100vh] top-0 left-0 -z-1 opacity-5"
       :style="{
         background: `url('${anime.background}') no-repeat center center fixed`,
-        'background-size': '100% 130%',
-        'background-position': 0
+        'background-size': 'cover'
       }"
     ></div>
     <div class="flex flex-col mx-auto min-h-screen object-cover">
@@ -72,7 +71,7 @@
         </div>
 
         <div
-          class="player-block m-5 flex md:flex-row overflow-hidden"
+          class="player-block relative m-5 flex md:flex-row overflow-hidden"
           :class="{
             theatre: theatre,
             'flex-col': !theatre,
@@ -80,7 +79,7 @@
           }"
         >
           <div
-            class="player"
+            class="player flex"
             :class="{ hidden: video == null, theatre: theatre }"
           >
             <div
@@ -138,7 +137,7 @@
           <div
             @mouseenter="lockChat = true"
             @mouseleave="lockChat = false"
-            class="chat-block overflow-x-hidden bg-hex-[#1b1b1b99]"
+            class="chat-block relative resize-x overflow-x-hidden pb-[100px] bg-black"
             ref="chat"
             v-if="
               nowInd != -1 &&
@@ -148,11 +147,7 @@
             :class="{ theatre: theatre }"
           >
             <div v-for="(msg, index) in parsedChat" :key="index">
-              <div
-                v-if="msg.display"
-                class="message"
-                style="text-shadow: 1px 1px 5px black"
-              >
+              <div v-if="msg.display" class="message">
                 <!-- <span class="time" v-text="`[${msg.time.time}]`"></span> -->
                 <span
                   class="author"
@@ -221,16 +216,19 @@
                 v-model="heroku"
               />
               <label for="scales">Использовать другой сервер</label>
-              <font-awesome-icon class="ml-2 cursor-pointer" @click="fixVolumeIphone" :icon="['fa', 'phone-volume']" />
+              <font-awesome-icon
+                class="ml-2 cursor-pointer"
+                @click="fixVolumeIphone"
+                :icon="['fa', 'phone-volume']"
+              />
             </div>
-
           </div>
         </div>
 
         <div class="m-5">
           <div class="episode-block" :class="{ active: video != null }">
             <div
-              class="episode-scroll w-full flex flex-wrap"
+              class="episode-scroll w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
               :class="{ active: video != null }"
             >
               <div
@@ -355,7 +353,10 @@
               v-for="(taim, index) in anime.episodes[nowInd].taiming"
               :key="index"
             >
-              <span :class="{ 'font-medium text-[20px] my-[20px] flex': taim.big }">{{ taim.name }}</span>
+              <span
+                :class="{ 'font-medium text-[20px] my-[20px] flex': taim.big }"
+                >{{ taim.name }}</span
+              >
               <span class="text-[aqua]">{{ taim.time }}</span>
             </div>
           </div>
@@ -584,7 +585,7 @@ export default {
       }
       this.title = `${title}`;
       if (chat != undefined) this.getChat(chat);
-      if(this.post.taiming) {
+      if (this.post.taiming) {
         this.activeTab = "taiming";
       }
     },
@@ -730,12 +731,13 @@ export default {
       }
     },
     hmsToSecondsOnly(str) {
-      let p = str.split(':'),
-          s = 0, m = 1;
+      let p = str.split(":"),
+        s = 0,
+        m = 1;
 
       while (p.length > 0) {
-          s += m * parseInt(p.pop(), 10);
-          m *= 60;
+        s += m * parseInt(p.pop(), 10);
+        m *= 60;
       }
 
       return s;

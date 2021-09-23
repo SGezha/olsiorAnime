@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="anime_bg hidden md:block"></div>
+    <div class="anime_bg"></div>
     <div class="container mx-auto" v-if="watched.length > 0">
       <div class="popular">
         <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
@@ -16,29 +16,31 @@
         <div
           class="
           main-block
-          flex
-          sm:justify-center
-          md:justify-start
-          items-center
-          flex-wrap
+          grid
+          w-full
+          grid-cols-2
+          md:grid-cols-4
+          lg:grid-cols-5
+          xl:grid-cols-6
+          2xl:grid-cols-8
         "
         >
           <Nuxt-link
             v-for="(pop, index) in smotrit"
             :key="index"
             :to="'/watch/' + pop.url"
-            class="card"
+            class="card w-full p-2"
           >
             <div class="preview shadow">
               <div
-                class="preview-img bg-center bg-cover"
+                class="preview-img bg-center bg-cover min-h-[40vh] md:min-h-full"
                 :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
               ></div>
               <div class="anime-stats">
-                <span class="stars">
-                  {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']" />
+                <span :class="{'opacity-0': pop.stars == '-'}" class="stars text-[#fff]">
+                  {{ pop.stars }} <font-awesome-icon v-if="pop.stars != 'Крис смотрит'" :icon="['fa', 'star']" />
                 </span>
-                <span class="episodes" v-text="pop.episodes + ' серий'"></span>
+                <span v-if="pop.episodes != '1/1'" class="episodes" v-text="pop.episodes + ' серий'"></span>
               </div>
             </div>
 
@@ -61,29 +63,31 @@
         <div
           class="
           main-block
-          flex
-          sm:justify-center
-          md:justify-start
-          items-center
-          flex-wrap
+          grid
+          w-full
+          grid-cols-2
+          md:grid-cols-4
+          lg:grid-cols-5
+          xl:grid-cols-6
+          2xl:grid-cols-8
         "
         >
           <Nuxt-link
             v-for="(pop, index) in watched"
             :key="index"
             :to="'/watch/' + pop.url"
-            class="card"
+            class="card w-full p-1 lg:p-2"
           >
             <div class="preview shadow">
               <div
-                class="preview-img bg-center bg-cover"
+                class="preview-img bg-center bg-cover min-h-[40vh] md:min-h-full"
                 :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
               ></div>
               <div class="anime-stats">
-                <span class="stars">
-                  {{ pop.stars }} <font-awesome-icon :icon="['fa', 'star']" />
+                <span :class="{'opacity-0': pop.stars == '-'}" class="stars text-[#fff]">
+                  {{ pop.stars }} <font-awesome-icon v-if="pop.stars != 'Крис смотрит'" :icon="['fa', 'star']" />
                 </span>
-                <span class="episodes" v-text="pop.episodes + ' серий'"></span>
+                <span v-if="pop.episodes != '1/1'" class="episodes" v-text="pop.episodes + ' серий'"></span>
               </div>
             </div>
 
@@ -135,11 +139,6 @@ export default {
   transform: scale(1.05);
 }
 
-.card {
-  width: 46%;
-  margin: 0 5px;
-}
-
 .preview-img {
   width: 100%;
   height: 30vh;
@@ -170,25 +169,31 @@ export default {
 .anime-stats {
   position: absolute;
   display: flex;
-  justify-content: center;
-  bottom: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: 100%;
 }
 
 .anime-stats span {
   display: inline-block;
-  color: white;
   font-size: 8px;
   padding: 5px 10px;
 }
 
 span.episodes {
-  background: #6bc9d1;
-  border-radius: 0px 4px 4px 0px;
+  background: rgba(0,0,0,.8);
+  box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 span.stars {
-  background: #ffd700;
-  border-radius: 4px 0px 0px 4px;
+  background: rgba(0,0,0,.8);
+  box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 span.stars .fa-star {
@@ -209,15 +214,8 @@ span.stars .fa-star {
 
   .anime-stats span {
     display: inline-block;
-    color: white;
-    font-size: 10px;
+    font-size: 16px;
     padding: 5px 10px;
-  }
-
-  .card {
-    min-width: 192px;
-    width: 10vw;
-    margin: 0 10px;
   }
 
   .preview-img {
@@ -246,20 +244,13 @@ span.stars .fa-star {
 
   .anime-stats span {
     display: inline-block;
-    color: white;
     font-size: 10px;
     padding: 5px 10px;
   }
 
-  .card {
-    min-width: 192px;
-    width: 10vw;
-    margin: 0 10px;
-  }
-
   .preview-img {
     width: 100%;
-    height: 350px;
+    max-height: 350px;
     overflow: hidden;
     border-radius: 4px;
   }
