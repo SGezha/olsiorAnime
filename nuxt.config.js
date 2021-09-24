@@ -41,6 +41,18 @@ export default {
     '@nuxtjs/pwa',
   ],
 
+  pwa: {
+    manifest: {
+      name: 'Олсиор смотрит аниме',
+      lang: 'ru',
+      useWebmanifestExtension: false,
+      short_name: 'Olsior',
+      start_url: 'routerBase',
+      background_color: "#1b1b1b",
+      description: "Приложение с записями стримов просмотра аниме Olsior\'а! С удобным интерфейсом и крутыми фишками. Сохранение прогресса просмотра, запись чата, режим театра, мобильный интерфейс."
+    }
+  },
+
   fontawesome: {
     icons: {
       solid: ['faChevronRight', 'faCommentAlt', 'faDownload', 'faStar', 'faCommentSlash', 'faComment', 'faExpand', 'faCompress', 'faPhoneVolume'],
