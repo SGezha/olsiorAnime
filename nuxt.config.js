@@ -37,7 +37,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     'nuxt-windicss',
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/pwa',
   ],
 
   fontawesome: {

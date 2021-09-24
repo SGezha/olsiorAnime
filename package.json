@@ -23,6 +23,7 @@
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
+    "@nuxtjs/pwa": "^3.3.5",
     "nuxt-windicss": "^1.2.3"
   },
   "babel": {
