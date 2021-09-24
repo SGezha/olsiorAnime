@@ -12,11 +12,10 @@
         <h1 class="text-sm mt-1">Загрузка...</h1>
       </div>
     </transition>
-    <div class="anime_bg"></div>
     <div class="container mx-auto" v-if="watched.length > 0">
       <div class="popular">
         <div
-          class="head text-2xl my-5 px-[20px] flex justify-start items-center"
+          class="head text-2xl my-5 ml-[5px] px-[20px] flex justify-start items-center"
         >
           <h2 class="flex justify-center items-center">
             Сейчас смотрит
@@ -76,7 +75,7 @@
         </div>
 
         <div
-          class="head text-2xl my-5 px-[20px] flex justify-start items-center"
+          class="head text-2xl my-5 ml-[5px] px-[20px] flex justify-start items-center"
         >
           <h2 class="flex justify-content items-center">
             Посмотрел
