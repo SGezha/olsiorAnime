@@ -46,8 +46,8 @@ export default {
       name: 'Олсиор смотрит аниме',
       lang: 'ru',
       useWebmanifestExtension: false,
-      short_name: 'Olsior',
-      start_url: 'routerBase',
+      short_name: 'Олсиор смотрит аниме',
+      start_url: '/',
       background_color: "#1b1b1b",
       description: "Приложение с записями стримов просмотра аниме Olsior\'а! С удобным интерфейсом и крутыми фишками. Сохранение прогресса просмотра, запись чата, режим театра, мобильный интерфейс."
     }
