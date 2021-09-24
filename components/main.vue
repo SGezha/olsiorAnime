@@ -1,9 +1,23 @@
 <template>
   <div>
+    <transition name="slide-fade">
+      <div
+        v-if="show"
+        class="bg-hex-[#1b1b1b] fixed left-0 top-0 w-screen h-screen flex justify-center items-center z-50 flex-col"
+      >
+        <img
+          src="https://olsior.herokuapp.com/loading.webp"
+          class="rounded-1 w-[100px] h-[100px]"
+        />
+        <h1 class="text-sm mt-1">Загрузка...</h1>
+      </div>
+    </transition>
     <div class="anime_bg"></div>
     <div class="container mx-auto" v-if="watched.length > 0">
       <div class="popular">
-        <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
+        <div
+          class="head text-2xl my-5 px-[20px] flex justify-start items-center"
+        >
           <h2 class="flex justify-center items-center">
             Сейчас смотрит
             <font-awesome-icon
@@ -33,14 +47,25 @@
           >
             <div class="preview shadow">
               <div
-                class="preview-img bg-center bg-cover min-h-[40vh] md:min-h-full"
+                class="preview-img bg-center bg-cover md:min-h-full"
                 :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
               ></div>
               <div class="anime-stats">
-                <span :class="{'opacity-0': pop.stars == '-'}" class="stars text-[#fff]">
-                  {{ pop.stars }} <font-awesome-icon v-if="pop.stars != 'Крис смотрит'" :icon="['fa', 'star']" />
+                <span
+                  :class="{ 'opacity-0': pop.stars == '-' }"
+                  class="stars text-[#fff]"
+                >
+                  {{ pop.stars }}
+                  <font-awesome-icon
+                    v-if="pop.stars != 'Крис смотрит'"
+                    :icon="['fa', 'star']"
+                  />
                 </span>
-                <span v-if="pop.episodes != '1/1'" class="episodes" v-text="pop.episodes + ' серий'"></span>
+                <span
+                  v-if="pop.episodes != '1/1'"
+                  class="episodes"
+                  v-text="pop.episodes + ' серий'"
+                ></span>
               </div>
             </div>
 
@@ -50,7 +75,9 @@
           </Nuxt-link>
         </div>
 
-        <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
+        <div
+          class="head text-2xl my-5 px-[20px] flex justify-start items-center"
+        >
           <h2 class="flex justify-content items-center">
             Посмотрел
             <font-awesome-icon
@@ -80,14 +107,25 @@
           >
             <div class="preview shadow">
               <div
-                class="preview-img bg-center bg-cover min-h-[40vh] md:min-h-full"
+                class="preview-img bg-center bg-cover md:min-h-full"
                 :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
               ></div>
               <div class="anime-stats">
-                <span :class="{'opacity-0': pop.stars == '-'}" class="stars text-[#fff]">
-                  {{ pop.stars }} <font-awesome-icon v-if="pop.stars != 'Крис смотрит'" :icon="['fa', 'star']" />
+                <span
+                  :class="{ 'opacity-0': pop.stars == '-' }"
+                  class="stars text-[#fff]"
+                >
+                  {{ pop.stars }}
+                  <font-awesome-icon
+                    v-if="pop.stars != 'Крис смотрит'"
+                    :icon="['fa', 'star']"
+                  />
                 </span>
-                <span v-if="pop.episodes != '1/1'" class="episodes" v-text="pop.episodes + ' серий'"></span>
+                <span
+                  v-if="pop.episodes != '1/1'"
+                  class="episodes"
+                  v-text="pop.episodes + ' серий'"
+                ></span>
               </div>
             </div>
 
@@ -106,7 +144,8 @@ export default {
   data() {
     return {
       smotrit: [],
-      watched: []
+      watched: [],
+      show: true
     };
   },
   async mounted() {
@@ -118,6 +157,11 @@ export default {
       } else {
         this.smotrit.push(a);
       }
+    });
+    this.$nextTick(function() {
+      setTimeout(() => {
+        this.show = false;
+      }, 200)
     });
   }
 };
@@ -183,15 +227,15 @@ export default {
 }
 
 span.episodes {
-  background: rgba(0,0,0,.8);
-  box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
   border-radius: 4px;
   font-size: 14px;
 }
 
 span.stars {
-  background: rgba(0,0,0,.8);
-  box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
   border-radius: 4px;
   font-size: 16px;
 }
@@ -263,5 +307,16 @@ span.stars .fa-star {
     transform: scale(1);
     transition: 0.3s ease;
   }
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.5s linear;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
