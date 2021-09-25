@@ -409,7 +409,27 @@ export default {
   },
   head() {
     return {
-      title: this.title
+      title: `${this.anime.title.split('/')[0]} - Олсиор смотрит аниме`,
+      meta: [
+        { hid: "og-title", property: "og:title", content: this.anime.title },
+        {
+          hid: "description",
+          name: "description",
+          content: this.anime.desc
+        },
+        {
+          property: "og:description",
+          hid: "og:description",
+          name: "og:description",
+          content: this.anime.desc
+        },
+        {
+          property: "og:image",
+          hid: "og:image",
+          name: "og:image",
+          content: `https://olsior.herokuapp.com${this.anime.background}`
+        }
+      ]
     };
   },
   data() {
@@ -418,7 +438,6 @@ export default {
       Footer,
       nowInd: -1,
       video: null,
-      title: "Олсиор смотрит аниме",
       save: {
         id: 0,
         time: 0
@@ -583,7 +602,7 @@ export default {
         this.selectQuality = "1080p";
         this.quality = [];
       }
-      this.title = `${title}`;
+      document.title = `${this.anime.title.split('/')[0]} ${post.title} - Олсиор смотрит аниме`;
       if (chat != undefined) this.getChat(chat);
       if (this.post.taiming) {
         this.activeTab = "taiming";
