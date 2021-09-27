@@ -101,6 +101,11 @@ export default {
           username: "fanat_anime_ot_olsi",
           amount: 10,
           type: "₽"
+        },
+        {
+          username: "ANONYMOUS",
+          amount: 200,
+          type: "₽"
         }
       ]
     };

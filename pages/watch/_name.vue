@@ -137,8 +137,9 @@
           <div
             @mouseenter="lockChat = true"
             @mouseleave="lockChat = false"
-            class="chat-block relative resize-x overflow-x-hidden pb-[100px] bg-black"
+            class="chat-block relative overflow-x-hidden pb-[100px] bg-black"
             ref="chat"
+            :style="{'width': chatSize + '%'}"
             v-if="
               nowInd != -1 &&
                 anime.episodes[nowInd].chat != undefined &&
@@ -207,6 +208,26 @@
 
             <div
               class="flex flwx-wrap items-center mt-2"
+              v-if="
+                nowInd != -1 &&
+                  anime.episodes[nowInd].chat != undefined &&
+                  !hideChat
+              "
+            >
+              <label for="size">Размер чата:</label>
+              <input
+                class="bg-[#2b2b2b] rounded-[2px] w-[45px] ml-2"
+                type="number"
+                min="1"
+                max="100"
+                v-model="chatSize"
+                id="size"
+              />
+              <span class="mr-2">%</span>
+            </div>
+
+            <div
+              class="flex flwx-wrap items-center mt-2"
               v-if="anime.episodes[nowInd].heroku != undefined"
             >
               <input
@@ -216,11 +237,6 @@
                 v-model="heroku"
               />
               <label for="scales">Использовать другой сервер</label>
-              <font-awesome-icon
-                class="ml-2 cursor-pointer"
-                @click="fixVolumeIphone"
-                :icon="['fa', 'phone-volume']"
-              />
             </div>
           </div>
         </div>
@@ -409,7 +425,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.anime.title.split('/')[0]} - Олсиор смотрит аниме`,
+      title: `${this.anime.title.split("/")[0]} - Олсиор смотрит аниме`,
       meta: [
         { hid: "og-title", property: "og:title", content: this.anime.title },
         {
@@ -458,7 +474,8 @@ export default {
       post: [],
       objectFit: "contain",
       needLoad: true,
-      heroku: false
+      heroku: false,
+      chatSize: 25
     };
   },
   mounted() {
@@ -573,10 +590,6 @@ export default {
     changeTime(time) {
       this.$refs.video.currentTime = this.hmsToSecondsOnly(time);
     },
-    fixVolumeIphone() {
-      this.$refs.video.muted = false;
-      this.$refs.video.volume = 1;
-    },
     change(ind, url, title, chat, post) {
       this.video = "";
       this.post = post;
@@ -602,7 +615,9 @@ export default {
         this.selectQuality = "1080p";
         this.quality = [];
       }
-      document.title = `${this.anime.title.split('/')[0]} ${post.title} - Олсиор смотрит аниме`;
+      document.title = `${this.anime.title.split("/")[0]} ${
+        post.title
+      } - Олсиор смотрит аниме`;
       if (chat != undefined) this.getChat(chat);
       if (this.post.taiming) {
         this.activeTab = "taiming";
