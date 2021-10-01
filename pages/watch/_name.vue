@@ -327,6 +327,8 @@
           </div>
         </div>
 
+        <h1 @click="test">TTest</h1>
+
         <div class="m-5" v-if="activeTab == 'desc'">
           <div class="arches-block">
             <h2 class="text-2xl -ml-[2px]">{{ anime.title }}</h2>
@@ -543,6 +545,28 @@ export default {
       });
       this.chat = chat;
       this.parseChat();
+    },
+    test() {
+      var xhrReq = new XMLHttpRequest();
+      xhrReq.open('GET', 'https://olsiorvideotest.herokuapp.com/1082', true);
+      xhrReq.responseType = 'blob';
+
+      xhrReq.onload = function() {
+          if (this.status === 200) {
+              var vid = URL.createObjectURL(this.response);
+              this.$refs.video.src = vid;
+          }
+      }
+      xhrReq.onerror = function() {
+          console.log('err' ,arguments);
+      }
+      xhrReq.onprogress = function(e){
+          if(e.lengthComputable) {
+              var percentComplete = ((e.loaded/e.total)*100|0) + '%';
+              console.log('progress: ', percentComplete);
+          }
+      }
+      xhrReq.send();
     },
     parseChat() {
       this.parsedChat = [];
