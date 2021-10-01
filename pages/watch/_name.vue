@@ -139,7 +139,7 @@
             @mouseleave="lockChat = false"
             class="chat-block relative overflow-x-hidden pb-[100px] bg-black"
             ref="chat"
-            :style="{'width': chatSize + '%'}"
+            :style="{'width': getChatSize() }"
             v-if="
               nowInd != -1 &&
                 anime.episodes[nowInd].chat != undefined &&
@@ -326,8 +326,6 @@
             </div>
           </div>
         </div>
-
-        <h1 @click="test">TTest</h1>
 
         <div class="m-5" v-if="activeTab == 'desc'">
           <div class="arches-block">
@@ -546,27 +544,11 @@ export default {
       this.chat = chat;
       this.parseChat();
     },
-    test() {
-      var xhrReq = new XMLHttpRequest();
-      xhrReq.open('GET', 'https://olsiorvideotest.herokuapp.com/1082', true);
-      xhrReq.responseType = 'blob';
-
-      xhrReq.onload = function() {
-          if (this.status === 200) {
-              var vid = URL.createObjectURL(this.response);
-              this.$refs.video.src = vid;
-          }
+    getChatSize() {
+      if(window.screen.width < 768 && !this.theatre) {
+        return `100%`
       }
-      xhrReq.onerror = function() {
-          console.log('err' ,arguments);
-      }
-      xhrReq.onprogress = function(e){
-          if(e.lengthComputable) {
-              var percentComplete = ((e.loaded/e.total)*100|0) + '%';
-              console.log('progress: ', percentComplete);
-          }
-      }
-      xhrReq.send();
+      return `${this.chatSize}%`
     },
     parseChat() {
       this.parsedChat = [];
