@@ -106,6 +106,11 @@ export default {
           username: "ANONYMOUS",
           amount: 200,
           type: "₽"
+        },
+        {
+          username: "ivangame1995",
+          amount: 100,
+          type: "₽"
         }
       ]
     };
