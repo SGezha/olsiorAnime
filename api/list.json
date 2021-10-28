@@ -1,10 +1,17 @@
 [
   {
-    "title": "Блич / Bleach",
-    "episodes": "302/366",
+    "title": "Атака титанов / Shingeki no Kyojin",
+    "episodes": "0/25",
     "stars": "?",
-    "url": "bleach",
+    "url": "atakatitanov",
     "watched": false
+  },
+  {
+    "title": "Блич / Bleach",
+    "episodes": "310/366",
+    "stars": "5/10",
+    "url": "bleach",
+    "watched": true
   },
   {
     "title": "Форма голоса / Koe no Katachi",
