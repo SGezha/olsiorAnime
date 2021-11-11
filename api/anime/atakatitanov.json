@@ -1,5 +1,5 @@
 {
-  "title": "Атака титанов / Shingeki no Kyojin",
+  "title": "Атака титанов 2 / Shingeki no Kyojin Season 2",
   "background": "/bg/atakatitanov.jpg",
   "genres": [
     "Сёнен",
@@ -33,6 +33,18 @@
       "url": "https://www.youtube.com/watch?v=sFdzNhJAdco",
       "episodes": "13-25",
       "title": "Shingeki no Kyojin (Attack On Titan) ED2"
+    }
+  ],
+  "seasons": [
+    {
+      "title": "Атака Титанов",
+      "url": "https://olsior.herokuapp.com/watch/atakatitanov",
+      "text": "ТВ (25 эп.), адаптация манги, 2013"
+    },
+    {
+      "title": "Атака титанов 2",
+      "url": "https://olsior.herokuapp.com/watch/atakatitanov2",
+      "text": "ТВ (12 эп.), продолжение, 2017"
     }
   ],
   "episodes": [
@@ -77,6 +89,32 @@
       "url": "https://stream.wrench.gq/26323",
       "heroku": "https://olsiorvideo.herokuapp.com/1097",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka15-16.txt?v=1636199148527"
+    },
+    {
+      "title": "17-18 серия",
+      "url": "https://stream.wrench.gq/28183",
+      "heroku": "https://olsiorvideo.herokuapp.com/1098",
+      "chat": ""
+    },
+    {
+      "title": "19-20 серия",
+      "url": "https://stream.wrench.gq/28186",
+      "heroku": "https://olsiorvideo.herokuapp.com/1099"
+    },
+    {
+      "title": "21-22 серия",
+      "url": "https://stream.wrench.gq/28187",
+      "heroku": "https://olsiorvideo.herokuapp.com/1102"
+    },
+    {
+      "title": "23-24 серия",
+      "url": "https://stream.wrench.gq/28184",
+      "heroku": "https://olsiorvideo.herokuapp.com/1100"
+    },
+    {
+      "title": "25 серия",
+      "url": "https://stream.wrench.gq/28185",
+      "heroku": "https://olsiorvideo.herokuapp.com/1101"
     }
   ]
 }

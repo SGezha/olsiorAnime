@@ -1,10 +1,17 @@
 [
   {
-    "title": "Атака титанов / Shingeki no Kyojin",
-    "episodes": "16/25",
+    "title": "Атака титанов 2 / Shingeki no Kyojin Season 2",
+    "episodes": "0/12",
     "stars": "?",
-    "url": "atakatitanov",
+    "url": "atakatitanov2",
     "watched": false
+  },
+  {
+    "title": "Атака титанов / Shingeki no Kyojin",
+    "episodes": "25/25",
+    "stars": "9",
+    "url": "atakatitanov",
+    "watched": true
   },
   {
     "title": "Блич / Bleach",
