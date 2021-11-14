@@ -12,10 +12,11 @@
         <h1 class="text-sm mt-1">Загрузка...</h1>
       </div>
     </transition>
+
     <div class="container mx-auto" v-if="watched.length > 0">
       <div class="popular">
         <div
-          class="head text-2xl my-5 ml-[5px] px-[20px] flex justify-start items-center"
+          class="head text-2xl my-5 px-[20px] flex justify-start items-center"
         >
           <h2 class="flex justify-center items-center">
             Сейчас смотрит
@@ -36,13 +37,14 @@
           lg:grid-cols-5
           xl:grid-cols-6
           2xl:grid-cols-8
+          gap-[10px]
         "
         >
           <Nuxt-link
             v-for="(pop, index) in smotrit"
             :key="index"
             :to="'/watch/' + pop.url"
-            class="card w-full p-2"
+            class="card w-full"
           >
             <div class="preview shadow">
               <div
@@ -74,8 +76,23 @@
           </Nuxt-link>
         </div>
 
+        <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
+          <h2 class="flex justify-center items-center">
+            Последняя нарезка
+            <font-awesome-icon
+              class="ml-2 mt-1"
+              style="font-size: 1rem;"
+              :icon="['fa', 'chevron-right']"
+            />
+          </h2>
+        </div>
+          <div class="main-block">
+            <iframe class="h-[50vh] w-full rounded-[10px]" src="https://www.youtube.com/embed/4IbhipyQz44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
         <div
-          class="head text-2xl my-5 ml-[5px] px-[20px] flex justify-start items-center"
+          class="head text-2xl my-5 px-[20px] flex justify-start items-center"
         >
           <h2 class="flex justify-content items-center">
             Посмотрел
@@ -96,13 +113,14 @@
           lg:grid-cols-5
           xl:grid-cols-6
           2xl:grid-cols-8
+          gap-[10px]
         "
         >
           <Nuxt-link
             v-for="(pop, index) in watched"
             :key="index"
             :to="'/watch/' + pop.url"
-            class="card w-full p-1 lg:p-2"
+            class="card w-full"
           >
             <div class="preview shadow">
               <div

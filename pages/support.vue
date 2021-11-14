@@ -9,9 +9,10 @@
         <a
           href="https://www.donationalerts.com/r/sgezha"
           class="flex mt-2 items-center flex-wrap"
-          ><img src="/donate.png" alt="" class="donate" /> С помощью сервиса
-          DonationAlerts</a
         >
+        <img src="/donate.png" alt="" class="donate" />
+        С помощью сервиса DonationAlerts
+        </a>
         <a
           href="https://destream.net/live/4funsasha/donate"
           class="flex mt-2 items-center flex-wrap"

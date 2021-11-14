@@ -298,7 +298,7 @@
               :class="{ active: activeTab == 'seasons' }"
               @click="activeTab = 'seasons'"
             >
-              Породяк просмотра
+              Порядок просмотра
             </div>
             <div
               v-if="anime.arches"
