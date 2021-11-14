@@ -1,10 +1,24 @@
 [
   {
     "title": "Атака титанов 2 / Shingeki no Kyojin Season 2",
-    "episodes": "0/12",
+    "episodes": "2/12",
     "stars": "?",
     "url": "atakatitanov2",
     "watched": false
+  },
+  {
+    "title": "Атака титанов OVA / Shingeki no Kyojin OVA",
+    "episodes": "3/3",
+    "stars": "-",
+    "url": "atakatitanovova2",
+    "watched": true
+  },
+  {
+    "title": "Атака титанов: Выбор без сожалений / Shingeki no Kyojin: Kuinaki Sentaku",
+    "episodes": "2/2",
+    "stars": "-",
+    "url": "atakatitanovova",
+    "watched": true
   },
   {
     "title": "Атака титанов / Shingeki no Kyojin",
