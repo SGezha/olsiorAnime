@@ -33,7 +33,6 @@
             <link url="https://olsior.herokuapp.com/watch/youtube" img="https://olsior.herokuapp.com/anime/youtube.jpg">Ютуб</link>
         </yandex:related>
 
-
         <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/akira</link>
             <author>Михаил Olsior Зверев</author>
@@ -51,6 +50,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/akira.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 1/1 серий</p>
             <p>Оценка стримера: 8</p>
             <p>Жанры: Экшен, Военное, Фантастика, Приключения, Ужасы, Сверхъестественное, Сейнен</p>
@@ -83,6 +86,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/atakatitanov.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 25/25 серий</p>
             <p>Оценка стримера: 9</p>
             <p>Жанры: Сёнен, Экшен, Драма, Фэнтези, Детектив, Военное, Супер сила</p>
@@ -116,6 +123,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/atakatitanov2.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 6/12 серий</p>
             <p>Оценка стримера: ?</p>
             <p>Жанры: Сёнен, Экшен, Драма, Фэнтези, Детектив, Военное, Супер сила</p>
@@ -149,6 +160,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/atakatitanovova.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 2/2 серий</p>
             <p>Оценка стримера: -</p>
             <p>Жанры: Сёдзё, Экшен, Фэнтези</p>
@@ -180,6 +195,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/atakatitanovova2.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 3/3 серий</p>
             <p>Оценка стримера: -</p>
             <p>Жанры: Сёнен, Экшен, Драма, Фэнтези, Детектив, Военное, Супер сила</p>
@@ -220,6 +239,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/bleach.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 310/366 серий</p>
             <p>Оценка стримера: 5</p>
             <p>Жанры: Экшен, Приключения, Комедия, Супер сила, Сверхъестественное, Сёнен</p>
@@ -254,6 +277,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/cosmos.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 2/13 серий</p>
             <p>Оценка стримера: -</p>
             <p>Жанры: Документальный</p>
@@ -285,6 +312,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/deathnote.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 25/37 серий</p>
             <p>Оценка стримера: 7</p>
             <p>Жанры: Детектив, Полиция, Психологическое, Сверхъестественное, Триллер, Сёнен</p>
@@ -321,6 +352,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/fullmetalalchemist.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 64/64 серий</p>
             <p>Оценка стримера: 8</p>
             <p>Жанры: Экшен, Приключения, Военное, Комедия, Драма, Магия, Фэнтези, Сёнен</p>
@@ -356,6 +391,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/gorod.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 12/12 серий</p>
             <p>Оценка стримера: 9</p>
             <p>Жанры: Детектив, Психологическое, Сверхъестественное, Сёнен</p>
@@ -391,6 +430,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/gto.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 43/43 серий</p>
             <p>Оценка стримера: 8</p>
             <p>Жанры: Повседневность, Комедия, Драма, Школа, Сейнен</p>
@@ -423,6 +466,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/kazetachinukris.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 1/1 серий</p>
             <p>Оценка стримера: Крис смотрит</p>
             <p>Жанры: Исторический, Драма, Романтика</p>
@@ -458,6 +505,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/kiminonawa.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 1/1 серий</p>
             <p>Оценка стримера: 9</p>
             <p>Жанры: Романтика, Сверхъестественное, Школа, Драма</p>
@@ -491,6 +542,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/koenokatachi.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 1/1 серий</p>
             <p>Оценка стримера: 9</p>
             <p>Жанры: Драма, Школа, Сёнен</p>
@@ -524,6 +579,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/naruto.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 220/220 серий</p>
             <p>Оценка стримера: 8</p>
             <p>Жанры: Экшен, Приключения, Комедия, Боевые искусства, Супер сила, Сёнен</p>
@@ -558,6 +617,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/narutolastfilm.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 1/1 серий</p>
             <p>Оценка стримера: -</p>
             <p>Жанры: Экшен, Приключения, Романтика, Боевые искусства, Супер сила, Сёнен</p>
@@ -589,6 +652,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/narutoshippuuden.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 500/500 серий</p>
             <p>Оценка стримера: 9</p>
             <p>Жанры: Экшен, Приключения, Комедия, Боевые искусства, Супер сила, Сёнен</p>
@@ -623,6 +690,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/onepunchman.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 12/12 серий</p>
             <p>Оценка стримера: 8</p>
             <p>Жанры: Экшен, Фантастика, Комедия, Пародия, Супер сила, Сверхъестественное</p>
@@ -655,6 +726,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/onepunchman2.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 12/12 серий</p>
             <p>Оценка стримера: 6</p>
             <p>Жанры: Экшен, Фантастика, Комедия, Пародия, Супер сила, Сверхъестественное</p>
@@ -690,6 +765,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/parazit.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 24/24 серий</p>
             <p>Оценка стримера: 7</p>
             <p>Жанры: Экшен, Фантастика, Ужасы, Психологическое, Драма, Сейнен</p>
@@ -721,6 +800,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/sadkris.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 1/1 серий</p>
             <p>Оценка стримера: Крис смотрит</p>
             <p>Жанры: Повседневность, Психологическое, Драма, Романтика</p>
@@ -755,6 +838,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/steinsgate.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 24/24 серий</p>
             <p>Оценка стримера: 10</p>
             <p>Жанры: Фантастика, Психологическое, Драма, Триллер</p>
@@ -786,6 +873,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/steinsgatedel.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 1/1 серий</p>
             <p>Оценка стримера: -</p>
             <p>Жанры: Фантастика, Психологическое, Драма, Триллер</p>
@@ -818,6 +909,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/steinsgateego.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 1/1 серий</p>
             <p>Оценка стримера: -</p>
             <p>Жанры: Фантастика, Психологическое, Драма, Триллер</p>
@@ -850,6 +945,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/steinsgatezero.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 23/23 серий</p>
             <p>Оценка стримера: 10</p>
             <p>Жанры: Фантастика, Психологическое, Драма, Триллер</p>
@@ -882,6 +981,10 @@
                     <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
                 </menu>
             </header>
+            <figure>
+              <img src="https://olsior.herokuapp.com/anime/youtube.jpg">
+              <figcaption>Постер</figcaption>
+            </figure>
             <p>Посмотрели: 1/1 серий</p>
             <p>Оценка стримера: -</p>
             <p>Жанры: </p>
