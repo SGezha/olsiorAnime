@@ -5,787 +5,838 @@
         <description>Олсиор смотрит разоичные аниме, записи стримов с чатом и навигацией</description>
         <turbo:analytics type="Yandex" id="Номер счетчика" params="{ 'param' : '84051220' }"></turbo:analytics>
         <yandex:related type="infinity">
-            <link url="https://olsior.herokuapp.com/watch/akira">Akira</link>
-            <link url="https://olsior.herokuapp.com/watch/atakatitanov">Атака титанов</link>
-            <link url="https://olsior.herokuapp.com/watch/atakatitanov2">Атака титанов 2</link>
-            <link url="https://olsior.herokuapp.com/watch/atakatitanovova">Атака титанов: Выбор без сожалений</link>
-            <link url="https://olsior.herokuapp.com/watch/atakatitanovova2">Атака титанов OVA</link>
-            <link url="https://olsior.herokuapp.com/watch/bleach">Блич</link>
-            <link url="https://olsior.herokuapp.com/watch/cosmos">Космос: Пространство и время</link>
-            <link url="https://olsior.herokuapp.com/watch/deathnote">Тетрадь смерти</link>
-            <link url="https://olsior.herokuapp.com/watch/fullmetalalchemist">Стальной алхимик: Братство</link>
-            <link url="https://olsior.herokuapp.com/watch/gorod">Город, в котором меня нет</link>
-            <link url="https://olsior.herokuapp.com/watch/gto">Крутой учитель Онидзука</link>
-            <link url="https://olsior.herokuapp.com/watch/kazetachinukris">Ветер крепчает</link>
-            <link url="https://olsior.herokuapp.com/watch/kiminonawa">Твоё имя</link>
-            <link url="https://olsior.herokuapp.com/watch/koenokatachi">Форма голоса</link>
-            <link url="https://olsior.herokuapp.com/watch/naruto">Наруто</link>
-            <link url="https://olsior.herokuapp.com/watch/narutolastfilm">Наруто: Последний фильм</link>
-            <link url="https://olsior.herokuapp.com/watch/narutoshippuuden">Наруто: Ураганные хроники</link>
-            <link url="https://olsior.herokuapp.com/watch/onepunchman">Ванпанчмен</link>
-            <link url="https://olsior.herokuapp.com/watch/onepunchman2">Ванпанчмен 2</link>
-            <link url="https://olsior.herokuapp.com/watch/parazit">Паразит: Учение о жизни</link>
-            <link url="https://olsior.herokuapp.com/watch/sadkris">Сад изящных слов</link>
-            <link url="https://olsior.herokuapp.com/watch/steinsgate">Врата Штейна</link>
-            <link url="https://olsior.herokuapp.com/watch/steinsgatedel">Врата Штейна: Найти недостающее звено — Деление на ноль</link>
-            <link url="https://olsior.herokuapp.com/watch/steinsgateego">Врата Штейна: Эгоистичная пориомания</link>
-            <link url="https://olsior.herokuapp.com/watch/steinsgatezero">Врата Штейна 0</link>
-            <link url="https://olsior.herokuapp.com/watch/youtube">Ютуб</link>
+            <link url="https://olsior.herokuapp.com/watch/akira" img="https://olsior.herokuapp.com/anime/akira.jpg">Akira</link>
+            <link url="https://olsior.herokuapp.com/watch/atakatitanov" img="https://olsior.herokuapp.com/anime/atakatitanov.jpg">Атака титанов</link>
+            <link url="https://olsior.herokuapp.com/watch/atakatitanov2" img="https://olsior.herokuapp.com/anime/atakatitanov2.jpg">Атака титанов 2</link>
+            <link url="https://olsior.herokuapp.com/watch/atakatitanovova" img="https://olsior.herokuapp.com/anime/atakatitanovova.jpg">Атака титанов: Выбор без сожалений</link>
+            <link url="https://olsior.herokuapp.com/watch/atakatitanovova2" img="https://olsior.herokuapp.com/anime/atakatitanovova2.jpg">Атака титанов OVA</link>
+            <link url="https://olsior.herokuapp.com/watch/bleach" img="https://olsior.herokuapp.com/anime/bleach.jpg">Блич</link>
+            <link url="https://olsior.herokuapp.com/watch/cosmos" img="https://olsior.herokuapp.com/anime/cosmos.jpg">Космос: Пространство и время</link>
+            <link url="https://olsior.herokuapp.com/watch/deathnote" img="https://olsior.herokuapp.com/anime/deathnote.jpg">Тетрадь смерти</link>
+            <link url="https://olsior.herokuapp.com/watch/fullmetalalchemist" img="https://olsior.herokuapp.com/anime/fullmetalalchemist.jpg">Стальной алхимик: Братство</link>
+            <link url="https://olsior.herokuapp.com/watch/gorod" img="https://olsior.herokuapp.com/anime/gorod.jpg">Город, в котором меня нет</link>
+            <link url="https://olsior.herokuapp.com/watch/gto" img="https://olsior.herokuapp.com/anime/gto.jpg">Крутой учитель Онидзука</link>
+            <link url="https://olsior.herokuapp.com/watch/kazetachinukris" img="https://olsior.herokuapp.com/anime/kazetachinukris.jpg">Ветер крепчает</link>
+            <link url="https://olsior.herokuapp.com/watch/kiminonawa" img="https://olsior.herokuapp.com/anime/kiminonawa.jpg">Твоё имя</link>
+            <link url="https://olsior.herokuapp.com/watch/koenokatachi" img="https://olsior.herokuapp.com/anime/koenokatachi.jpg">Форма голоса</link>
+            <link url="https://olsior.herokuapp.com/watch/naruto" img="https://olsior.herokuapp.com/anime/naruto.jpg">Наруто</link>
+            <link url="https://olsior.herokuapp.com/watch/narutolastfilm" img="https://olsior.herokuapp.com/anime/narutolastfilm.jpg">Наруто: Последний фильм</link>
+            <link url="https://olsior.herokuapp.com/watch/narutoshippuuden" img="https://olsior.herokuapp.com/anime/narutoshippuuden.jpg">Наруто: Ураганные хроники</link>
+            <link url="https://olsior.herokuapp.com/watch/onepunchman" img="https://olsior.herokuapp.com/anime/onepunchman.jpg">Ванпанчмен</link>
+            <link url="https://olsior.herokuapp.com/watch/onepunchman2" img="https://olsior.herokuapp.com/anime/onepunchman2.jpg">Ванпанчмен 2</link>
+            <link url="https://olsior.herokuapp.com/watch/parazit" img="https://olsior.herokuapp.com/anime/parazit.jpg">Паразит: Учение о жизни</link>
+            <link url="https://olsior.herokuapp.com/watch/sadkris" img="https://olsior.herokuapp.com/anime/sadkris.jpg">Сад изящных слов</link>
+            <link url="https://olsior.herokuapp.com/watch/steinsgate" img="https://olsior.herokuapp.com/anime/steinsgate.jpg">Врата Штейна</link>
+            <link url="https://olsior.herokuapp.com/watch/steinsgatedel" img="https://olsior.herokuapp.com/anime/steinsgatedel.jpg">Врата Штейна: Найти недостающее звено — Деление на ноль</link>
+            <link url="https://olsior.herokuapp.com/watch/steinsgateego" img="https://olsior.herokuapp.com/anime/steinsgateego.jpg">Врата Штейна: Эгоистичная пориомания</link>
+            <link url="https://olsior.herokuapp.com/watch/steinsgatezero" img="https://olsior.herokuapp.com/anime/steinsgatezero.jpg">Врата Штейна 0</link>
+            <link url="https://olsior.herokuapp.com/watch/youtube" img="https://olsior.herokuapp.com/anime/youtube.jpg">Ютуб</link>
         </yandex:related>
+
         <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/akira</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Akira</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 1/1 серий</p>
-        <p>Оценка стримера: 8</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Akira</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 1/1 серий</p>
+                    <p>Оценка стримера: 8</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/akira">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/akira">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/atakatitanov</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Атака титанов</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 25/25 серий</p>
-        <p>Оценка стримера: 9</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Атака титанов</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 25/25 серий</p>
+                    <p>Оценка стримера: 9</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/atakatitanov">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/atakatitanov">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/atakatitanov2</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Атака титанов 2</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 6/12 серий</p>
-        <p>Оценка стримера: ?</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Атака титанов 2</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 6/12 серий</p>
+                    <p>Оценка стримера: ?</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/atakatitanov2">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/atakatitanov2">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/atakatitanovova</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Атака титанов: Выбор без сожалений</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 2/2 серий</p>
-        <p>Оценка стримера: -</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Атака титанов: Выбор без сожалений</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 2/2 серий</p>
+                    <p>Оценка стримера: -</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/atakatitanovova">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/atakatitanovova">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/atakatitanovova2</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Атака титанов OVA</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 3/3 серий</p>
-        <p>Оценка стримера: -</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Атака титанов OVA</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 3/3 серий</p>
+                    <p>Оценка стримера: -</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/atakatitanovova2">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/atakatitanovova2">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/bleach</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Блич</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 310/366 серий</p>
-        <p>Оценка стримера: 5</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Блич</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 310/366 серий</p>
+                    <p>Оценка стримера: 5</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/bleach">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/bleach">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/cosmos</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Космос: Пространство и время</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 2/13 серий</p>
-        <p>Оценка стримера: -</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Космос: Пространство и время</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 2/13 серий</p>
+                    <p>Оценка стримера: -</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/cosmos">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/cosmos">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/deathnote</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Тетрадь смерти</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 25/37 серий</p>
-        <p>Оценка стримера: 7</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Тетрадь смерти</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 25/37 серий</p>
+                    <p>Оценка стримера: 7</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/deathnote">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/deathnote">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/fullmetalalchemist</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Стальной алхимик: Братство</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 64/64 серий</p>
-        <p>Оценка стримера: 8</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Стальной алхимик: Братство</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 64/64 серий</p>
+                    <p>Оценка стримера: 8</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/fullmetalalchemist">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/fullmetalalchemist">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/gorod</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Город, в котором меня нет</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 12/12 серий</p>
-        <p>Оценка стримера: 9</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Город, в котором меня нет</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 12/12 серий</p>
+                    <p>Оценка стримера: 9</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/gorod">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/gorod">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/gto</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Крутой учитель Онидзука</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 43/43 серий</p>
-        <p>Оценка стримера: 8</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Крутой учитель Онидзука</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 43/43 серий</p>
+                    <p>Оценка стримера: 8</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/gto">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/gto">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/kazetachinukris</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Ветер крепчает</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 1/1 серий</p>
-        <p>Оценка стримера: Крис смотрит</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Ветер крепчает</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 1/1 серий</p>
+                    <p>Оценка стримера: Крис смотрит</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/kazetachinukris">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/kazetachinukris">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/kiminonawa</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Твоё имя</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 1/1 серий</p>
-        <p>Оценка стримера: 9</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Твоё имя</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 1/1 серий</p>
+                    <p>Оценка стримера: 9</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/kiminonawa">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/kiminonawa">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/koenokatachi</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Форма голоса</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 1/1 серий</p>
-        <p>Оценка стримера: 9</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Форма голоса</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 1/1 серий</p>
+                    <p>Оценка стримера: 9</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/koenokatachi">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/koenokatachi">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/naruto</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Наруто</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 220/220 серий</p>
-        <p>Оценка стримера: 8</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Наруто</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 220/220 серий</p>
+                    <p>Оценка стримера: 8</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/naruto">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/naruto">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/narutolastfilm</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Наруто: Последний фильм</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 1/1 серий</p>
-        <p>Оценка стримера: -</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Наруто: Последний фильм</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 1/1 серий</p>
+                    <p>Оценка стримера: -</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/narutolastfilm">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/narutolastfilm">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/narutoshippuuden</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Наруто: Ураганные хроники</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 500/500 серий</p>
-        <p>Оценка стримера: 9</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Наруто: Ураганные хроники</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 500/500 серий</p>
+                    <p>Оценка стримера: 9</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/narutoshippuuden">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/narutoshippuuden">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/onepunchman</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Ванпанчмен</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 12/12 серий</p>
-        <p>Оценка стримера: 8</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Ванпанчмен</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 12/12 серий</p>
+                    <p>Оценка стримера: 8</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/onepunchman">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/onepunchman">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/onepunchman2</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Ванпанчмен 2</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 12/12 серий</p>
-        <p>Оценка стримера: 6</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Ванпанчмен 2</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 12/12 серий</p>
+                    <p>Оценка стримера: 6</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/onepunchman2">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/onepunchman2">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/parazit</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Паразит: Учение о жизни</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 24/24 серий</p>
-        <p>Оценка стримера: 7</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Паразит: Учение о жизни</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 24/24 серий</p>
+                    <p>Оценка стримера: 7</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/parazit">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/parazit">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/sadkris</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Сад изящных слов</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 1/1 серий</p>
-        <p>Оценка стримера: Крис смотрит</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Сад изящных слов</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 1/1 серий</p>
+                    <p>Оценка стримера: Крис смотрит</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/sadkris">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/sadkris">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/steinsgate</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Врата Штейна</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 24/24 серий</p>
-        <p>Оценка стримера: 10</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Врата Штейна</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 24/24 серий</p>
+                    <p>Оценка стримера: 10</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/steinsgate">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/steinsgate">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/steinsgatedel</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Врата Штейна: Найти недостающее звено — Деление на ноль</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 1/1 серий</p>
-        <p>Оценка стримера: -</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Врата Штейна: Найти недостающее звено — Деление на ноль</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 1/1 серий</p>
+                    <p>Оценка стримера: -</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/steinsgatedel">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/steinsgatedel">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/steinsgateego</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Врата Штейна: Эгоистичная пориомания</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 1/1 серий</p>
-        <p>Оценка стримера: -</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Врата Штейна: Эгоистичная пориомания</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 1/1 серий</p>
+                    <p>Оценка стримера: -</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/steinsgateego">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/steinsgateego">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/steinsgatezero</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Врата Штейна 0</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 23/23 серий</p>
-        <p>Оценка стримера: 10</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Врата Штейна 0</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 23/23 серий</p>
+                    <p>Оценка стримера: 10</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/steinsgatezero">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/steinsgatezero">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
+        </item>
+        <item turbo="true">
             <link>https://olsior.herokuapp.com/watch/youtube</link>
             <author>Михаил Olsior Зверев</author>
             <category>Развлечение</category>
             <turbo:content>
                 <![CDATA[
-        <header>
-            <h1>Олсиор смотрит аниме</h1>
-            <h2>Ютуб</h2>
-            <figure>
-                <img src="https://olsior.herokuapp.com/minloading.webp">
-            </figure>
-            <menu>
-                <a href="https://olsior.herokuapp.com/">Список аниме</a>
-                <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
-            </menu>
-        </header>
-        <p>Посмотрели: 1/1 серий</p>
-        <p>Оценка стримера: -</p>
+                    <header>
+                        <h1>Олсиор смотрит аниме</h1>
+                        <h2>Ютуб</h2>
+                        <figure>
+                            <img src="https://olsior.herokuapp.com/minloading.webp">
+                        </figure>
+                        <menu>
+                            <a href="https://olsior.herokuapp.com/">Список аниме</a>
+                            <a href="https://olsior.herokuapp.com/support">Поддержать автора</a>
+                        </menu>
+                    </header>
+                    <p>Посмотрели: 1/1 серий</p>
+                    <p>Оценка стримера: -</p>
 
 
-        <a href="https://olsior.herokuapp.com/watch/youtube">Перейти на сайт</a>
-        <section id="contacts">
-            <div data-block="widget-feedback" data-stick="false">
-                <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
-                <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
-            </div>
-        <section>
-    ]]>
+                    <a href="https://olsior.herokuapp.com/watch/youtube">Перейти на сайт</a>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="telegram" data-url="https://t.me/olsior"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/ols1or"></div>
+                        </div>
+                    <section>
+                ]]>
             </turbo:content>
         </item>
     </channel>

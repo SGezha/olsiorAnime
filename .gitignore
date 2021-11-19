@@ -91,3 +91,4 @@ sw.*
 
 package-lock.json
 api/anime/index.js
+result.rss
