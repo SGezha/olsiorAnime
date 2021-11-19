@@ -90,3 +90,4 @@ sw.*
 *.swp
 
 package-lock.json
+api/anime/index.js
