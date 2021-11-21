@@ -1,10 +1,17 @@
 [
   {
     "title": "Атака титанов 2 / Shingeki no Kyojin Season 2",
-    "episodes": "6/12",
+    "episodes": "0/12",
+    "stars": "?",
+    "url": "atakatitanov3",
+    "watched": false
+  },
+  {
+    "title": "Атака титанов 2 / Shingeki no Kyojin Season 2",
+    "episodes": "12/12",
     "stars": "?",
     "url": "atakatitanov2",
-    "watched": false
+    "watched": true
   },
   {
     "title": "Атака титанов OVA / Shingeki no Kyojin OVA",
