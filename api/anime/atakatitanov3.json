@@ -53,6 +53,23 @@
     }
   ],
   "episodes": [
-
+    {
+      "title": "1-2 серия",
+      "url": "https://stream.wrench.gq/31723",
+      "heroku": "https://olsiorvideo.herokuapp.com/1149",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka3-1-2.txt?v=1637917584768"
+    },
+    {
+      "title": "3-4 серия",
+      "url": "https://stream.wrench.gq/31724",
+      "heroku": "https://olsiorvideo.herokuapp.com/1151",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka3-3-4.txt?v=1637917587692"
+    },
+    {
+      "title": "5-6 серия",
+      "url": "https://stream.wrench.gq/31725",
+      "heroku": "https://olsiorvideo.herokuapp.com/1150",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka3-5-6.txt?v=1637917607549"
+    }
   ]
 }
