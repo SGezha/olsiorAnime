@@ -16,6 +16,11 @@
       "url": "https://www.youtube.com/watch?v=swwUoExDIng",
       "episodes": "1-12",
       "title": "Red Swan - YOSHIKI (X JAPAN) feat. HYDE"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jhYg5NrN-r8",
+      "episodes": "13-22",
+      "title": "Linked Horizon - Shoukei to Shikabane no Michi"
     }
   ],
   "ed": [
@@ -23,6 +28,11 @@
       "url": "https://www.youtube.com/watch?v=mHeHzy1S4D8",
       "episodes": "1-12",
       "title": "Linked Horizon - Akatsuki no Chinkonka"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hQuG-PdVJDc",
+      "episodes": "13-22",
+      "title": "Name Love by Cinema staff 進撃の巨人"
     }
   ],
   "seasons": [
@@ -88,6 +98,24 @@
       "url": "https://stream.wrench.gq/32334",
       "heroku": "https://olsiorvideo.herokuapp.com/1154",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka3-11.txt?v=1638121122093"
+    },
+    {
+      "title": "12-13 серия",
+      "url": "https://stream.wrench.gq/32773",
+      "heroku": "https://olsiorvideo.herokuapp.com/1155",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka3-12-13.txt?v=1638276332979"
+    },
+    {
+      "title": "14-15 серия",
+      "url": "https://stream.wrench.gq/32774",
+      "heroku": "https://olsiorvideo.herokuapp.com/1156",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka3-14-15.txt?v=1638276334731"
+    },
+    {
+      "title": "16-17 серия",
+      "url": "https://stream.wrench.gq/32775",
+      "heroku": "https://olsiorvideo.herokuapp.com/1157",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka3-16-17.txt?v=1638276342090"
     }
   ]
 }
