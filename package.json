@@ -2,6 +2,9 @@
   "name": "olsior-anime",
   "version": "3.2.2",
   "private": true,
+  "engines" : {
+    "node" : ">=8.0.0 <11.0.0"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
