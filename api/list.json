@@ -1,10 +1,17 @@
 [
   {
     "title": "Атака титанов: Финал / Shingeki no Kyojin: The Final Season",
-    "episodes": "0/16",
+    "episodes": "6/16",
     "stars": "?",
     "url": "atakatitanov4",
     "watched": false
+  },
+  {
+    "title": "Атака титанов: Потерянные девушки / Shingeki no Kyojin: Lost Girls",
+    "episodes": "1/3",
+    "stars": "-",
+    "url": "atakatitanovova3",
+    "watched": true
   },
   {
     "title": "Атака титанов 3 / Shingeki no Kyojin Season 3",

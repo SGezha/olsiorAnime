@@ -52,11 +52,40 @@
       "text": "ТВ (22 эп.), продолжение, 2018"
     },
     {
+      "title": "Атака Титанов: Потерянные девушки",
+      "url": "https://olsior.herokuapp.com/watch/atakatitanov3",
+      "text": "OVA (3 эп.), адаптация романа, 2017"
+    },
+    {
       "title": "Атака Титанов: Финал",
       "url": "https://olsior.herokuapp.com/watch/atakatitanov4",
       "text": "ТВ (16 эп.), продолжение, 2021"
     }
   ],
   "episodes": [
+    {
+      "title": "1 серия (половина)",
+      "url": "https://00s23-webgx4.wrench.gq/36557",
+      "heroku": "https://olsiorvideo.herokuapp.com/1161",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-1.txt?v=1639598184681"
+    },
+    {
+      "title": "1-2 серия",
+      "url": "https://00s23-webgx4.wrench.gq/36558",
+      "heroku": "https://olsiorvideo.herokuapp.com/1162",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-1-2.txt?v=1639598214664"
+    },
+    {
+      "title": "3-4 серия",
+      "url": "https://00s23-webgx4.wrench.gq/36563",
+      "heroku": "https://olsiorvideo.herokuapp.com/1163",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-3-4.txt?v=1639598218648"
+    },
+    {
+      "title": "5-6 серия",
+      "url": "https://00s23-webgx4.wrench.gq/36564",
+      "heroku": "https://olsiorvideo.herokuapp.com/1164",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-5-6.txt?v=1639598364696"
+    }
   ]
 }
