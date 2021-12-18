@@ -76,21 +76,6 @@
           </Nuxt-link>
         </div>
 
-        <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
-          <h2 class="flex justify-center items-center">
-            Последняя нарезка
-            <font-awesome-icon
-              class="ml-2 mt-1"
-              style="font-size: 1rem;"
-              :icon="['fa', 'chevron-right']"
-            />
-          </h2>
-        </div>
-          <div class="main-block">
-            <iframe class="h-[50vh] w-full rounded-[10px]" src="https://www.youtube.com/embed/4IbhipyQz44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-
         <div
           class="head text-2xl my-5 px-[20px] flex justify-start items-center"
         >
@@ -150,6 +135,21 @@
               <h2 v-text="pop.title" :title="pop.title"></h2>
             </div>
           </Nuxt-link>
+        </div>
+
+        <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
+          <h2 class="flex justify-center items-center">
+            Последняя нарезка
+            <font-awesome-icon
+              class="ml-2 mt-1"
+              style="font-size: 1rem;"
+              :icon="['fa', 'chevron-right']"
+            />
+          </h2>
+        </div>
+          <div class="main-block">
+            <iframe class="h-[50vh] w-full rounded-[10px]" src="https://www.youtube.com/embed/4IbhipyQz44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
