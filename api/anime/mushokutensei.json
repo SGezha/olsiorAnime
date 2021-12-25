@@ -19,6 +19,18 @@
       "url": "",
       "heroku": "https://olsiorvideo.herokuapp.com/1171",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/mushokutensei-4-5.txt?v=1640087117107"
+    },
+    {
+      "title": "6-8 серия",
+      "url": "",
+      "heroku": "https://olsiorvideo.herokuapp.com/1173",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/mushokutensei-6-8.txt?v=1640460525780"
+    },
+    {
+      "title": "9-10 серия",
+      "url": "",
+      "heroku": "https://olsiorvideo.herokuapp.com/1174",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/mushokutensei-9-10.txt?v=1640460528639"
     }
   ]
 }
