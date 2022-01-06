@@ -226,7 +226,7 @@
               <span class="mr-2">%</span>
             </div>
 
-            <div
+            <!-- <div
               class="flex flwx-wrap items-center mt-2"
               v-if="anime.episodes[nowInd].heroku != undefined"
             >
@@ -237,7 +237,7 @@
                 v-model="heroku"
               />
               <label for="scales">Использовать другой сервер</label>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -416,10 +416,10 @@ import Footer from "@/components/footer.vue";
 
 export default {
   async asyncData({ params, $axios }) {
-    let anime = await $axios.$get(
-      `https://olsior.herokuapp.com/api/anime?${params.name}`
-    );
-    // let anime = await $axios.$get(`/api/anime?${params.name}`);
+    // let anime = await $axios.$get(
+    //   `https://olsior.herokuapp.com/api/anime?${params.name}`
+    // );
+    let anime = await $axios.$get(`/api/anime?${params.name}`);
     anime = JSON.parse(anime);
     return { anime };
   },

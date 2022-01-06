@@ -139,7 +139,7 @@
 
         <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
           <h2 class="flex justify-center items-center">
-            Последняя нарезка
+            Последнии нарезки
             <font-awesome-icon
               class="ml-2 mt-1"
               style="font-size: 1rem;"
@@ -148,7 +148,11 @@
           </h2>
         </div>
           <div class="main-block">
-            <iframe class="h-[50vh] w-full rounded-[10px]" src="https://www.youtube.com/embed/4IbhipyQz44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[10px]">
+              <iframe class="w-full rounded-[10px] min-h-[30vh]" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/9WjuJQjivQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="w-full rounded-[10px] min-h-[30vh]" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/5E5sMi-KO6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="w-full rounded-[10px] min-h-[30vh]" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/xdNcV53CqN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
