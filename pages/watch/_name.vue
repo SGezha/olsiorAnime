@@ -248,25 +248,27 @@
             </div>
           </button>
           <transition v-if="openedGift" name="fade">
-            <table class="w-full darkTable">
-              <thead>
-                <tr class="font-semibold">
-                  <th class="align-middle">Место</th>
-                  <th class="align-middle">Ник</th>
-                  <th class="align-middle">Количество</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="(g, ind) in topGift" :key="ind">
-                  <td class="align-middle flex justify-center" v-if="ind == 0"><img class="w-[30px]" src="/gift-1.gif"></td>
-                  <td class="align-middle flex justify-center" v-else-if="ind == 1"><img class="w-[30px]" src="/t2.gif"></td>
-                  <td class="align-middle flex justify-center" v-else-if="ind == 2"><img class="w-[30px]" src="/t3.gif"></td>
-                  <td class="align-middle" v-else>{{ind + 1}}</td>
-                  <td class="text-center font-bold align-middle">{{ g.author }}</td>
-                  <td class="align-middle">{{ g.count }}</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="max-h-[400px] overflow-y-auto">
+              <table class="w-full darkTable">
+                <thead>
+                  <tr class="font-semibold">
+                    <th class="align-middle">Место</th>
+                    <th class="align-middle">Ник</th>
+                    <th class="align-middle">Количество</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="(g, ind) in topGift" :key="ind">
+                    <td class="align-middle flex justify-center" v-if="ind == 0"><img class="w-[30px]" src="/gift-1.gif"></td>
+                    <td class="align-middle flex justify-center" v-else-if="ind == 1"><img class="w-[30px]" src="/t2.gif"></td>
+                    <td class="align-middle flex justify-center" v-else-if="ind == 2"><img class="w-[30px]" src="/t3.gif"></td>
+                    <td class="align-middle" v-else>{{ind + 1}}</td>
+                    <td class="text-center font-bold align-middle">{{ g.author }}</td>
+                    <td class="align-middle">{{ g.count }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </transition>
         </div>
 
