@@ -151,7 +151,7 @@
               <div v-if="msg.display" class="message">
                 <!-- <span class="time" v-text="`[${msg.time.time}]`"></span> -->
                 <span
-                  class="author"
+                  class="author font-semibold"
                   v-text="msg.author + ':'"
                   :style="{ color: `${msg.color}` }"
                 ></span>
@@ -239,6 +239,68 @@
               <label for="scales">Использовать другой сервер</label>
             </div> -->
           </div>
+        </div>
+
+        <div class="my-2 mx-5" v-if="topGift.length != 0">
+          <button @click="openedGift = !openedGift" class="text-center flex justify-center w-full bg-[#2b2b2b] py-[5px] rounded-[5px] transition-colors hover:(bg-[#3b3b3b]) focus:(outline-transparent)">
+            <div class="flex items-center">
+              <img class="w-[30px] mr-[10px] font-bold" src="/gift-1.gif">Топ шейхов
+            </div>
+          </button>
+          <transition v-if="openedGift" name="fade">
+            <table class="w-full darkTable">
+              <thead>
+                <tr class="font-semibold">
+                  <th class="align-middle">Место</th>
+                  <th class="align-middle">Ник</th>
+                  <th class="align-middle">Количество</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(g, ind) in topGift" :key="ind">
+                  <td class="align-middle flex justify-center" v-if="ind == 0"><img class="w-[30px]" src="/gift-1.gif"></td>
+                  <td class="align-middle flex justify-center" v-else-if="ind == 1"><img class="w-[30px]" src="/t2.gif"></td>
+                  <td class="align-middle flex justify-center" v-else-if="ind == 2"><img class="w-[30px]" src="/t3.gif"></td>
+                  <td class="align-middle" v-else>{{ind + 1}}</td>
+                  <td class="text-center font-bold align-middle">{{ g.author }}</td>
+                  <td class="align-middle">{{ g.count }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </transition>
+        </div>
+
+        <div class="my-2 mx-5" v-if="topChat.length != 0">
+          <button @click="openedTopChat = !openedTopChat" class="text-center flex justify-center w-full bg-[#2b2b2b] py-[5px] rounded-[5px] transition-colors hover:(bg-[#3b3b3b]) focus:(outline-transparent)">
+            <div class="flex items-center">
+              <img class="w-[30px] mr-[10px] font-bold" src="/c1.png">Топ чаттеров
+            </div>
+          </button>
+          <transition v-if="openedTopChat" name="fade">
+            <div class="max-h-[400px] overflow-y-auto">
+              <table class="w-full darkTable">
+                <thead>
+                  <tr class="font-semibold">
+                    <th class="align-middle">Место</th>
+                    <th class="align-middle">Ник</th>
+                    <th class="align-middle">Символов</th>
+                    <th class="align-middle">Количество сообщений</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="(g, ind) in topChat" :key="ind">
+                    <td class="align-middle flex justify-center" v-if="ind == 0"><img class="w-[30px]" src="/c1.png"></td>
+                    <td class="align-middle flex justify-center" v-else-if="ind == 1"><img class="w-[30px]" src="/t2.gif"></td>
+                    <td class="align-middle flex justify-center" v-else-if="ind == 2"><img class="w-[30px]" src="/t3.gif"></td>
+                    <td class="align-middle" v-else>{{ind + 1}}</td>
+                    <td class="text-center font-bold align-middle">{{ g.author }}</td>
+                    <td class="align-middle">{{ g.symbols }}</td>
+                    <td class="align-middle">{{ g.count }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </transition>
         </div>
 
         <div class="m-5">
@@ -475,7 +537,11 @@ export default {
       objectFit: "contain",
       needLoad: true,
       heroku: false,
-      chatSize: 25
+      chatSize: 25,
+      topChat: [],
+      topGift: [],
+      openedGift: false,
+      openedTopChat: false
     };
   },
   mounted() {
@@ -552,6 +618,8 @@ export default {
     },
     parseChat() {
       this.parsedChat = [];
+      this.topChat = [];
+      this.topGift = [];
       let timeStart;
       this.chat.split("\r\n").forEach((text, ind) => {
         if (ind == 0) {
@@ -571,6 +639,30 @@ export default {
         let hourDiff = timeEnd - timeStart; //in ms
         let secDiff = hourDiff / 1000; //in s
         let result = {};
+        let message = text.split("] ")[1].split(`${text.split("] ")[1].split(":")[0]}: `).join("");
+        let author = text.split("] ")[1].split(":")[0];
+        let chatter = this.topChat.find(a => a.author == author);
+        if(chatter) {
+            chatter.count = chatter.count + 1;
+            chatter.symbols = chatter.symbols + message.length;
+        } else {
+            this.topChat.push({
+                author,
+                count: 1,
+                symbols: message.length
+            })
+        }
+        if(message.includes('gifted') && !message.includes(`Olsior's`)) {
+            let gifter = this.topGift.find(a => a.author == author);
+            if(gifter) {
+                gifter.count = gifter.count + 1;
+            } else {
+                this.topGift.push({
+                    author,
+                    count: 1
+                })
+            }
+        }
         result.time = this.formatTime(secDiff);
         result.timesec = secDiff;
         this.parsedChat.push({
@@ -583,6 +675,8 @@ export default {
           display: false
         });
       });
+      this.topGift = this.topGift.sort((a, b) => a.count - b.count).reverse()
+      this.topChat = this.topChat.sort((a, b) => a.count - b.count).reverse()
     },
     changeQuality(url, heroku) {
       this.video = "";
@@ -784,12 +878,12 @@ export default {
     },
     formatTime(duration) {
       // Hours, minutes and seconds
-      var hrs = ~~(duration / 3600);
-      var mins = ~~((duration % 3600) / 60);
-      var secs = ~~duration % 60;
+      let hrs = ~~(duration / 3600);
+      let mins = ~~((duration % 3600) / 60);
+      let secs = ~~duration % 60;
 
       // Output like "1:01" or "4:03:59" or "123:03:59"
-      var ret = "";
+      let ret = "";
 
       if (hrs > 0) {
         ret += "" + hrs + ":" + (mins < 10 ? "0" : "");
@@ -800,9 +894,9 @@ export default {
       return ret;
     },
     getRandomColor() {
-      var letters = "0123456789ABCDEF";
-      var color = "#";
-      for (var i = 0; i < 6; i++) {
+      let letters = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
       }
       return color;
