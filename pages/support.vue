@@ -132,6 +132,11 @@ export default {
           username: "abathur",
           amount: 150,
           type: "₽"
+        },
+        {
+          username: "RAMIN",
+          amount: 80,
+          type: "₽"
         }
       ]
     };
