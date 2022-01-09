@@ -179,11 +179,9 @@ export default {
         this.smotrit.push(a);
       }
     });
-    this.$nextTick(function() {
-      setTimeout(() => {
-        this.show = false;
-      }, 200)
-    });
+    setTimeout(() => {
+      this.show = false;
+    }, 100)
   }
 };
 </script>
