@@ -332,7 +332,7 @@
                     :icon="['fa', 'comment-alt']"
                     v-if="post.chat"
                   />
-                  <a :href="post.url" class="down">
+                  <a :href="post.heroku" class="down">
                     <font-awesome-icon :icon="['fa', 'download']" />
                   </a>
                 </div>
