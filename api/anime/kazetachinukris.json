@@ -11,13 +11,15 @@
       "title": "Фильм 1 ч.",
       "url": "https://stream.wrench.gq/19833",
       "heroku": "https://olsiorvideo.herokuapp.com/1068",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fveter-1.txt?v=1632412719539"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fveter-1.txt?v=1632412719539",
+      "tgLink": "https://t.me/animekogda/352"
     },
     {
       "title": "Фильм 2 ч.",
       "url": "https://stream.wrench.gq/19834",
       "heroku": "https://olsiorvideo.herokuapp.com/1069",
-      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fveter-2.txt?v=1632412722312"
+      "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fveter-2.txt?v=1632412722312",
+      "tgLink": "https://t.me/animekogda/352"
     }
   ]
 }

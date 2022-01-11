@@ -550,8 +550,7 @@ export default {
       topChat: [],
       topGift: [],
       openedGift: false,
-      openedTopChat: false,
-      tgLink: ""
+      openedTopChat: false
     };
   },
   mounted() {

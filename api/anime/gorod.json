@@ -33,7 +33,8 @@
           "url": "https://stream.wrench.gq/9211",
           "heroku": "https://olsiorvideo.herokuapp.com/921"
         }
-      ]
+      ],
+      "tgLink": "https://t.me/animekogda/240"
     },
     {
       "title": "4-6 серия",
@@ -45,7 +46,8 @@
           "url": "https://stream.wrench.gq/9213",
           "heroku": "https://olsiorvideo.herokuapp.com/922"
         }
-      ]
+      ],
+      "tgLink": "https://t.me/animekogda/241"
     },
     {
       "title": "7-9 серия",
@@ -57,7 +59,8 @@
           "url": "https://stream.wrench.gq/9214",
           "heroku": "https://olsiorvideo.herokuapp.com/924"
         }
-      ]
+      ],
+      "tgLink": "https://t.me/animekogda/242"
     },
     {
       "title": "10-12 серия",
@@ -69,7 +72,8 @@
           "url": "https://stream.wrench.gq/9212",
           "heroku": "https://olsiorvideo.herokuapp.com/923"
         }
-      ]
+      ],
+      "tgLink": "https://t.me/animekogda/243"
     }
   ]
 }
