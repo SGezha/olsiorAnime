@@ -6,6 +6,18 @@
     "Спорт",
     "Школа"
   ],
+  "seasons": [
+    {
+      "title": "Баскетбол Куроко",
+      "url": "https://olsior.herokuapp.com/watch/kurokonobasket",
+      "text": "ТВ (25 эп.), адаптация манги, 2012"
+    },
+    {
+      "title": "Баскетбол Куроко 2",
+      "url": "https://olsior.herokuapp.com/watch/kurokonobasket2",
+      "text": "ТВ (25 эп.), продолжение, 2013"
+    }
+  ],
   "op": [
     {
       "url": "https://www.youtube.com/watch?v=5RVEM8-UKlg",
@@ -80,6 +92,27 @@
       "heroku": "https://olsiorvideo.herokuapp.com/1190",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko1-17-18.txt?v=1641834572558",
       "tgLink": "https://t.me/animekogda/455"
+    },
+    {
+      "title": "19-21 серия",
+      "url": "",
+      "heroku": "https://olsiorvideo.herokuapp.com/1191",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko1-19-21.txt?v=1641937844426",
+      "tgLink": "https://t.me/animekogda/456"
+    },
+    {
+      "title": "22-23 серия",
+      "url": "",
+      "heroku": "https://olsiorvideo.herokuapp.com/1192",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko1-22-23.txt?v=1641937847026",
+      "tgLink": "https://t.me/animekogda/457"
+    },
+    {
+      "title": "24-25 серия",
+      "url": "",
+      "heroku": "https://olsiorvideo.herokuapp.com/1193",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko1-24-25.txt?v=1641937851046",
+      "tgLink": "https://t.me/animekogda/458"
     }
   ]
 }

@@ -1,10 +1,17 @@
 [
   {
-    "title": "Баскетбол Куроко / Kuroko no Basket",
-    "episodes": "18/25",
+    "title": "Баскетбол Куроко 2 / Kuroko no Basket 2nd Season",
+    "episodes": "0/25",
     "stars": "?",
+    "url": "kurokonobasket2",
+    "watched": true
+  },
+  {
+    "title": "Баскетбол Куроко / Kuroko no Basket",
+    "episodes": "25/25",
+    "stars": "8",
     "url": "kurokonobasket",
-    "watched": false
+    "watched": true
   },
   {
     "title": "Нуар / Noir",

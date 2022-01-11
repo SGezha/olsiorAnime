@@ -1,18 +1,5 @@
 <template>
   <div>
-    <transition name="slide-fade">
-      <div
-        v-if="show"
-        class="bg-hex-[#1b1b1b] fixed left-0 top-0 w-screen h-screen flex justify-center items-center z-50 flex-col"
-      >
-        <img
-          src="https://olsior.herokuapp.com/loading.webp"
-          class="rounded-1 w-[100px] h-[100px]"
-        />
-        <h1 class="text-sm mt-1">Загрузка...</h1>
-      </div>
-    </transition>
-
     <div class="container mx-auto" v-if="watched.length > 0">
       <div class="popular">
         <div
@@ -165,8 +152,7 @@ export default {
   data() {
     return {
       smotrit: [],
-      watched: [],
-      show: true
+      watched: []
     };
   },
   async mounted() {
@@ -179,9 +165,6 @@ export default {
         this.smotrit.push(a);
       }
     });
-    setTimeout(() => {
-      this.show = false;
-    }, 100)
   }
 };
 </script>
