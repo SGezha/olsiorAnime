@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container mx-auto" v-if="watched.length > 0">
+    <div class="container mx-auto" v-if="watched().length > 0">
       <div class="popular">
         <div
           class="head text-2xl my-5 px-[20px] flex justify-start items-center"
@@ -28,7 +28,7 @@
         "
         >
           <Nuxt-link
-            v-for="(pop, index) in smotrit"
+            v-for="(pop, index) in smotrit()"
             :key="index"
             :to="'/watch/' + pop.url"
             class="card w-full"
@@ -36,7 +36,7 @@
             <div class="preview shadow">
               <div
                 class="preview-img bg-center bg-cover md:min-h-full"
-                :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
+                :style="{ backgroundImage: 'url(/anime/' + pop.url + '.webp)' }"
               ></div>
               <div class="anime-stats">
                 <span
@@ -89,7 +89,7 @@
         "
         >
           <Nuxt-link
-            v-for="(pop, index) in watched"
+            v-for="(pop, index) in watched()"
             :key="index"
             :to="'/watch/' + pop.url"
             class="card w-full"
@@ -97,7 +97,7 @@
             <div class="preview shadow">
               <div
                 class="preview-img bg-center bg-cover md:min-h-full"
-                :style="{ backgroundImage: 'url(/anime/' + pop.url + '.jpg)' }"
+                :style="{ backgroundImage: 'url(/anime/' + pop.url + '.webp)' }"
               ></div>
               <div class="anime-stats">
                 <span
@@ -150,22 +150,18 @@
 <script>
 export default {
   data() {
-    return {
-      smotrit: [],
-      watched: []
-    };
+    return {};
   },
-  async mounted() {
-    const animes = await this.$axios.$get(`${window.location.href}api/list`);
-    let data = JSON.parse(animes);
-    data.forEach(a => {
-      if (a.watched) {
-        this.watched.push(a);
-      } else {
-        this.smotrit.push(a);
-      }
-    });
-  }
+  async mounted() {},
+  methods: {
+    watched: function () {
+      return this.anime.filter(a => a.watched);
+    },
+    smotrit: function() {
+      return this.anime.filter(a => !a.watched);
+    }
+  },
+  props: ['anime']
 };
 </script>
 

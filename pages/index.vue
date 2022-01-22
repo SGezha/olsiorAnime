@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <Main />
+    <Main :anime="anime" />
     <Footer />
   </div>
 </template>
@@ -12,6 +12,14 @@ import Main from "@/components/main.vue";
 import Footer from "@/components/footer.vue";
 
 export default {
+  async asyncData({ params, $axios }) {
+    let anime = await $axios.$get(
+      `https://olsior.herokuapp.com/api/list`
+    );
+    // let anime = await $axios.$get(`/api/anime?${params.name}`);
+    anime = JSON.parse(anime);
+    return { anime };
+  },
   data() {
     return {
       Header,
