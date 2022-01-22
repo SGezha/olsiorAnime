@@ -17,7 +17,7 @@
       <NuxtLink to="/">
         <h1>
           <img
-            src="https://olsior.herokuapp.com/minloading.webp"
+            src="/minloading.webp"
             class="logo h-[24px] w-[24px]"
             alt="Logo"
           />
@@ -28,7 +28,7 @@
         <h1>
           Поддержать работу сайта
           <img
-            src="https://olsior.herokuapp.com/money.jpg"
+            src="/money.webp"
             class="logo h-[24px] w-[24px]"
             alt="Donate"
           />
