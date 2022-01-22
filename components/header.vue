@@ -19,6 +19,7 @@
           <img
             src="https://olsior.herokuapp.com/minloading.webp"
             class="logo h-[24px] w-[24px]"
+            alt="Logo"
           />
           Олсиор смотрит аниме <span class="small">BETA</span>
         </h1>
@@ -29,6 +30,7 @@
           <img
             src="https://olsior.herokuapp.com/money.jpg"
             class="logo h-[24px] w-[24px]"
+            alt="Donate"
           />
         </h1>
       </NuxtLink>
