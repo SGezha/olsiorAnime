@@ -555,6 +555,7 @@ export default {
   },
   mounted() {
     // window.addEventListener("keydown", this.rewind);
+    document.location.href = document.location.href.split('olsior.herokuapp.com').join('smotrel.net');
     if (
       localStorage.getItem(`${window.location.href.split("/watch/")[1]}`) !=
       null

@@ -27,7 +27,9 @@ export default {
       Footer
     };
   },
-  mounted() {},
+  mounted() {
+    document.location.href = document.location.href.split('olsior.herokuapp.com').join('smotrel.net');
+  },
   computed: {},
   methods: {}
 };
