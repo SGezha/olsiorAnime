@@ -23,7 +23,7 @@
           />
           <span>С помощью сервиса DeStream (для жителей Украины)</span></a
         >
-        <h2 class="mt-2">История донатов:</h2>
+        <h2 class="mt-2">Топ донатов:</h2>
         <ul class="da-donationslist flex flex-wrap -ml-1">
           <li
             v-for="(user, ind) in donate"
@@ -137,12 +137,22 @@ export default {
           username: "RAMIN",
           amount: 80,
           type: "₽"
+        },
+        {
+          username: "Olsior",
+          amount: 1000,
+          type: "₽"
+        },
+        {
+          username: "YarosTK",
+          amount: 2235,
+          type: "₽"
         }
       ]
     };
   },
   mounted() {
-    this.donate = this.donate.reverse();
+    this.donate = this.donate.sort((a, b) => b.amount - a.amount);
   },
   computed: {},
   methods: {}
