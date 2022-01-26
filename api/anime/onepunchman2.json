@@ -40,6 +40,7 @@
     {
       "title": "1-2 серия",
       "url": "https://stream.wrench.gq/8520",
+      "hls": "https://anime.smotrel.net/hls/onepunchman_s2/onepunchman_s2_e1-2/onepunchman_s2_e1-2_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/422",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_1-2.txt?v=1629306695654",
       "quality": [
@@ -54,6 +55,7 @@
     {
       "title": "3-4 серия",
       "url": "https://stream.wrench.gq/8533",
+      "hls": "https://anime.smotrel.net/hls/onepunchman_s2/onepunchman_s2_e3-4/onepunchman_s2_e3-4_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/426",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_3-4.txt?v=1629309281240",
       "quality": [
@@ -68,6 +70,7 @@
     {
       "title": "5-6 серия",
       "url": "https://stream.wrench.gq/8541",
+      "hls": "https://anime.smotrel.net/hls/onepunchman_s2/onepunchman_s2_e5-6/onepunchman_s2_e5-6_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/427",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_5-6.txt?v=1629312437561",
       "quality": [
@@ -82,6 +85,7 @@
     {
       "title": "7-8 серия",
       "url": "https://stream.wrench.gq/8542",
+      "hls": "https://anime.smotrel.net/hls/onepunchman_s2/onepunchman_s2_e7-8/onepunchman_s2_e7-8_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/423",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_7-8.txt?v=1629316328274",
       "quality": [
@@ -96,6 +100,7 @@
     {
       "title": "9-10 серия",
       "url": "https://stream.wrench.gq/8547",
+      "hls": "https://anime.smotrel.net/hls/onepunchman_s2/onepunchman_s2_e9-10/onepunchman_s2_e9-10_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/424",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_9-10.txt?v=1629320349835",
       "quality": [
@@ -110,6 +115,7 @@
     {
       "title": "11-12 серия",
       "url": "https://stream.wrench.gq/8584",
+      "hls": "https://anime.smotrel.net/hls/onepunchman_s2/onepunchman_s2_e11-12/onepunchman_s2_e11-12_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/425",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fone2_11-12.txt?v=1629325497114",
       "quality": [
