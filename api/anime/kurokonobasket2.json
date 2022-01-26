@@ -47,6 +47,7 @@
     {
       "title": "1-3 серия",
       "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroku_2/kuroku_2_1-3/output.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1194",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-1-3.txt?v=1643056262496",
       "tgLink": "https://t.me/animekogda/460"

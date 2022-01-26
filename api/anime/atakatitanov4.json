@@ -66,6 +66,7 @@
     {
       "title": "1 серия (половина)",
       "url": "https://00s23-webgx4.wrench.gq/36557",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e1/AT_s4_e1.1_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1161",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-1.txt?v=1639598184681",
       "tgLink": "https://t.me/animekogda/422"
@@ -73,6 +74,7 @@
     {
       "title": "1-2 серия",
       "url": "https://00s23-webgx4.wrench.gq/36558",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e1-2/AT_s4_e1.2-2_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1162",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-1-2.txt?v=1639598214664",
       "tgLink": "https://t.me/animekogda/422"
@@ -80,6 +82,7 @@
     {
       "title": "3-4 серия",
       "url": "https://00s23-webgx4.wrench.gq/36563",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e3-4/AT_s4_e3-4_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1163",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-3-4.txt?v=1639744033949",
       "tgLink": "https://t.me/animekogda/423"
@@ -87,6 +90,7 @@
     {
       "title": "5-6 серия",
       "url": "https://00s23-webgx4.wrench.gq/36564",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e5-6/AT_s4_e5-6_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1164",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-5-6.txt?v=1639598364696",
       "tgLink": "https://t.me/animekogda/424"
@@ -94,6 +98,7 @@
     {
       "title": "7-8 серия",
       "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e7-8/AT_s4_e7-8_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1165",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-7-8.txt?v=1639810742123",
       "tgLink": "https://t.me/animekogda/425"
@@ -101,6 +106,7 @@
     {
       "title": "9-10 серия",
       "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e9-10/AT_s4_e9-10_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1166",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-9-10.txt?v=1639810745393",
       "tgLink": "https://t.me/animekogda/426"
@@ -108,6 +114,7 @@
     {
       "title": "11-12 серия",
       "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e11-12/AT_s4_e11-12_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1169",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-11-12.txt?v=1639810751039",
       "tgLink": "https://t.me/animekogda/427"
@@ -115,6 +122,7 @@
     {
       "title": "13-14 серия",
       "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e13-14/AT_s4_e13-14_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1167",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-13-14.txt?v=1639810754370",
       "tgLink": "https://t.me/animekogda/428"
@@ -122,6 +130,7 @@
     {
       "title": "15-16 серия",
       "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e15-16/AT_s4_e15-16_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1168",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-15-16.txt?v=1639810758258",
       "tgLink": "https://t.me/animekogda/429"
@@ -129,6 +138,7 @@
     {
       "title": "Ведосеки по Отаке 1 ч.",
       "url": "",
+      "hls": "https://anime.smotrel.net/hls/YouTube/YT_vid_AT_1/YT_vid_AT_1.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1175",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/videoataka-1.txt?v=1640698747582",
       "tgLink": "https://t.me/animekogda/435"
@@ -136,6 +146,7 @@
     {
       "title": "Ведосеки по Отаке 2 ч.",
       "url": "",
+      "hls": "https://anime.smotrel.net/hls/YouTube/YT_vid_AT_2/YT_vid_AT_2.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1176",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/videoataka-2.txt?v=1640698750215",
       "tgLink": "https://t.me/animekogda/435"

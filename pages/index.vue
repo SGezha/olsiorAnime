@@ -14,8 +14,7 @@ import Footer from "@/components/footer.vue";
 export default {
   async asyncData({ params, $axios }) {
     let anime = await $axios.$get(`https://smotrel.net/api/list`);
-    // let anime = await $axios.$get(`https://smotrel.net/api/list`);
-    // let anime = await $axios.$get(`/api/anime?${params.name}`);
+    // let anime = await $axios.$get(`/api/list`);
     anime = JSON.parse(anime);
     return { anime };
   },

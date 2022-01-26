@@ -5,6 +5,7 @@
     {
       "title": "Как аниме создало и убило киберпанк",
       "url": "https://stream.wrench.gq/14895",
+      "hls": "https://anime.smotrel.net/hls/YouTube/kak_anime_sozdalo/kak_anime_sozdalo_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1021",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fcyberpunk.txt?v=1631199593616",
       "taiming": [

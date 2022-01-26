@@ -76,6 +76,7 @@
     {
       "title": "1-2 серия",
       "url": "https://stream.wrench.gq/25581",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e1-2/AT_s1_e1-2_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1091",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka1-2.txt?v=1635838985496",
       "tgLink": "https://t.me/animekogda/381"
@@ -83,6 +84,7 @@
     {
       "title": "3-4 серия",
       "url": "https://stream.wrench.gq/25582",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e3-4/AT_s1_e3-4_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1093",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka3-4.txt?v=1635838988221",
       "tgLink": "https://t.me/animekogda/382"
@@ -90,6 +92,7 @@
     {
       "title": "5-6 серия",
       "url": "https://stream.wrench.gq/25582",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e5-6/AT_s1_e5-6_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1092",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka5-6.txt?v=1635838991130",
       "tgLink": "https://t.me/animekogda/383"
@@ -97,6 +100,7 @@
     {
       "title": "7-9 серия",
       "url": "https://stream.wrench.gq/25904",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e7-9/AT_s1_e7-9_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1094",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka7-9.txt?v=1636061370412",
       "tgLink": "https://t.me/animekogda/384"
@@ -104,6 +108,7 @@
     {
       "title": "10-11 серия",
       "url": "https://stream.wrench.gq/25905",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e10-11/AT_s1_e10-11_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1095",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka10-11.txt?v=1636061378669",
       "tgLink": "https://t.me/animekogda/385"
@@ -111,6 +116,7 @@
     {
       "title": "12-14 серия",
       "url": "https://stream.wrench.gq/26322",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e12-14/AT_s1_e12-14_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1096",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka12-14.txt?v=1636199145790",
       "tgLink": "https://t.me/animekogda/386"
@@ -118,6 +124,7 @@
     {
       "title": "15-16 серия",
       "url": "https://stream.wrench.gq/26323",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e15-16/AT_s1_e15-16_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1097",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fataka15-16.txt?v=1636199148527",
       "tgLink": "https://t.me/animekogda/387"
@@ -125,6 +132,7 @@
     {
       "title": "17-18 серия",
       "url": "https://stream.wrench.gq/28183",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e17-18/AT_s1_e17-18_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1098",
       "chat": "",
       "tgLink": "https://t.me/animekogda/388"
@@ -132,24 +140,28 @@
     {
       "title": "19-20 серия",
       "url": "https://stream.wrench.gq/28186",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e19-20/AT_s1_e19-20_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1099",
       "tgLink": "https://t.me/animekogda/389"
     },
     {
       "title": "21-22 серия",
       "url": "https://stream.wrench.gq/28187",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e21-22/AT_s1_e21-22_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1102",
       "tgLink": "https://t.me/animekogda/390"
     },
     {
       "title": "23-24 серия",
       "url": "https://stream.wrench.gq/28184",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e23-24/AT_s1_e23-24_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1100",
       "tgLink": "https://t.me/animekogda/391"
     },
     {
       "title": "25 серия",
       "url": "https://stream.wrench.gq/28185",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s1/AT_s1_e25/AT_s1_e25_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1101",
       "tgLink": "https://t.me/animekogda/392"
     }

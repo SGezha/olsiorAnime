@@ -11,6 +11,7 @@
     {
       "title": "Фильм 1ч.",
       "url": "https://stream.wrench.gq/20331",
+      "hls": "https://anime.smotrel.net/hls/Koe_no_Katachi/Koe_no_Katachi_1/Koe_no_Katachi_1_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1074",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fkoenokatachi-1.txt?v=1632608683289",
       "tgLink": "https://t.me/animekogda/363"
@@ -18,6 +19,7 @@
     {
       "title": "Фильм 2ч.",
       "url": "https://stream.wrench.gq/20332",
+      "hls": "https://anime.smotrel.net/hls/Koe_no_Katachi/Koe_no_Katachi_2/Koe_no_Katachi_2_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1075",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fkoenokatachi-2.txt?v=1632608686972",
       "tgLink": "https://t.me/animekogda/363"

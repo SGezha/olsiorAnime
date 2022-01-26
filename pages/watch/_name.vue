@@ -507,7 +507,6 @@ import Hls from "hls.js";
 export default {
   async asyncData({ params, $axios }) {
     let anime = await $axios.$get(`https://smotrel.net/api/anime?${params.name}`);
-    // let anime = await $axios.$get(`https://smotrel.net/api/anime?${params.name}`);
     // let anime = await $axios.$get(`/api/anime?${params.name}`);
     anime = JSON.parse(anime);
     return { anime };

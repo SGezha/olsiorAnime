@@ -15,12 +15,14 @@
     {
       "title": "Фильм 1ч.",
       "url": "https://stream.wrench.gq/14570",
+      "hls": "https://anime.smotrel.net/hls/akira/Akira_1/Akira_1_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1019",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fakira-1.txt?v=1631090559013"
     },
     {
       "title": "Фильм 2ч.",
       "url": "https://stream.wrench.gq/14571",
+      "hls": "https://anime.smotrel.net/hls/akira/Akira_2/Akira_2_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1020",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fakira-2.txt?v=1631090564716"
     }

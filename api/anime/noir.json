@@ -10,6 +10,7 @@
     {
       "title": "1-2 серия",
       "url": "",
+      "hls": "https://anime.smotrel.net/hls/Noir/Noir_1-2/Noir_1-2_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1182",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/noir-1-2.txt?v=1641478678564",
       "tgLink": "https://t.me/animekogda/447"
@@ -17,6 +18,7 @@
     {
       "title": "3-4 серия",
       "url": "",
+      "hls": "https://anime.smotrel.net/hls/Noir/Noir_3-4/Noir_3-4_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1183",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/noir-3-4.txt?v=1641478692429",
       "tgLink": "https://t.me/animekogda/448"
