@@ -12,7 +12,6 @@
     {
       "title": "Фильм 1ч.",
       "url": "https://stream.wrench.gq/19803",
-      "hls": "https://anime.smotrel.net/hls/kiminonawa/kiminonawa_1/kiminonawa_1.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1063",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fkiminonawa-1.txt?v=1632385677360",
       "tgLink": "https://t.me/animekogda/349"
@@ -20,7 +19,6 @@
     {
       "title": "Фильм 2ч.",
       "url": "https://stream.wrench.gq/19804",
-      "hls": "https://anime.smotrel.net/hls/kiminonawa/kiminonawa_2/kiminonawa_2.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1064",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fkiminonawa-2.txt?v=1632385680365",
       "tgLink": "https://t.me/animekogda/349"

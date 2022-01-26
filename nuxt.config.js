@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Олсиор смотрит аниме',
@@ -88,10 +88,6 @@ module.exports = {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   serverMiddleware: {
     '/api': '~/api'
-  },
-
-  server: {
-    port: 8080 // default: localhost
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

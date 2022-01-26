@@ -142,7 +142,6 @@ export default {
     };
   },
   mounted() {
-    document.location.href = document.location.href.split('olsior.herokuapp.com').join('smotrel.net')
     this.donate = this.donate.reverse();
   },
   computed: {},
