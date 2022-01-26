@@ -97,7 +97,7 @@
               v-if="needLoad"
             >
               <img
-                src="https://olsior.herokuapp.com/loading.gif"
+                src="https://smotrel.net/loading.gif"
                 class="rounded-full w-[70px]"
               />
               <h1 class="text-xs mt-1 text-shadow-xl">Загрузка...</h1>
@@ -507,7 +507,7 @@ import Hls from "hls.js";
 export default {
   async asyncData({ params, $axios }) {
     // let anime = await $axios.$get(`https://smotrel.net/api/anime?${params.name}`);
-    // let anime = await $axios.$get(`https://olsior.herokuapp.com/api/anime?${params.name}`);
+    // let anime = await $axios.$get(`https://smotrel.net/api/anime?${params.name}`);
     let anime = await $axios.$get(`/api/anime?${params.name}`);
     anime = JSON.parse(anime);
     return { anime };

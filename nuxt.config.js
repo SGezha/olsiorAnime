@@ -10,8 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Сайт с записями стримов просмотра аниме Olsior\'а! С удобным интерфейсом и крутыми фишками. Сохранение прогресса просмотра, запись чата, режим театра, мобильный интерфейс.' },
       { property: 'og:description', hid: 'og:description', name: 'og:description', content: 'Сайт с записями стримов просмотра аниме Olsior\'а! С удобным интерфейсом и крутыми фишками. Сохранение прогресса просмотра, запись чата, режим театра, мобильный интерфейс.' },
       { property: 'og:title', hid: 'og:title', name: 'og:title', content: 'Олсиор смотрит аниме' },
-      { property: 'og:url', hid: 'og:url', name: 'og:url', content: 'https://olsior.herokuapp.com' },
-      { property: 'og:image', hid: 'og:image', name: 'og:image', content: 'https://olsior.herokuapp.com/site.jpg' },
+      { property: 'og:url', hid: 'og:url', name: 'og:url', content: 'https://smotrel.net' },
+      { property: 'og:image', hid: 'og:image', name: 'og:image', content: 'https://smotrel.net/site.jpg' },
       { hid: 'Keywords', name: 'Keywords', content: 'Olsior, olsior, олсиор, Олсиор, смотрит, Смотрит, аниме, Аниме, Olsior смотрит аниме, Olsior записи аниме стримов, олсиор аниме записи, Anime, anime, наруто, блич, Naruto, bleach, Bleach, врата штейна, смотрит, аниме, записи стримов, стримы, Стримы олсиора, Записи олсиора, Olsior twitch' },
       { name: 'format-detection', content: 'telephone=no' }
     ],

@@ -28,37 +28,37 @@
   "seasons": [
     {
       "title": "Атака Титанов",
-      "url": "https://olsior.herokuapp.com/watch/atakatitanov",
+      "url": "https://smotrel.net/watch/atakatitanov",
       "text": "ТВ (25 эп.), адаптация манги, 2013"
     },
     {
       "title": "Атака титанов: Выбор без сожалений / Shingeki no Kyojin: Kuinaki Sentaku",
-      "url": "https://olsior.herokuapp.com/watch/atakatitanov2ova",
+      "url": "https://smotrel.net/watch/atakatitanov2ova",
       "text": "OVA (2 эп.), 2014"
     },
     {
       "title": "Атака титанов OVA / Shingeki no Kyojin OVA",
-      "url": "https://olsior.herokuapp.com/watch/atakatitanovova2",
+      "url": "https://smotrel.net/watch/atakatitanovova2",
       "text": "OVA (3 эп.), 2013"
     },
     {
       "title": "Атака титанов 2",
-      "url": "https://olsior.herokuapp.com/watch/atakatitanov2",
+      "url": "https://smotrel.net/watch/atakatitanov2",
       "text": "ТВ (12 эп.), продолжение, 2017"
     },
     {
       "title": "Атака титанов 3",
-      "url": "https://olsior.herokuapp.com/watch/atakatitanov3",
+      "url": "https://smotrel.net/watch/atakatitanov3",
       "text": "ТВ (22 эп.), продолжение, 2018"
     },
     {
       "title": "Атака Титанов: Потерянные девушки",
-      "url": "https://olsior.herokuapp.com/watch/atakatitanov3",
+      "url": "https://smotrel.net/watch/atakatitanov3",
       "text": "OVA (3 эп.), адаптация романа, 2017"
     },
     {
       "title": "Атака Титанов: Финал",
-      "url": "https://olsior.herokuapp.com/watch/atakatitanov4",
+      "url": "https://smotrel.net/watch/atakatitanov4",
       "text": "ТВ (16 эп.), продолжение, 2021"
     }
   ],

@@ -9,12 +9,12 @@
   "seasons": [
     {
       "title": "Баскетбол Куроко",
-      "url": "https://olsior.herokuapp.com/watch/kurokonobasket",
+      "url": "https://smotrel.net/watch/kurokonobasket",
       "text": "ТВ (25 эп.), адаптация манги, 2012"
     },
     {
       "title": "Баскетбол Куроко 2",
-      "url": "https://olsior.herokuapp.com/watch/kurokonobasket2",
+      "url": "https://smotrel.net/watch/kurokonobasket2",
       "text": "ТВ (25 эп.), продолжение, 2013"
     }
   ],

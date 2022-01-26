@@ -27,12 +27,12 @@
   "seasons": [
     {
       "title": "Ванпанчмен",
-      "url": "https://olsior.herokuapp.com/watch/onepunchman",
+      "url": "https://smotrel.net/watch/onepunchman",
       "text": "ТВ (12 эп.), адаптация манги, 2015"
     },
     {
       "title": "Ванпанчмен 2",
-      "url": "https://olsior.herokuapp.com/watch/onepunchman2",
+      "url": "https://smotrel.net/watch/onepunchman2",
       "text": "ТВ, продолжение, 2019"
     }
   ],

@@ -30,22 +30,22 @@
   "seasons": [
     {
       "title": "Врата Штейна",
-      "url": "https://olsior.herokuapp.com/watch/steinsgate",
+      "url": "https://smotrel.net/watch/steinsgate",
       "text": "ТВ (24 эп.), адаптация игры, 2011"
     },
     {
       "title": "Врата Штейна: Эгоистичная пориомания",
-      "url": "https://olsior.herokuapp.com/watch/steinsgateego",
+      "url": "https://smotrel.net/watch/steinsgateego",
       "text": "Спэшл (1 эп.), дополнение, 2012"
     },
     {
       "title": "Врата Штейна: Найти недостающее звено - Деление на ноль",
-      "url": "https://olsior.herokuapp.com/watch/steinsgatedel",
+      "url": "https://smotrel.net/watch/steinsgatedel",
       "text": "Спэшл (1 эп.), адаптация игры, 2015"
     },
     {
       "title": "Врата Штейна 0",
-      "url": "https://olsior.herokuapp.com/watch/steinsgatezero",
+      "url": "https://smotrel.net/watch/steinsgatezero",
       "text": "ТВ (23 эп.), адаптация игры, 2018"
     }
   ],
