@@ -233,6 +233,24 @@
               <span class="mr-2">%</span>
             </div>
 
+            <div
+              class="flex flex-wrap items-center mt-2"
+              v-if="
+                nowInd != -1 &&
+                  anime.episodes[nowInd].hls != undefined
+              "
+            >
+              <label for="size">Сервер:</label>
+              <select
+                class="bg-[#2b2b2b] p-[2px] rounded-[2px] ml-2"
+                name="fit"
+                v-model="server"
+              >
+                <option value="smotrel">smotrel.net</option>
+                <option value="heroku">herokuapp.com</option>
+              </select>
+            </div>
+
             <!-- <div
               class="flex flex-wrap items-center mt-2"
               v-if="anime.episodes[nowInd].heroku != undefined"
@@ -484,13 +502,13 @@
 import "@/assets/css/watch.css";
 import Header from "@/components/header.vue";
 import Footer from "@/components/footer.vue";
+import Hls from "hls.js";
 
 export default {
   async asyncData({ params, $axios }) {
-    let anime = await $axios.$get(
-      `https://olsior.herokuapp.com/api/anime?${params.name}`
-    );
-    // let anime = await $axios.$get(`/api/anime?${params.name}`);
+    // let anime = await $axios.$get(`https://smotrel.net/api/anime?${params.name}`);
+    // let anime = await $axios.$get(`https://olsior.herokuapp.com/api/anime?${params.name}`);
+    let anime = await $axios.$get(`/api/anime?${params.name}`);
     anime = JSON.parse(anime);
     return { anime };
   },
@@ -514,7 +532,7 @@ export default {
           property: "og:image",
           hid: "og:image",
           name: "og:image",
-          content: `https://olsior.herokuapp.com${this.anime.background}`
+          content: `https://smotrel.net${this.anime.background}`
         }
       ]
     };
@@ -544,6 +562,7 @@ export default {
       selectQuality: "1080p",
       post: [],
       objectFit: "contain",
+      server: "smotrel",
       needLoad: true,
       heroku: false,
       chatSize: 25,
@@ -589,6 +608,10 @@ export default {
           this.selectQuality = "1080p";
         }
       }
+    },
+    server(value) {
+      let { url, title, chat } = this.post;
+      this.change(this.nowInd, url, title, chat, this.post)
     },
     objectFit(value) {
       this.$refs.video.style.objectFit = value;
@@ -700,8 +723,10 @@ export default {
       this.$refs.video.currentTime = this.hmsToSecondsOnly(time);
     },
     change(ind, url, title, chat, post) {
+      if(window.hls) window.hls.stopLoad()
       this.video = "";
       this.post = post;
+      if(post.hls == undefined) this.server = 'heroku'
 
       this.chat = "";
 
@@ -709,7 +734,25 @@ export default {
       if (this.save.id == ind) this.needSave = true;
       this.nowInd = ind;
 
-      if (this.heroku == false && post.heroku != undefined) {
+      if (post.hls != undefined && this.server == 'smotrel') {
+        setTimeout(() => {
+          if (Hls.isSupported()) {
+            const hls = new Hls();
+            if(this.needSave) hls.config.startPosition = this.save.time;
+            hls.loadSource(post.hls);
+            hls.attachMedia(this.$refs.video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              this.$refs.video.play()
+            });
+            window.hls = hls;
+          } else {
+            this.$refs.video.src = post.hls;
+            this.$refs.video.addEventListener('loadedmetadata', () => {
+                this.$refs.video.play();
+            });
+          }
+        }, 0)
+      } else if(this.heroku == false && post.heroku != undefined && this.server != 'smotrel') {
         this.video = post.heroku;
       } else {
         this.video = url;
