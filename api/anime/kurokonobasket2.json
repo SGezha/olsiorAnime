@@ -57,7 +57,7 @@
       "url": "",
       "hls": "https://anime.smotrel.net/hls/kuroku_2/kuroku_s2_e4-6/kuroku_s2_e4-6_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1195",
-      "chat": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-4-6.txt?v=1643226280251",
       "tgLink": "https://t.me/animekogda/461"
     },
     {
@@ -65,7 +65,7 @@
       "url": "",
       "hls": "https://anime.smotrel.net/hls/kuroku_2/kuroku_s2_e7-8/kuroku_s2_e7-8_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1196",
-      "chat": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-7-8.txt?v=1643226282300",
       "tgLink": "https://t.me/animekogda/462"
     }
   ]

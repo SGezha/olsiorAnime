@@ -336,348 +336,406 @@
     {
       "title": "1-2 серия",
       "url": "https://stream.wrench.gq/7516",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e1-2/Naruto_s2_e1-2_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/547",
       "tgLink": "https://t.me/animekogda/50"
     },
     {
       "title": "3-5 серия",
       "url": "https://stream.wrench.gq/7517",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e3-5/Naruto_s2_e3-5_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/548",
       "tgLink": "https://t.me/animekogda/51"
     },
     {
       "title": "6-7 серия",
       "url": "https://stream.wrench.gq/7518",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e6-7/Naruto_s2_e6-7_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/571",
       "tgLink": "https://t.me/animekogda/52"
     },
     {
       "title": "8-9 серия",
       "url": "https://stream.wrench.gq/7519",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e8-9/Naruto_s2_e8-9_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/549",
       "tgLink": "https://t.me/animekogda/53"
     },
     {
       "title": "10-11 серия",
       "url": "https://stream.wrench.gq/7520",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e10-11/Naruto_s2_e10-11_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/574",
       "tgLink": "https://t.me/animekogda/54"
     },
     {
       "title": "12-13 серия",
       "url": "https://stream.wrench.gq/7521",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e12-13/Naruto_s2_e12-13_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/550",
       "tgLink": "https://t.me/animekogda/55"
     },
     {
       "title": "14-15 серия",
       "url": "https://stream.wrench.gq/7522",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e14-15/Naruto_s2_e14-15_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/551",
       "tgLink": "https://t.me/animekogda/56"
     },
     {
       "title": "16-17 серия",
       "url": "https://stream.wrench.gq/7523",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e16-17/Naruto_s2_e16-17_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/552",
       "tgLink": "https://t.me/animekogda/57"
     },
     {
       "title": "18-19 серия",
       "url": "https://stream.wrench.gq/7524",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e18-19/Naruto_s2_e18-19_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/553",
       "tgLink": "https://t.me/animekogda/58"
     },
     {
       "title": "20-23 серия",
       "url": "https://stream.wrench.gq/7525",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e20-23/Naruto_s2_e20-23_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/554",
       "tgLink": "https://t.me/animekogda/59"
     },
     {
       "title": "24-27 серия",
       "url": "https://stream.wrench.gq/7526",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e24-27/Naruto_s2_e24-27_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/555",
       "tgLink": "https://t.me/animekogda/60"
     },
     {
       "title": "28-29 серия",
       "url": "https://stream.wrench.gq/7527",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e28-29/Naruto_s2_e28-29_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/556",
       "tgLink": "https://t.me/animekogda/61"
     },
     {
       "title": "30-32 серия",
       "url": "https://stream.wrench.gq/7528",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e30-32/Naruto_s2_e30-32_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/557",
       "tgLink": "https://t.me/animekogda/62"
     },
     {
       "title": "33-35 серия",
       "url": "https://stream.wrench.gq/7529",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e33-35/Naruto_s2_e33-35_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/558",
       "tgLink": "https://t.me/animekogda/63"
     },
     {
       "title": "36-38 серия",
       "url": "https://stream.wrench.gq/7530",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e36-38/Naruto_s2_e36-38_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/559",
       "tgLink": "https://t.me/animekogda/64"
     },
     {
       "title": "39-41 серия",
       "url": "https://stream.wrench.gq/7531",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e39-41/Naruto_s2_e39-41_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/560",
       "tgLink": "https://t.me/animekogda/65"
     },
     {
       "title": "42-44 серия",
       "url": "https://stream.wrench.gq/7532",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e42-44/Naruto_s2_e42-44_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/561",
       "tgLink": "https://t.me/animekogda/66"
     },
     {
       "title": "45-47 серия",
       "url": "https://stream.wrench.gq/7533",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e45-47/Naruto_s2_e45-47_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/562",
       "tgLink": "https://t.me/animekogda/67"
     },
     {
       "title": "48-51 серия",
       "url": "https://stream.wrench.gq/7534",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e48-51/Naruto_s2_e48-51_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/563",
       "tgLink": "https://t.me/animekogda/68"
     },
     {
       "title": "52-53 серия",
       "url": "https://stream.wrench.gq/7535",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e52-53/Naruto_s2_e52-53_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/564",
       "tgLink": "https://t.me/animekogda/69"
     },
     {
       "title": "54-56 серия",
       "url": "https://stream.wrench.gq/7536",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e54-56/Naruto_s2_e54-56_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/565",
       "tgLink": "https://t.me/animekogda/70"
     },
     {
       "title": "71-74 серия",
       "url": "https://stream.wrench.gq/7537",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e71-74/Naruto_s2_e71-74_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/566",
       "tgLink": "https://t.me/animekogda/71"
     },
     {
       "title": "75-76 серия",
       "url": "https://stream.wrench.gq/7538",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e75-76/Naruto_s2_e75-76_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/567",
       "tgLink": "https://t.me/animekogda/72"
     },
     {
       "title": "77-79 серия",
       "url": "https://stream.wrench.gq/7539",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e77-79/Naruto_s2_e77-79_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/568",
       "tgLink": "https://t.me/animekogda/73"
     },
     {
       "title": "80-82 серия",
       "url": "https://stream.wrench.gq/7540",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e80-82/Naruto_s2_e80-82_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/569",
       "tgLink": "https://t.me/animekogda/74"
     },
     {
       "title": "83-84 серия",
       "url": "https://stream.wrench.gq/7541",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e83-84/Naruto_s2_e83-84_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/570",
       "tgLink": "https://t.me/animekogda/75"
     },
     {
       "title": "85 серия",
       "url": "https://stream.wrench.gq/7542",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e85/Naruto_s2_e85_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/572",
       "tgLink": "https://t.me/animekogda/76"
     },
     {
       "title": "86-89 серия",
       "url": "https://stream.wrench.gq/7543",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e86-89/Naruto_s2_e86-89_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/573",
       "tgLink": "https://t.me/animekogda/77"
     },
     {
       "title": "90 серия",
       "url": "https://stream.wrench.gq/7544",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e90/Naruto_s2_e90_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/577",
       "tgLink": "https://t.me/animekogda/78"
     },
     {
       "title": "97 серия",
       "url": "https://stream.wrench.gq/7561",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e97/Naruto_s2_e97_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/578",
       "tgLink": "https://t.me/animekogda/96"
     },
     {
       "title": "112-114 серия",
       "url": "https://stream.wrench.gq/7545",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e112-114/Naruto_s2_e112-114_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/575",
       "tgLink": "https://t.me/animekogda/79"
     },
     {
       "title": "115-116 серия",
       "url": "https://stream.wrench.gq/7546",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e115-116/Naruto_s2_e115-116_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/576",
       "tgLink": "https://t.me/animekogda/80"
     },
     {
       "title": "117-118 серия",
       "url": "https://stream.wrench.gq/9788",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e117-118/Naruto_s2_e117-118_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/579",
       "tgLink": "https://t.me/animekogda/81"
     },
     {
       "title": "119-121 серия",
       "url": "https://stream.wrench.gq/7547",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e119-121/Naruto_s2_e119-121_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/580",
       "tgLink": "https://t.me/animekogda/82"
     },
     {
       "title": "122-125 серия",
       "url": "https://stream.wrench.gq/7548",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e122-125/Naruto_s2_e122-125_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/581",
       "tgLink": "https://t.me/animekogda/83"
     },
     {
       "title": "126-128 серия",
       "url": "https://stream.wrench.gq/7549",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e126-128/Naruto_s2_e126-128_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/595",
       "tgLink": "https://t.me/animekogda/84"
     },
     {
       "title": "129-133 серия",
       "url": "https://stream.wrench.gq/7550",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e129-133/Naruto_s2_e129-133_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/582",
       "tgLink": "https://t.me/animekogda/85"
     },
     {
       "title": "134-136 серия",
       "url": "https://stream.wrench.gq/7551",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e134-136/Naruto_s2_e134-136_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/583",
       "tgLink": "https://t.me/animekogda/86"
     },
     {
       "title": "137-139 серия",
       "url": "https://stream.wrench.gq/7552",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e137-139/Naruto_s2_e137-139_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/584",
       "tgLink": "https://t.me/animekogda/87"
     },
     {
       "title": "140-143 серия",
       "url": "https://stream.wrench.gq/7553",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e140-143/Naruto_s2_e140-143_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/585",
       "tgLink": "https://t.me/animekogda/88"
     },
     {
       "title": "152 серия",
       "url": "https://stream.wrench.gq/7554",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e152/Naruto_s2_e152_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/586",
       "tgLink": "https://t.me/animekogda/89"
     },
     {
       "title": "153-155 серия",
       "url": "https://stream.wrench.gq/7555",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e153-155/Naruto_s2_e153-155_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/587",
       "tgLink": "https://t.me/animekogda/90"
     },
     {
       "title": "156-158 серия",
       "url": "https://stream.wrench.gq/7556",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e156-158/Naruto_s2_e156-158_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/588",
       "tgLink": "https://t.me/animekogda/91"
     },
     {
       "title": "159-162 серия",
       "url": "https://stream.wrench.gq/7557",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e159-162/Naruto_s2_e159-162_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/589",
       "tgLink": "https://t.me/animekogda/92"
     },
     {
       "title": "163-165 серия",
       "url": "https://stream.wrench.gq/7558",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e163-165/Naruto_s2_e163-165_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/590",
       "tgLink": "https://t.me/animekogda/93"
     },
     {
       "title": "166-169 серия",
       "url": "https://stream.wrench.gq/7559",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e166-169/Naruto_s2_e166-169_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/601",
       "tgLink": "https://t.me/animekogda/94"
     },
     {
       "title": "172-175 серия",
       "url": "https://stream.wrench.gq/7560",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e172-175/Naruto_s2_e172-175_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/591",
       "tgLink": "https://t.me/animekogda/95"
     },
     {
       "title": "176-181 серия",
       "url": "https://stream.wrench.gq/11003",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e176-181/Naruto_s2_e176-181_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/872",
       "tgLink": "https://t.me/animekogda/97"
     },
     {
       "title": "197-199 серия",
       "url": "https://stream.wrench.gq/7563",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e197-199/Naruto_s2_e197-199_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/593",
       "tgLink": "https://t.me/animekogda/98"
     },
     {
       "title": "200-202 серия",
       "url": "https://stream.wrench.gq/7564",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e200-202/Naruto_s2_e200-202_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/594",
       "tgLink": "https://t.me/animekogda/99"
     },
     {
       "title": "203-205 серия",
       "url": "https://stream.wrench.gq/7565",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e203-205/Naruto_s2_e203-205_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/596",
       "tgLink": "https://t.me/animekogda/100"
     },
     {
       "title": "206-208 серия",
       "url": "https://stream.wrench.gq/7566",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e206-208/Naruto_s2_e206-208_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/597",
       "tgLink": "https://t.me/animekogda/101"
     },
     {
       "title": "209-211 серия",
       "url": "https://stream.wrench.gq/7567",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e209-211/Naruto_s2_e209-211_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/598",
       "tgLink": "https://t.me/animekogda/102"
     },
     {
       "title": "212-214 серия",
       "url": "https://stream.wrench.gq/7568",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e212-214/Naruto_s2_e212-214_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/599",
       "tgLink": "https://t.me/animekogda/103"
     },
     {
       "title": "215-216 серия",
       "url": "https://stream.wrench.gq/7569",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e215-216/Naruto_s2_e215-216_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/613",
       "tgLink": "https://t.me/animekogda/104"
     },
     {
       "title": "217-219 серия",
       "url": "https://stream.wrench.gq/7570",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e217-219/Naruto_s2_e217-219_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/600",
       "tgLink": "https://t.me/animekogda/105"
     },
     {
       "title": "220-222 серия",
       "url": "https://stream.wrench.gq/7571",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e220-222/Naruto_s2_e220-222_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/602",
       "tgLink": "https://t.me/animekogda/106"
     },
     {
       "title": "243-245 серия",
       "url": "https://stream.wrench.gq/7572",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_s2_e243-245/Naruto_s2_e243-245_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/603",
       "tgLink": "https://t.me/animekogda/107"
     },
