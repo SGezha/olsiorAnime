@@ -239,6 +239,7 @@
     {
       "title": "1-2 серия",
       "url": "https://stream.wrench.gq/7178",
+      "hls": "https://anime.smotrel.net/hls/Bleach/Bleach_1-2/Bleach_1-2_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/463",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fbleach_1-2.txt?v=1629040945210",
       "tgLink": "https://t.me/animekogda/267"

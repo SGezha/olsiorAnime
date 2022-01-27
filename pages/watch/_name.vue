@@ -710,9 +710,28 @@ export default {
       this.topChat = this.topChat.sort((a, b) => a.count - b.count).reverse()
     },
     changeQuality(url, heroku) {
+      if(window.hls) window.hls.stopLoad()
       this.video = "";
       if (this.save.id == this.nowInd) this.needSave = true;
-      if (this.heroku == false && this.quality[0].heroku != undefined) {
+      if(this.post.hls != undefined && this.server == 'smotrel') {
+        setTimeout(() => {
+          if (Hls.isSupported()) {
+            const hls = new Hls();
+            if(this.needSave) hls.config.startPosition = this.save.time;
+            hls.loadSource(this.post.hls);
+            hls.attachMedia(this.$refs.video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function() {
+              this.$refs.video.play()
+            });
+            window.hls = hls;
+          } else {
+            this.$refs.video.src = post.hls;
+            this.$refs.video.addEventListener('loadedmetadata', () => {
+                this.$refs.video.play();
+            });
+          }
+        }, 0)
+      } else if (this.heroku == false && this.quality[0].heroku != undefined && this.server != 'smotrel') {
         this.video = heroku;
       } else {
         this.video = url;

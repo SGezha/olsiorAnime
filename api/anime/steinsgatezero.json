@@ -53,6 +53,7 @@
     {
       "title": "1-2 серия",
       "url": "https://stream.wrench.gq/7305",
+      "hls": "https://anime.smotrel.net/hls/Steins_Gate_0/Steins_Gate_0_1-2/Steins_Gate_0_1-2_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/406",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_1-2.txt?v=1628972916505",
       "quality": [
@@ -67,6 +68,7 @@
     {
       "title": "3-4 серия",
       "url": "https://stream.wrench.gq/7313",
+      "hls": "https://anime.smotrel.net/hls/Steins_Gate_0/Steins_Gate_0_3-4/Steins_Gate_0_3-4_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/414",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_3-4.txt?v=1628972920373",
       "quality": [
@@ -81,6 +83,7 @@
     {
       "title": "5-7 серия",
       "url": "https://stream.wrench.gq/7314",
+      "hls": "https://anime.smotrel.net/hls/Steins_Gate_0/Steins_Gate_0_5-7/Steins_Gate_0_5-7_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/415",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_5-7.txt?v=1628972925234",
       "quality": [
@@ -95,6 +98,7 @@
     {
       "title": "8-9 серия",
       "url": "https://stream.wrench.gq/7306",
+      "hls": "https://anime.smotrel.net/hls/Steins_Gate_0/Steins_Gate_0_8-9/Steins_Gate_0_8-9_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/407",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_8-9.txt?v=1628972930136",
       "quality": [
@@ -109,6 +113,7 @@
     {
       "title": "10-12 серия",
       "url": "https://stream.wrench.gq/7307",
+      "hls": "https://anime.smotrel.net/hls/Steins_Gate_0/Steins_Gate_0_10-12/Steins_Gate_0_10-12_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/408",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_10-12.txt?v=1628972935431",
       "quality": [
@@ -123,6 +128,7 @@
     {
       "title": "13-15 серия",
       "url": "https://stream.wrench.gq/7308",
+      "hls": "https://anime.smotrel.net/hls/Steins_Gate_0/Steins_Gate_0_13-15/Steins_Gate_0_13-15_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/409",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_13-15.txt?v=1628972940682",
       "quality": [
@@ -137,6 +143,7 @@
     {
       "title": "16-17 серия",
       "url": "https://stream.wrench.gq/7309",
+      "hls": "https://anime.smotrel.net/hls/Steins_Gate_0/Steins_Gate_0_16-17/Steins_Gate_0_16-17_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/410",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_16-17.txt?v=1628972949455",
       "quality": [
@@ -151,6 +158,7 @@
     {
       "title": "18-19 серия",
       "url": "https://stream.wrench.gq/7310",
+      "hls": "https://anime.smotrel.net/hls/Steins_Gate_0/Steins_Gate_0_18-19/Steins_Gate_0_18-19_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/411",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_18-19.txt?v=1628972958233",
       "quality": [
@@ -165,6 +173,7 @@
     {
       "title": "20-21 серия",
       "url": "https://stream.wrench.gq/7311",
+      "hls": "https://anime.smotrel.net/hls/Steins_Gate_0/Steins_Gate_0_20-21/Steins_Gate_0_20-21_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/412",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_20-21.txt?v=1628972966817",
       "quality": [
@@ -179,6 +188,7 @@
     {
       "title": "22-23 серия",
       "url": "https://stream.wrench.gq/7312",
+      "hls": "https://anime.smotrel.net/hls/Steins_Gate_0/Steins_Gate_0_22-23/Steins_Gate_0_22-23_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/413",
       "chat": "https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Fstains_zero_22-23.txt?v=1628972971447",
       "quality": [
