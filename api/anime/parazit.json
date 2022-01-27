@@ -28,6 +28,7 @@
     {
       "title": "1-3 серия",
       "url": "https://stream.wrench.gq/7365",
+      "hls": "https://anime.smotrel.net/hls/Kiseijuu/Kiseijuu_1-3/Kiseijuu_1-3_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/428",
       "quality": [
         {
@@ -41,6 +42,7 @@
     {
       "title": "4-6 серия",
       "url": "https://stream.wrench.gq/7371",
+      "hls": "https://anime.smotrel.net/hls/Kiseijuu/Kiseijuu_4-6/Kiseijuu_4-6_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/430",
       "quality": [
         {
@@ -54,6 +56,7 @@
     {
       "title": "7-9 серия",
       "url": "https://stream.wrench.gq/7372",
+      "hls": "https://anime.smotrel.net/hls/Kiseijuu/Kiseijuu_7-9/Kiseijuu_7-9_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/431",
       "quality": [
         {
@@ -67,6 +70,7 @@
     {
       "title": "10-12 серия",
       "url": "https://stream.wrench.gq/7366",
+      "hls": "https://anime.smotrel.net/hls/Kiseijuu/Kiseijuu_10-12/Kiseijuu_10-12_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/436",
       "quality": [
         {
@@ -80,6 +84,7 @@
     {
       "title": "13-15 серия",
       "url": "https://stream.wrench.gq/7367",
+      "hls": "https://anime.smotrel.net/hls/Kiseijuu/Kiseijuu_13-15/Kiseijuu_13-15_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/432",
       "quality": [
         {
@@ -93,6 +98,7 @@
     {
       "title": "16-18 серия",
       "url": "https://stream.wrench.gq/7368",
+      "hls": "https://anime.smotrel.net/hls/Kiseijuu/Kiseijuu_16-18/Kiseijuu_16-18_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/433",
       "quality": [
         {
@@ -106,6 +112,7 @@
     {
       "title": "19-21 серия",
       "url": "https://stream.wrench.gq/7369",
+      "hls": "https://anime.smotrel.net/hls/Kiseijuu/Kiseijuu_19-21/Kiseijuu_19-21_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/434",
       "quality": [
         {
@@ -119,6 +126,7 @@
     {
       "title": "22-24 серия",
       "url": "https://stream.wrench.gq/7370",
+      "hls": "https://anime.smotrel.net/hls/Kiseijuu/Kiseijuu_22-24/Kiseijuu_22-24_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/435",
       "quality": [
         {

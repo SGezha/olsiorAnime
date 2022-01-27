@@ -37,6 +37,7 @@
     {
       "title": "1 серия",
       "url": "https://stream.wrench.gq/7410",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_1/gto_1_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/437",
       "quality": [
         {
@@ -50,6 +51,7 @@
     {
       "title": "2-3 серия",
       "url": "https://stream.wrench.gq/7411",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_2-3/gto_2-3_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/450",
       "quality": [
         {
@@ -63,6 +65,7 @@
     {
       "title": "4-5 серия",
       "url": "https://stream.wrench.gq/7412",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_4-5/gto_4-5_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/438",
       "quality": [
         {
@@ -76,6 +79,7 @@
     {
       "title": "6-7 серия",
       "url": "https://stream.wrench.gq/7413",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_6-7/gto_6-7_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/439",
       "quality": [
         {
@@ -89,6 +93,7 @@
     {
       "title": "8 серия",
       "url": "https://stream.wrench.gq/7414",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_8/gto_8_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/440",
       "quality": [
         {
@@ -102,6 +107,7 @@
     {
       "title": "9-10 серия",
       "url": "https://stream.wrench.gq/7415",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_9-10/gto_9-10_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/441",
       "quality": [
         {
@@ -115,6 +121,7 @@
     {
       "title": "11-12 серия",
       "url": "https://stream.wrench.gq/7416",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_11-12/gto_11-12_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/442",
       "quality": [
         {
@@ -128,6 +135,7 @@
     {
       "title": "13-15 серия",
       "url": "https://stream.wrench.gq/7417",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_13-15/gto_13-15_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/443",
       "quality": [
         {
@@ -141,6 +149,7 @@
     {
       "title": "16-17 серия",
       "url": "https://stream.wrench.gq/7418",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_16-17/gto_16-17_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/444",
       "quality": [
         {
@@ -154,6 +163,7 @@
     {
       "title": "18-20 серия",
       "url": "https://stream.wrench.gq/7419",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_18-20/gto_18-20_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/455",
       "quality": [
         {
@@ -167,6 +177,7 @@
     {
       "title": "21-22 серия",
       "url": "https://stream.wrench.gq/7420",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_21-22/gto_21-22_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/445",
       "quality": [
         {
@@ -180,6 +191,7 @@
     {
       "title": "23-24 серия",
       "url": "https://stream.wrench.gq/7421",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_23-24/gto_23-24_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/446",
       "quality": [
         {
@@ -193,6 +205,7 @@
     {
       "title": "25-26 серия",
       "url": "https://stream.wrench.gq/7422",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_25-26/gto_25-26_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/447",
       "quality": [
         {
@@ -206,6 +219,7 @@
     {
       "title": "27-28 серия",
       "url": "https://stream.wrench.gq/7423",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_27-28/gto_27-28_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/448",
       "quality": [
         {
@@ -219,6 +233,7 @@
     {
       "title": "29-31 серия",
       "url": "https://stream.wrench.gq/7424",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_29-31/gto_29-31_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/449",
       "quality": [
         {
@@ -232,6 +247,7 @@
     {
       "title": "32-34 серия",
       "url": "https://stream.wrench.gq/7425",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_32-34/gto_32-34_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/451",
       "quality": [
         {
@@ -245,6 +261,7 @@
     {
       "title": "35-37 серия",
       "url": "https://stream.wrench.gq/7426",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_35-37/gto_35-37_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/452",
       "quality": [
         {
@@ -258,6 +275,7 @@
     {
       "title": "38-40 серия",
       "url": "https://stream.wrench.gq/7427",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_38-40/gto_38-40_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/453",
       "quality": [
         {
@@ -271,6 +289,7 @@
     {
       "title": "41-43 серия",
       "url": "https://stream.wrench.gq/7428",
+      "hls": "https://anime.smotrel.net/hls/gto/gto_41-43/gto_41-43_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/454",
       "quality": [
         {

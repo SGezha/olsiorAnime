@@ -9,11 +9,13 @@
     {
       "title": "1 серия",
       "url": "https://stream.wrench.gq/14921",
+      "hls": "https://anime.smotrel.net/hls/Cosmos/Cosmos_1/Cosmos_1_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1022"
     },
     {
       "title": "2 серия",
       "url": "https://stream.wrench.gq/14922",
+      "hls": "https://anime.smotrel.net/hls/Cosmos/Cosmos_2/Cosmos_2_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1023"
     }
   ]

@@ -31,6 +31,7 @@
     {
       "title": "Фильм",
       "url": "https://stream.wrench.gq/7634",
+      "hls": "https://anime.smotrel.net/hls/Naruto_s2/Naruto_film10/Naruto_film10_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/498",
       "quality": [
         {

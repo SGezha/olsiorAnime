@@ -38,6 +38,7 @@
     {
       "title": "1-5 серия",
       "url": "https://stream.wrench.gq/7385",
+      "hls": "https://anime.smotrel.net/hls/death_note/death_note_1-5/death_note_1-5_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/456",
       "quality": [
         {
@@ -51,6 +52,7 @@
     {
       "title": "6-10 серия",
       "url": "https://stream.wrench.gq/7386",
+      "hls": "https://anime.smotrel.net/hls/death_note/death_note_6-10/death_note_6-10_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/457",
       "quality": [
         {
@@ -64,6 +66,7 @@
     {
       "title": "11-13 серия",
       "url": "https://stream.wrench.gq/7389",
+      "hls": "https://anime.smotrel.net/hls/death_note/death_note_11-13/death_note_11-13_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/460",
       "quality": [
         {
@@ -77,6 +80,7 @@
     {
       "title": "14-17 серия",
       "url": "https://stream.wrench.gq/7390",
+      "hls": "https://anime.smotrel.net/hls/death_note/death_note_14-17/death_note_14-17_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/458",
       "quality": [
         {
@@ -90,6 +94,7 @@
     {
       "title": "18-21 серия",
       "url": "https://stream.wrench.gq/7387",
+      "hls": "https://anime.smotrel.net/hls/death_note/death_note_18-21/death_note_18-21_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/461",
       "quality": [
         {
@@ -103,6 +108,7 @@
     {
       "title": "22-25 серия",
       "url": "https://stream.wrench.gq/7388",
+      "hls": "https://anime.smotrel.net/hls/death_note/death_note_22-25/death_note_22-25_.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/459",
       "quality": [
         {
