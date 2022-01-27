@@ -112,7 +112,6 @@
               :key="video"
               :class="{ theatre: theatre }"
               @keydown="rewind"
-              @loadedmetadata="getResolution"
               @timeupdate="handleVideo"
               @abort="handleVideo"
               @loadstart="handleVideo"
@@ -807,15 +806,6 @@ export default {
         document.webkitExitFullscreen();
       } else if (document.msExitFullscreen) {
         document.msExitFullscreen();
-      }
-    },
-    getResolution(event) {
-      if (event.target.videoHeight != 480) {
-        this.height = event.target.videoHeight + "p";
-        this.selectQuality = this.height;
-      } else {
-        this.height = "1080p";
-        this.selectQuality = `480p`;
       }
     },
     loadedVideo() {
