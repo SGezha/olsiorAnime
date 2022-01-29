@@ -162,6 +162,11 @@ export default {
           username: "Temi",
           amount: 15,
           type: "₽"
+        },
+        {
+          username: "Amurkibon",
+          amount: 100,
+          type: "₽"
         }
       ]
     };
