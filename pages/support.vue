@@ -152,6 +152,16 @@ export default {
           username: "Svee4K",
           amount: 1000,
           type: "₽"
+        },
+        {
+          username: "LinaFromBerlin",
+          amount: 200,
+          type: "₽"
+        },
+        {
+          username: "Temi",
+          amount: 15,
+          type: "₽"
         }
       ]
     };

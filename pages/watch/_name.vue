@@ -865,7 +865,7 @@ export default {
         if (a.display) return;
         a.display = true;
         a.color = this.getRandomColor();
-        if (ind + 1 == mesaages.length && !this.lockChat) {
+        if (ind + 1 == mesaages.length) {
           setTimeout(() => {
             this.$refs.chat.scrollTo({
               top: 9999999999999999
