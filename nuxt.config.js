@@ -16,7 +16,7 @@ module.exports = {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/favicon.ico?v=1643295988839' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
     ],
   },
 
