@@ -747,6 +747,7 @@ export default {
           if (Hls.isSupported()) {
             const hls = new Hls();
             if(this.needSave) hls.config.startPosition = this.save.time;
+            this.$refs.video.volume = this.save.volume;
             hls.loadSource(post.hls);
             hls.attachMedia(this.$refs.video);
             hls.on(Hls.Events.MANIFEST_PARSED, function() {
