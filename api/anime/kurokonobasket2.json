@@ -83,6 +83,22 @@
       "heroku": "https://olsiorvideo.herokuapp.com/1198",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-12-13.txt?v=1643886243263",
       "tgLink": "https://t.me/animekogda/464"
+    },
+    {
+      "title": "14-16 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroku_2/kuroku_s2_e14-16/kuroku_s2_e14-16_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1199",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-14-16.txt?v=1643926767736",
+      "tgLink": "https://t.me/animekogda/465"
+    },
+    {
+      "title": "17-18 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroku_2/kuroku_s2_e17-18/kuroku_s2_e17-18_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1200",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-17-18.txt?v=1643926771088",
+      "tgLink": "https://t.me/animekogda/466"
     }
   ]
 }
