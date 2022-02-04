@@ -126,7 +126,7 @@
 
         <div class="head text-2xl my-5 px-[20px] flex justify-start items-center">
           <h2 class="flex justify-center items-center">
-            Последнии нарезки
+            Последние нарезки
             <font-awesome-icon
               class="ml-2 mt-1"
               style="font-size: 1rem;"
