@@ -1,0 +1,62 @@
+{
+  "title": "Баскетбол Куроко 3 / Kuroko no Basket 3rd Season",
+  "genres": [
+    "Сёнен",
+    "Комедия",
+    "Спорт",
+    "Школа"
+  ],
+  "seasons": [
+    {
+      "title": "Баскетбол Куроко",
+      "url": "https://smotrel.net/watch/kurokonobasket",
+      "text": "ТВ (25 эп.), адаптация манги, 2012"
+    },
+    {
+      "title": "Баскетбол Куроко 2",
+      "url": "https://smotrel.net/watch/kurokonobasket2",
+      "text": "ТВ (25 эп.), продолжение, 2013"
+    },
+    {
+      "title": "Баскетбол Куроко 3",
+      "url": "https://smotrel.net/watch/kurokonobasket3",
+      "text": "ТВ (25 эп.), продолжение, 2015"
+    }
+  ],
+  "op": [
+    {
+      "url": "https://www.youtube.com/watch?v=WrzpLdU7eWU",
+      "episodes": "1-13",
+      "title": "GRANRODEO - Punky Funky Love"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=833F3rQr9lg",
+      "episodes": "14-17",
+      "title": "Kensho Ono - ZERO"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=yPaqhJ12YqY",
+      "episodes": "18-25",
+      "title": "GRANRODEO - Memories"
+    }
+  ],
+  "ed": [
+    {
+      "url": "https://www.youtube.com/watch?v=mXV5TOcwZP0",
+      "episodes": "1-13",
+      "title": "Fo'xTails - GLITTER DAYS"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6QlmnMs0qIg",
+      "episodes": "14-17",
+      "title": "SCREEN mode - Ambivalence"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YokXOaG3M2o",
+      "episodes": "18-25",
+      "title": "OLDCODEX - Lantana"
+    }
+  ],
+  "desc": "Зимний кубок не за горами, он — цель героев, ставших сильнее и опытнее благодаря усердным тренировкам и прошедшим играм с другими школами. Но столь лакомый кусочек вряд ли останется без внимания, ведь соперники тоже не стояли на месте все это время. Поверженные во втором сезоне стали лишь стимулом для других команд, «Поколение чудес» еще покажет себя на площадке. А посему Сэйрин вместе с знаменитыми Куроко и Кагами потребуется приложить немало усилий, дабы сокрушить всех асов с их школами и вырвать победу!",
+  "episodes": []
+}

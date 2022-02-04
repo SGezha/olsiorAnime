@@ -1,10 +1,17 @@
 [
   {
+    "title": "Баскетбол Куроко 3 / Kuroko no Basket 3rd Season",
+    "episodes": "0/25",
+    "stars": "?",
+    "url": "kurokonobasket3",
+    "watched": false
+  },
+  {
     "title": "Баскетбол Куроко 2 / Kuroko no Basket 2nd Season",
-    "episodes": "18/25",
+    "episodes": "25/25",
     "stars": "?",
     "url": "kurokonobasket2",
-    "watched": false
+    "watched": true
   },
   {
     "title": "Баскетбол Куроко / Kuroko no Basket",

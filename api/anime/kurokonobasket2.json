@@ -99,6 +99,46 @@
       "heroku": "https://olsiorvideo.herokuapp.com/1200",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-17-18.txt?v=1643926771088",
       "tgLink": "https://t.me/animekogda/466"
+    },
+    {
+      "title": "19-20 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroku_2/kuroku_s2_e19-20/kuroku_s2_e19-20_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1201",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-19-20.txt?v=1644011475261",
+      "tgLink": "https://t.me/animekogda/467"
+    },
+    {
+      "title": "20-21 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroku_2/kuroku_s2_e20-21/kuroku_s2_e20-21_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1202",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-20-21.txt?v=1644011478267",
+      "tgLink": "https://t.me/animekogda/467"
+    },
+    {
+      "title": "21 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroku_2/kuroku_s2_e21/kuroku_s2_e21_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1203",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-21.txt?v=1644011485387",
+      "tgLink": "https://t.me/animekogda/467"
+    },
+    {
+      "title": "22-23 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroku_2/kuroku_s2_e22-23/kuroku_s2_e22-23_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1204",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-22-23.txt?v=1644011488399",
+      "tgLink": "https://t.me/animekogda/468"
+    },
+    {
+      "title": "24-25 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroku_2/kuroku_s2_e24-25/kuroku_s2_e24-25_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1205",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko2-24-25.txt?v=1644011492960",
+      "tgLink": "https://t.me/animekogda/469"
     }
   ]
 }
