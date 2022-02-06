@@ -647,7 +647,7 @@ export default {
   methods: {
     async getChat(url) {
       const emotes = await this.$axios.$get(
-        `https://cdn.glitch.com/513930f1-8551-4a01-b9f0-59a88e2429c1%2Femotes2.json?v=1632040166246`
+        `https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/emotes.json?v=1644150481352`
       );
       this.emotes = emotes;
       let chat = await this.$axios.$get(`${url}`);
