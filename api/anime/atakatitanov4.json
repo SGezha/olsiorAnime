@@ -150,6 +150,46 @@
       "heroku": "https://olsiorvideo.herokuapp.com/1176",
       "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/videoataka-2.txt?v=1640698750215",
       "tgLink": "https://t.me/animekogda/435"
+    },
+    {
+      "title": "17-18 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e17-18/AT_s4_e17-18_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1207",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-17-18.txt?v=1644357509079",
+      "tgLink": "https://t.me/animekogda/471"
+    },
+    {
+      "title": "19-20 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e19-20/AT_s4_e19-20_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1208",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-19-20.txt?v=1644357512715",
+      "tgLink": "https://t.me/animekogda/472"
+    },
+    {
+      "title": "21 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e21/AT_s4_e21_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1209",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-21.txt?v=1644357657909",
+      "tgLink": "https://t.me/animekogda/473"
+    },
+    {
+      "title": "Обсуждаем Атаку и Болтаем 1 ч.",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/YouTube/Obsujdaem_Ataku_1/Obsujdaem_Ataku_1_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1210",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/obsujdaem-ataku-1.txt?v=1644484063148",
+      "tgLink": "https://t.me/animekogda/474"
+    },
+    {
+      "title": "Обсуждаем Атаку и Болтаем 2 ч.",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/YouTube/Obsujdaem_Ataku_2/Obsujdaem_Ataku_2_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1211",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/obsujdaem-ataku-2.txt?v=1644484066009",
+      "tgLink": "https://t.me/animekogda/474"
     }
   ]
 }

@@ -7,9 +7,16 @@
     "watched": false
   },
   {
+    "title": "Атака титанов: Финал / Shingeki no Kyojin: The Final Season",
+    "episodes": "21/?",
+    "stars": "10",
+    "url": "atakatitanov4",
+    "watched": false
+  },
+  {
     "title": "Баскетбол Куроко 2 / Kuroko no Basket 2nd Season",
     "episodes": "25/25",
-    "stars": "?",
+    "stars": "7",
     "url": "kurokonobasket2",
     "watched": true
   },
@@ -32,13 +39,6 @@
     "episodes": "23/23",
     "stars": "7",
     "url": "mushokutensei",
-    "watched": true
-  },
-  {
-    "title": "Атака титанов: Финал / Shingeki no Kyojin: The Final Season",
-    "episodes": "16/16",
-    "stars": "10",
-    "url": "atakatitanov4",
     "watched": true
   },
   {

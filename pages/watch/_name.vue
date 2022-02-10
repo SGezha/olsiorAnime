@@ -799,6 +799,7 @@ export default {
       } else if (document.documentElement.msRequestFullscreen) {
         document.documentElement.msRequestFullscreen();
       }
+      screen.orientation.lock("landscape-primary")
     },
     closeFullscreen() {
       if (document.exitFullscreen) {
@@ -808,6 +809,7 @@ export default {
       } else if (document.msExitFullscreen) {
         document.msExitFullscreen();
       }
+      screen.orientation.lock("portrait")
     },
     loadedVideo() {
       if (this.$refs.video == undefined) return;

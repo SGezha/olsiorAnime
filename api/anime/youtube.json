@@ -50,6 +50,38 @@
         { "time": "1:22:14", "name": "Hack // Sign(2002)" }
       ],
       "tgLink": "https://t.me/animekogda/328"
+    },
+    {
+      "title": "Ведосеки по Отаке 1 ч.",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/YouTube/YT_vid_AT_1/YT_vid_AT_1.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1175",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/videoataka-1.txt?v=1640698747582",
+      "tgLink": "https://t.me/animekogda/435"
+    },
+    {
+      "title": "Ведосеки по Отаке 2 ч.",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/YouTube/YT_vid_AT_2/YT_vid_AT_2.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1176",
+      "chat": "https://cdn.glitch.me/513930f1-8551-4a01-b9f0-59a88e2429c1/videoataka-2.txt?v=1640698750215",
+      "tgLink": "https://t.me/animekogda/435"
+    },
+    {
+      "title": "Обсуждаем Атаку и Болтаем 1 ч.",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/YouTube/Obsujdaem_Ataku_1/Obsujdaem_Ataku_1_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1210",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/obsujdaem-ataku-1.txt?v=1644484063148",
+      "tgLink": "https://t.me/animekogda/474"
+    },
+    {
+      "title": "Обсуждаем Атаку и Болтаем 2 ч.",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/YouTube/Obsujdaem_Ataku_2/Obsujdaem_Ataku_2_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1211",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/obsujdaem-ataku-2.txt?v=1644484066009",
+      "tgLink": "https://t.me/animekogda/474"
     }
   ]
 }
