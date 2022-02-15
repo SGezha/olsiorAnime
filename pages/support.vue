@@ -79,23 +79,8 @@ export default {
           type: "₽"
         },
         {
-          username: "yaroslaff",
-          amount: 100,
-          type: "₽"
-        },
-        {
           username: "yaroslaffb",
-          amount: 100,
-          type: "₽"
-        },
-        {
-          username: "yaroslaffb",
-          amount: 111,
-          type: "₽"
-        },
-        {
-          username: "yaroslaffb",
-          amount: 100,
+          amount: 411,
           type: "₽"
         },
         {
@@ -165,6 +150,11 @@ export default {
         },
         {
           username: "Amurkibon",
+          amount: 100,
+          type: "₽"
+        },
+        {
+          username: "кто здесь",
           amount: 100,
           type: "₽"
         }

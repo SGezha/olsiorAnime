@@ -66,6 +66,30 @@
       "heroku": "https://olsiorvideo.herokuapp.com/1206",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-1-3.txt?v=1644269180275",
       "tgLink": "https://t.me/animekogda/470"
+    },
+    {
+      "title": "4-5 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroko_s3/kuroko_s3_e4-5/kuroko_s3_e4-5_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1212",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-4-5.txt?v=1644513971292",
+      "tgLink": "https://t.me/animekogda/476"
+    },
+    {
+      "title": "6-8 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroko_s3/kuroko_s3_e6-8/kuroko_s3_e6-8_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1213",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-6-8.txt?v=1644955526017",
+      "tgLink": "https://t.me/animekogda/477"
+    },
+    {
+      "title": "9-10 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroko_s3/kuroko_s3_e9-10/kuroko_s3_e9-10_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1214 ",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-9-10.txt?v=1644955533644",
+      "tgLink": "https://t.me/animekogda/478"
     }
   ]
 }
