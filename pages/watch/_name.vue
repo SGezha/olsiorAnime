@@ -870,8 +870,9 @@ export default {
         a.color = this.getRandomColor();
         if (ind + 1 == mesaages.length) {
           setTimeout(() => {
+            let chatSize = this.$refs.chat.scrollHeight;
             this.$refs.chat.scrollTo({
-              top: 9999999999999999
+              top: chatSize
             });
           }, 100);
         }

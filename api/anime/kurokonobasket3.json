@@ -1,5 +1,6 @@
 {
   "title": "Баскетбол Куроко 3 / Kuroko no Basket 3rd Season",
+  "background": "/bg/kurokonobasket.jpg",
   "genres": [
     "Сёнен",
     "Комедия",
@@ -90,6 +91,38 @@
       "heroku": "https://olsiorvideo.herokuapp.com/1214 ",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-9-10.txt?v=1644955533644",
       "tgLink": "https://t.me/animekogda/478"
+    },
+    {
+      "title": "11-13 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroko_s3/kuroko_s3_e11-13/kuroko_s3_e11-13_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1215",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-11-13.txt?v=1645035665045",
+      "tgLink": "https://t.me/animekogda/479"
+    },
+    {
+      "title": "14-15 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroko_s3/kuroko_s3_e14-15/kuroko_s3_e14-15_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1216",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-14-15.txt?v=1645035670360",
+      "tgLink": "https://t.me/animekogda/480"
+    },
+    {
+      "title": "16-17 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroko_s3/kuroko_s3_e16-17/kuroko_s3_e16-17_.m3u8",
+      "heroku": "https://t.me/animekogda/486",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-16-17.txt?v=1645128220877",
+      "tgLink": "https://t.me/animekogda/485"
+    },
+    {
+      "title": "18 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroko_s3/kuroko_s3_e18/kuroko_s3_e18_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1218",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-18.txt?v=1645128224331",
+      "tgLink": "https://t.me/animekogda/486"
     }
   ]
 }
