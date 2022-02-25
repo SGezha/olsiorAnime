@@ -1,17 +1,17 @@
 [
   {
-    "title": "Баскетбол Куроко 3 / Kuroko no Basket 3rd Season",
-    "episodes": "18/25",
-    "stars": "?",
-    "url": "kurokonobasket3",
-    "watched": false
-  },
-  {
     "title": "Атака титанов: Финал / Shingeki no Kyojin: The Final Season",
     "episodes": "21/?",
     "stars": "10",
     "url": "atakatitanov4",
     "watched": false
+  },
+  {
+    "title": "Баскетбол Куроко 3 / Kuroko no Basket 3rd Season",
+    "episodes": "25/25",
+    "stars": "?",
+    "url": "kurokonobasket3",
+    "watched": true
   },
   {
     "title": "Баскетбол Куроко 2 / Kuroko no Basket 2nd Season",

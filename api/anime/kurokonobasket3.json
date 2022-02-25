@@ -123,6 +123,22 @@
       "heroku": "https://olsiorvideo.herokuapp.com/1218",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-18.txt?v=1645128224331",
       "tgLink": "https://t.me/animekogda/486"
+    },
+    {
+      "title": "19-22 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroko_s3/kuroko_s3_e19-22/kuroko_s3_e19-22_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1219",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-19-22.txt?v=1645815819949",
+      "tgLink": "https://t.me/animekogda/487"
+    },
+    {
+      "title": "22-25 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/kuroko_s3/kuroko_s3_e22-25/kuroko_s3_e22-25_.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1220",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko3-22-25.txt?v=1645815823490",
+      "tgLink": "https://t.me/animekogda/488"
     }
   ]
 }
