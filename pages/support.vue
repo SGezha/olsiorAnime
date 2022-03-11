@@ -157,6 +157,11 @@ export default {
           username: "кто здесь",
           amount: 100,
           type: "₽"
+        },
+        {
+          username: "Jak1R",
+          amount: 50,
+          type: "₽"
         }
       ]
     };
