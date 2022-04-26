@@ -190,6 +190,38 @@
       "heroku": "https://olsiorvideo.herokuapp.com/1211",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/obsujdaem-ataku-2.txt?v=1644491925066",
       "tgLink": "https://t.me/animekogda/474"
+    },
+    {
+      "title": "22-23 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e22-23/AT_s4_e22-23.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1226",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-22-23.txt?v=1650984806984",
+      "tgLink": "https://t.me/animekogda/496"
+    },
+    {
+      "title": "24-25 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e24-25/AT_s4_e24-25.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1229",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-24-25.txt?v=1650984813944",
+      "tgLink": "https://t.me/animekogda/497"
+    },
+    {
+      "title": "25-26 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e25-26/AT_s4_e25-26.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1227",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-25-26.txt?v=1650984820775",
+      "tgLink": "https://t.me/animekogda/498"
+    },
+    {
+      "title": "27-28 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/Shingeki_no_Kyojin_s4/AT_s4_e27-28/AT_s4_e27-28.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1228",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/ataka4-27-28.txt?v=1650984824498",
+      "tgLink": "https://t.me/animekogda/499"
     }
   ]
 }
