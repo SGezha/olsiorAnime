@@ -13,16 +13,6 @@
         <img src="/donate.png" alt="" class="donate" />
         С помощью сервиса DonationAlerts
         </a>
-        <a
-          href="https://destream.net/live/4funsasha/donate"
-          class="flex mt-2 items-center flex-wrap"
-          ><img
-            src="/donate2.png"
-            alt=""
-            class="w-[100px] h-[55px] -mt-[15px] mr-[10px]"
-          />
-          <span>С помощью сервиса DeStream (для жителей Украины)</span></a
-        >
         <h2 class="mt-2">Топ донатов:</h2>
         <ul class="da-donationslist flex flex-wrap -ml-1">
           <li
