@@ -32,7 +32,7 @@
             v-for="(pop, index) in smotrit()"
             :key="index"
             :to="'/watch/' + pop.url"
-            class="card w-full"
+            class="card w-full relative"
           >
             <div class="preview shadow">
               <div
@@ -46,7 +46,7 @@
                 >
                   {{ pop.stars }}
                   <font-awesome-icon
-                    v-if="pop.stars != 'Крис смотрит'"
+                    v-if="pop.stars != 'Крис смотрит' && pop.stars != 'Пересмотр'"
                     :icon="['fa', 'star']"
                   />
                 </span>
@@ -93,7 +93,7 @@
             v-for="(pop, index) in watched()"
             :key="index"
             :to="'/watch/' + pop.url"
-            class="card w-full"
+            class="card w-full relative"
           >
             <div class="preview shadow">
               <div
@@ -107,7 +107,7 @@
                 >
                   {{ pop.stars }}
                   <font-awesome-icon
-                    v-if="pop.stars != 'Крис смотрит'"
+                    v-if="pop.stars != 'Крис смотрит' && pop.stars != 'Пересмотр'"
                     :icon="['fa', 'star']"
                   />
                 </span>

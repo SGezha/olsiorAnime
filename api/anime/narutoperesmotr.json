@@ -1,0 +1,76 @@
+{
+  "title": "Наруто / Naruto",
+  "genres": [
+    "Экшен",
+    "Приключения",
+    "Комедия",
+    "Боевые искусства",
+    "Супер сила",
+    "Сёнен"
+  ],
+  "desc": "Пересмотр лучших серий аниме Наруто на марафоне в поддержку ВСУ.",
+  "seasons": [
+    {
+      "title": "Наруто",
+      "url": "https://smotrel.net/watch/naruto",
+      "text": "ТВ (220 эп.), первый сериал, адаптация манги, 2002"
+    },
+    {
+      "title": "Наруто: Ураганные хроники",
+      "url": "https://smotrel.net/watch/naruto",
+      "text": "ТВ (500 эп.), второй сериал, адаптация манги, 2007"
+    },
+    {
+      "title": "Наруто: Последний фильм",
+      "url": "https://smotrel.net/watch/narutolastfilm",
+      "text": "п/ф, после 480 серии, дополнение, 2014"
+    },
+    {
+      "title": "Пересмотр лучших серий наруто",
+      "url": "https://smotrel.net/watch/narutoperesmotr",
+      "text": ""
+    }
+  ],
+  "episodes": [
+    {
+      "title": "19,48-49 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/peresmotr/naruto_19_48_49/naruto_19_48_49.m3u8",
+      "heroku": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/naruto_19_48_49.txt?v=1653845338443",
+      "tgLink": "https://t.me/animekogda/502"
+    },
+    {
+      "title": "50,124 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/peresmotr/naruto_50_124/naruto_50_124.m3u8",
+      "heroku": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/naruto_50_124.txt?v=1653845342111",
+      "tgLink": "https://t.me/animekogda/502"
+    },
+    {
+      "title": "82,130,131 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/peresmotr/naruto_82_130_131/naruto_82_130_131.m3u8",
+      "heroku": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/naruto_82_130-131.txt?v=1653845345785",
+      "tgLink": "https://t.me/animekogda/504"
+    },
+    {
+      "title": "132-133 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/peresmotr/naruto_132_133/naruto_132_133.m3u8",
+      "heroku": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/naruto_132-133.txt?v=1653845349270",
+      "tgLink": "https://t.me/animekogda/505"
+    },
+    {
+      "title": "162-163 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/peresmotr/naruto_162_163/naruto_162_163.m3u8",
+      "heroku": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/naruto_162-163.txt?v=1653845352201",
+      "tgLink": "https://t.me/animekogda/506"
+    }
+  ]
+}

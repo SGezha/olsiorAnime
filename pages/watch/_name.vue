@@ -444,7 +444,7 @@
               <a class="link" target="_blank" :href="seas.url">
                 {{ seas.title }}
               </a>
-              - {{ seas.text }}
+              <span v-if="seas.text.length != 0">- </span> {{ seas.text }}
             </div>
           </div>
         </div>

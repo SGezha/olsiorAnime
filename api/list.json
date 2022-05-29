@@ -1,5 +1,19 @@
 [
   {
+    "title": "Наруто / Naruto",
+    "episodes": "12",
+    "stars": "Пересмотр",
+    "url": "narutoperesmotr",
+    "watched": true
+  },
+  {
+    "title": "Код Ґіасс: Повстання Лелуша / Бунтівний Лелуш",
+    "episodes": "1/25",
+    "stars": "?",
+    "url": "codegeass",
+    "watched": true
+  },
+  {
     "title": "Атака титанов: Финал / Shingeki no Kyojin: The Final Season",
     "episodes": "28/28",
     "stars": "10",
