@@ -36,7 +36,7 @@
       "url": "",
       "hls": "https://anime.smotrel.net/hls/kuroko_film/kuroko_film_1/kuroko_film_1.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1239",
-      "chat": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko_film_1.txt?v=1654756902403",
       "tgLink": "https://t.me/animekogda/514"
     },
     {
@@ -44,7 +44,7 @@
       "url": "",
       "hls": "https://anime.smotrel.net/hls/kuroko_film/kuroko_film_2/kuroko_film_2.m3u8",
       "heroku": "https://olsiorvideo.herokuapp.com/1240",
-      "chat": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/kuroko_film_2.txt?v=1654756905088",
       "tgLink": "https://t.me/animekogda/515"
     }
   ]
