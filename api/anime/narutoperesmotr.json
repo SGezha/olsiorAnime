@@ -35,42 +35,63 @@
     {
       "title": "19 48-49 серия",
       "url": "",
-      "hls": "https://anime.smotrel.net/hls/peresmotr/naruto_19_48_49/naruto_19_48_49.m3u8",
-      "heroku": "",
+      "hls": "https://anime.smotrel.net/hls/Naruto(peresmotr)/naruto_19_48_49/naruto_19_48_49.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1231",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/naruto_19_48_49.txt?v=1653845338443",
       "tgLink": "https://t.me/animekogda/502"
     },
     {
       "title": "50 124 серия",
       "url": "",
-      "hls": "https://anime.smotrel.net/hls/peresmotr/naruto_50_124/naruto_50_124.m3u8",
-      "heroku": "",
+      "hls": "https://anime.smotrel.net/hls/Naruto(peresmotr)/naruto_50_124/naruto_50_124.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1238",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/naruto_50_124.txt?v=1653845342111",
       "tgLink": "https://t.me/animekogda/502"
     },
     {
       "title": "82 130-131 серия",
       "url": "",
-      "hls": "https://anime.smotrel.net/hls/peresmotr/naruto_82_130_131/naruto_82_130_131.m3u8",
-      "heroku": "",
+      "hls": "https://anime.smotrel.net/hls/Naruto(peresmotr)/naruto_82_130_131/naruto_82_130_131.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1232",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/naruto_82_130-131.txt?v=1653845345785",
       "tgLink": "https://t.me/animekogda/504"
     },
     {
       "title": "132-133 серия",
       "url": "",
-      "hls": "https://anime.smotrel.net/hls/peresmotr/naruto_132_133/naruto_132_133.m3u8",
-      "heroku": "",
+      "hls": "https://anime.smotrel.net/hls/Naruto(peresmotr)/naruto_132_133/naruto_132_133.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1233",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/naruto_132-133.txt?v=1653845349270",
       "tgLink": "https://t.me/animekogda/505"
     },
     {
       "title": "162-163 серия",
       "url": "",
-      "hls": "https://anime.smotrel.net/hls/peresmotr/naruto_162_163/naruto_162_163.m3u8",
-      "heroku": "",
+      "hls": "https://anime.smotrel.net/hls/Naruto(peresmotr)/naruto_162_163/naruto_162_163.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1234",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/naruto_162-163.txt?v=1653845352201",
       "tgLink": "https://t.me/animekogda/506"
+    },
+    {
+      "title": "135-137 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/Naruto(peresmotr)/naruto_135-137/naruto_135-137.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1235",
+      "tgLink": "https://t.me/animekogda/507"
+    },
+    {
+      "title": "138 168 167 249 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/Naruto(peresmotr)/naruto_138_168_167_249/naruto_138_168_167_249.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1236",
+      "tgLink": "https://t.me/animekogda/508"
+    },
+    {
+      "title": "329 375 420 421 474 серия",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/Naruto(peresmotr)/naruto_329_375_420_421_474/naruto_329_375_420_421_474.m3u8",
+      "heroku": "https://olsiorvideo.herokuapp.com/1237",
+      "tgLink": "https://t.me/animekogda/509"
     }
   ]
 }

@@ -1,7 +1,14 @@
 [
   {
+    "title": "Баскетбол Куроко: Остання гра / Kuroko no Basket Movie 4: Last Game",
+    "episodes": "1",
+    "stars": "7",
+    "url": "kurokonobasketfilm",
+    "watched": true
+  },
+  {
     "title": "Наруто / Naruto",
-    "episodes": "12",
+    "episodes": "24",
     "stars": "Пересмотр",
     "url": "narutoperesmotr",
     "watched": true
