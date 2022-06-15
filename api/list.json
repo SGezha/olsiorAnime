@@ -1,7 +1,14 @@
 [
   {
+    "title": "Код Ґіасс: Повстання Лелуша / Бунтівний Лелуш",
+    "episodes": "7/25",
+    "stars": "?",
+    "url": "codegeass",
+    "watched": true
+  },
+  {
     "title": "Баскетбол Куроко: Остання гра / Kuroko no Basket Movie 4: Last Game",
-    "episodes": "1",
+    "episodes": "1/1",
     "stars": "7",
     "url": "kurokonobasketfilm",
     "watched": true
@@ -11,13 +18,6 @@
     "episodes": "24",
     "stars": "Пересмотр",
     "url": "narutoperesmotr",
-    "watched": true
-  },
-  {
-    "title": "Код Ґіасс: Повстання Лелуша / Бунтівний Лелуш",
-    "episodes": "1/25",
-    "stars": "?",
-    "url": "codegeass",
     "watched": true
   },
   {
