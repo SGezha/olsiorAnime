@@ -653,7 +653,7 @@ export default {
       let chat = await this.$axios.$get(`${url}`);
       this.emotes.forEach(m => {
         chat = chat
-          .split(`${m.name}`)
+          .split(` ${m.name}`)
           .join(`<img class="emote" src="${m.url}">`);
       });
       this.chat = chat;
@@ -688,7 +688,7 @@ export default {
         let hourDiff = timeEnd - timeStart; //in ms
         let secDiff = hourDiff / 1000; //in s
         let result = {};
-        let message = text.split("] ")[1].split(`${text.split("] ")[1].split(":")[0]}: `).join("");
+        let message = text.split("] ")[1].split(`${text.split("] ")[1].split(":")[0]}:`).join("");
         let author = text.split("] ")[1].split(":")[0];
         let chatter = this.topChat.find(a => a.author == author);
         if(chatter) {
@@ -719,7 +719,7 @@ export default {
           author: text.split("] ")[1].split(":")[0],
           text: text
             .split("] ")[1]
-            .split(`${text.split("] ")[1].split(":")[0]}: `)
+            .split(`${text.split("] ")[1].split(":")[0]}:`)
             .join(""),
           display: false
         });
