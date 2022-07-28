@@ -3,7 +3,7 @@
     <div class="container mx-auto" v-if="watched().length > 0">
       <div class="popular">
         <div
-          class="head text-2xl my-5 px-[20px] flex justify-start items-center hidden"
+          class="head text-2xl my-5 px-[20px] flex justify-start items-center"
         >
           <h2 class="flex justify-center items-center">
             Сейчас смотрит
@@ -25,7 +25,6 @@
           xl:grid-cols-6
           2xl:grid-cols-8
           gap-[10px]
-          hidden
         "
         >
           <Nuxt-link
