@@ -47,6 +47,22 @@
       "heroku": "https://olsiorvideo.herokuapp.com/1244",
       "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/code_geass_9-10.txt?v=1655459150893",
       "tgLink": "https://t.me/animekogda/520"
+    },
+    {
+      "title": "11-12 серія",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/code_geass/code_geass_11-12/code_geass_11-12.m3u8",
+      "heroku": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/code_geass_11-12.txt?v=1659043101195",
+      "tgLink": "https://t.me/animekogda/523"
+    },
+    {
+      "title": "11-12 серія",
+      "url": "",
+      "hls": "https://anime.smotrel.net/hls/code_geass/code_geass_13-14/code_geass_13-14.m3u8",
+      "heroku": "",
+      "chat": "https://cdn.glitch.global/513930f1-8551-4a01-b9f0-59a88e2429c1/code_geass_13-14.txt?v=1659043103204",
+      "tgLink": "https://t.me/animekogda/524"
     }
   ]
 }
